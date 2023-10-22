@@ -1,0 +1,84 @@
+@use 'sass:math';
+
+@function stripUnit($number) {
+  @return math.div($number, ($number * 0 + 1));
+}
+
+@function rem($pxValue) {
+  @return #{calc(stripUnit($pxValue) / stripUnit($html-font-size))}rem;
+  //@return #{stripUnit($pxValue)}rem;
+}
+
+@function vwd($size) {
+  $vw-context: ($desktop-reference-size * 0.01) * 1px;
+  @return calc($size / $vw-context) * 1vw;
+}
+
+@function vhd($size) {
+  $vw-context: ($desktop-reference-size * 0.01) * 1px;
+  @return calc($size / $vw-context) * 1vh;
+}
+
+@function vwm($size) {
+  $vw-context: ($mobile-reference-size * 0.01) * 1px;
+  @return calc($size / $vw-context) * 1vw;
+}
+
+@function vhm($size) {
+  $vw-context: ($mobile-reference-size * 0.01) * 1px;
+  @return calc($size / $vw-context) * 1vh;
+}
+
+@function percent($size, $parent-width) {
+  $vw-context: ($parent-width * 0.01) * 1px;
+  @return calc($parent-width / $vw-context) * 1%;
+}
+
+@mixin size($width, $height: $width) {
+  @media screen and (min-width: $mobile-size-trigger) {
+    width: vwd($width);
+    height: vwd($height);
+  }
+
+  @media screen and (max-width: $mobile-size-trigger) {
+    width: vwm($width);
+    height: vwm($height);
+  }
+}
+
+@mixin flex($direction: row, $align: center, $justify: center) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin font($size: 18rem, $height: 26rem, $weight: 400, $family: "MetronicPro") {
+  font-family: $family;
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+@mixin background($url, $size: cover, $position: center) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: $size;
+  background-position: $position;
+}
+
+@mixin pseudo($width, $height, $display: block, $pos: absolute) {
+  content: "";
+  display: $display;
+  position: $pos;
+
+  @include size($width, $height);
+}
+
+@mixin font-linear {
+  background: $linear;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  background-clip: text;
+}

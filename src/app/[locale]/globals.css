@@ -1,0 +1,18 @@
+:root {
+  --green: #00A650;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overscroll-behavior-y: none;
+}
+
+
+@font-face {
+  font-family: "Gantari";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("../../../public/fonts/Gantari-VariableFont_wght.woff2") format("woff2");
+}

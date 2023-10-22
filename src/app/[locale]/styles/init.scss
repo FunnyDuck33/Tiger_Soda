@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'mixins';
+
+
+@media screen and (max-width: $mobile-size-trigger) {
+  html {
+    font-size: vwm($html-font-size);
+  }
+}
+
+@media screen and (min-width: $mobile-size-trigger + 1) {
+  html {
+    font-size: vwd($html-font-size);
+  }
+
+  body {
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: $desktop-reference-px-size) {
+  html {
+    font-size: $html-font-size;
+  }
+}
