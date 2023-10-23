@@ -1,5 +1,6 @@
 :root {
   --green: #00A650;
+  --graphyte: #242424;
 }
 
 html,
@@ -9,10 +10,33 @@ body {
   overscroll-behavior-y: none;
 }
 
+.wide_padding {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 calc((100% - 1040rem) / 2);
+  flex-shrink: 0;
+}
+
+.wide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.box {
+  width: 1040rem;
+  margin: 0 auto;
+}
 
 @font-face {
   font-family: "Gantari";
   font-style: normal;
   font-weight: 100 900;
   src: url("../../../public/fonts/Gantari-VariableFont_wght.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DTGetai";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../../public/fonts/DTGetaiGroteskDisplay-Black.woff2") format("woff2");
 }

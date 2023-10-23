@@ -1,11 +1,67 @@
 {
   "Index": {
-    "Header": {
+    "Navigation": {
       "about": "About",
       "projects": "Projects",
       "services": "Services",
       "creators": "Creators",
       "contacts": "Contact us"
+    },
+    "Header": {
+      "desc": "ethical digital agency"
+    },
+    "Cover": "Welcome to&nbsp;Tiger Soda web-site. We&nbsp;are a&nbsp;global creative agency that does trendy, ethical, beautiful and rewarding advertising.",
+    "Ticker": "we care;about;your brand",
+    "Projects": {
+      "title": "projects",
+      "button": "All projects",
+      "banners": [
+        "Online museum of ZHEK-art",
+        "NFT tokens for Samokat",
+        "Tigers x Jägermeister"
+      ]
+    },
+    "Services": {
+      "title": "services",
+      "button": "Service page",
+      "data": [
+        {
+          "title": "Special projects",
+          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
+        },
+        {
+          "title": "Micromedia",
+          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
+        },
+        {
+          "title": "PR support",
+          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
+        },
+        {
+          "title": "Creative consulting",
+          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
+        },
+        {
+          "title": "Ethical audit",
+          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
+        },
+        {
+          "title": "Brand media",
+          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
+        },
+        {
+          "title": "Animated podcasts",
+          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
+        },
+        {
+          "title": "Educational course",
+          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
+        },
+        {
+          "title": "New formats",
+          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
+        }
+      ]
     }
   }
 }

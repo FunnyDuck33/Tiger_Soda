@@ -1,0 +1,22 @@
+.root {
+    display: flex;
+
+    font-size: 72rem;
+    font-family: "DTGetai", "sans-serif";
+    letter-spacing: 1.44rem;
+
+    overflow-x: hidden;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.item {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.flake {
+    margin: 0 22rem;
+    width: 123px;
+}

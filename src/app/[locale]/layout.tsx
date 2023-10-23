@@ -20,9 +20,7 @@ export default function LocaleLayout({
     return (
         <html lang={locale}>
         <body>
-        <div className={styles.container}>
             {children}
-        </div>
         </body>
         </html>
     )

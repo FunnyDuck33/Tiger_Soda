@@ -1,0 +1,23 @@
+.root {
+    position: relative;
+    margin: 56rem auto 64rem;
+}
+
+.content {
+    width: 640rem;
+
+    font-family: "Gantari", "sans-serif";
+    font-size: 32rem;
+    line-height: 125%;
+    letter-spacing: 0.64rem;
+}
+
+.floaty {
+    position: absolute;
+
+    top: 12rem;
+    left: 693rem;
+
+    width: 45rem;
+}
+

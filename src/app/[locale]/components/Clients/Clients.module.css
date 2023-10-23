@@ -1,0 +1,27 @@
+.root {
+    position: relative;
+
+    margin-top: 100rem;
+    margin-bottom: 100rem;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.wrapper:not(:first-child) {
+    margin-top: 32rem;
+}
+
+.icon {
+    height: 27rem;
+}
+
+.icon_tall {
+    height: 48rem;
+}
+
+
