@@ -23,7 +23,7 @@ const Services = () => {
             <img src={tiger.src} alt="" className={styles.tiger}/>
             <div className={styles.wrapper}>
                 { data.map(({title, desc}, index) => (
-                    <div className={styles.item}>
+                    <div className={styles.item} key={title}>
                         <div className={styles.itemCount}>0{index + 1}</div>
                         <div className={styles.itemWrapper}>
                             <div className={styles.itemTitle}>{title}</div>

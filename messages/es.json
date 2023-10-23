@@ -62,6 +62,29 @@
           "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
         }
       ]
-    }
+    },
+    "Creators": {
+      "title": "creators",
+      "button": "All creators",
+      "data": [
+        {
+          "title": "Ivan Ivanow",
+          "desc": "Animation"
+        },
+        {
+          "title": "Petr Petrow",
+          "desc": "Video production"
+        },
+        {
+          "title": "Svetlana Svetlanova",
+          "desc": "Illustration"
+        },
+        {
+          "title": "Elena Troyanskaya",
+          "desc": "Graphics"
+        }
+      ]
+    },
+    "Clients": "clients"
   }
 }

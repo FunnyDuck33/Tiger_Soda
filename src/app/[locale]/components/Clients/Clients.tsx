@@ -20,8 +20,14 @@ import {useTranslations} from "next-intl";
 
 import styles from './Clients.module.css';
 
+interface List {
+    svg: {
+        src: string;
+    },
+    type?: string;
+}
 
-const list1 = [
+const list1: List[] = [
     {svg: client1},
     {svg: client2},
     {svg: client3},
@@ -30,7 +36,7 @@ const list1 = [
     {svg: client6},
 ]
 
-const list2 = [
+const list2: List[] = [
     {svg: client7, type: 'tall'},
     {svg: client8},
     {svg: client9, type: 'tall'},

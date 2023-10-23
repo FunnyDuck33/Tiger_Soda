@@ -14,7 +14,6 @@ const Ticker = () => {
 
     const scroller = () => {
         const root = document.querySelector(styles.root);
-        console.log(root);
         // requestAnimationFrame(scroller)
     }
 

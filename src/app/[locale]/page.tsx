@@ -7,6 +7,7 @@ import Projects from "@/app/[locale]/components/Projects/Projects";
 import Services from "@/app/[locale]/components/Services/Services";
 import Creators from "@/app/[locale]/components/Creators/Creators";
 import Clients from "@/app/[locale]/components/Clients/Clients";
+import Footer from "@/app/[locale]/components/Footer/Footer";
 
 interface Props {
     params: {
@@ -24,6 +25,7 @@ export default function Home({params}: Props) {
           <Services/>
           <Creators/>
           <Clients/>
+          <Footer/>
       </div>
   )
 }

@@ -49,7 +49,7 @@ const Creators = () => {
             <BlockHeader title={t('title')} buttonTitle={t('button')} link='/'/>
             <div className={styles.wrapper}>
                 {data.map(({title, desc}, i) => (
-                    <ImageItem src={imageData[i].src} title={title} desc={desc} link={imageData[i].link} size='s'/>
+                    <ImageItem key={title} src={imageData[i].src} title={title} desc={desc} link={imageData[i].link} size='s'/>
                 ))}
             </div>
             <img src={floaty1.src} alt="" className={cn(styles.floaty, styles.floaty1)}/>

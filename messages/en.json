@@ -86,5 +86,14 @@
       ]
     },
     "Clients": "clients"
+  },
+  "Footer": {
+    "title": "let&rsquo;s talk about your objectives",
+    "desc": "fill out the form and we&nbsp;will contact you",
+    "name": "Name",
+    "email": "E-mail",
+    "company": "Company",
+    "message": "Message",
+    "button": "Sent"
   }
 }

@@ -37,7 +37,7 @@ const Projects = () => {
             <BlockHeader title={t('title')} buttonTitle={t('button')} link='/'/>
             <div className={styles.bottomWrapper}>
                 {data.map(({src, link}, index) => (
-                    <ImageItem src={src} title={banners[index]} link={link} size='l'/>
+                    <ImageItem key={src} src={src} title={banners[index]} link={link} size='l'/>
                 ))}
             </div>
             <img src={floaty.src} alt="" className={styles.floaty}/>
