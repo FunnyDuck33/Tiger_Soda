@@ -1,0 +1,47 @@
+@media (min-width: $mobile-size-trigger + 1) {
+    .root {
+        position: relative;
+        margin: 56rem auto 64rem;
+    }
+
+    .content {
+        width: 640rem;
+
+        font-family: "Gantari", "sans-serif";
+        font-size: 32rem;
+        line-height: 125%;
+        letter-spacing: 0.64rem;
+    }
+
+    .floaty {
+        position: absolute;
+
+        top: 12rem;
+        left: 693rem;
+
+        width: 45rem;
+    }
+}
+
+@media (max-width: $mobile-size-trigger) {
+    .root {
+        position: relative;
+        margin: 43rem auto 40rem;
+    }
+
+    .content {
+        font-family: "Gantari", "sans-serif";
+        font-size: 16rem;
+        line-height: 150%;
+        letter-spacing: 0.32rem;
+    }
+
+    .floaty {
+        position: absolute;
+
+        bottom: -37rem;
+        right: 0;
+
+        width: 43rem;
+    }
+}

@@ -4,7 +4,7 @@ import arrowBlackSvg from './assets/arrow-black.svg';
 
 import Link from "next-intl/link";
 
-import styles from './ImageItem.module.css';
+import styles from './ImageItem.module.scss';
 
 interface Props {
     src: string;
@@ -18,6 +18,7 @@ const sizeClasses = {
     l: styles.root_size_l,
     m: styles.root_size_m,
     s: styles.root_size_s,
+    xs: styles.root_size_xs,
 }
 
 const ImageItem = ({src, title, link, size, desc}: Props) => {

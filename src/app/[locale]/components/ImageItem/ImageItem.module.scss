@@ -1,0 +1,140 @@
+@media (min-width: $mobile-size-trigger + 1) {
+    .root {
+        position: relative;
+    }
+
+    .root_size_l {
+        width: 325rem;
+    }
+
+    .root_size_m {
+        width: 288rem;
+    }
+
+    .root_size_s {
+        width: 249rem;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .link {
+        text-decoration: none;
+    }
+
+    .title {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        margin-top: 16rem;
+
+        font-family: "Gantari", "sans-serif";
+        font-size: 18rem;
+        line-height: 133%;
+        letter-spacing: 0.36rem;
+        font-weight: 700;
+        color: var(--graphyte);
+    }
+
+    .title::after {
+        display: block;
+        content: url("./assets/arrow-black.svg");
+
+        margin-left: 9rem;
+
+        width: 16rem;
+
+        transform: translateY(2rem);
+    }
+
+    .desc {
+        padding: 8rem;
+        margin-top: 8rem;
+
+        border-radius: 100rem;
+        border: 1px solid black;
+        color: black;
+
+        font-family: "Gantari", "sans-serif";
+        font-size: 14rem;
+        letter-spacing: 0.28rem;
+        line-height: 114%;
+    }
+}
+
+@media (max-width: $mobile-size-trigger) {
+    .root {
+        position: relative;
+    }
+
+    .root_size_m .img {
+        width: 288rem;
+    }
+
+    .root_size_s .img {
+        width: 249rem;
+    }
+
+    .root_size_xs .img {
+        width: 171rem;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link {
+        text-decoration: none;
+    }
+
+    .title {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        margin-top: 16rem;
+
+        font-family: "Gantari", "sans-serif";
+        font-size: 18rem;
+        line-height: 133%;
+        letter-spacing: 0.36rem;
+        font-weight: 700;
+        color: var(--graphyte);
+        white-space: nowrap;
+    }
+
+    .title::after {
+        display: block;
+        content: url("./assets/arrow-black.svg");
+
+        margin-left: 9rem;
+
+        width: 16rem;
+
+        transform: translateY(2rem);
+    }
+
+    .desc {
+        padding: 8rem;
+        margin-top: 8rem;
+
+        border-radius: 100rem;
+        border: 1px solid black;
+        color: black;
+
+        font-family: "Gantari", "sans-serif";
+        font-size: 14rem;
+        letter-spacing: 0.28rem;
+        line-height: 114%;
+    }
+}

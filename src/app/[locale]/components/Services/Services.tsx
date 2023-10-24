@@ -1,12 +1,17 @@
+'use client';
+
 import cn from 'classnames'
+
+import {isMobile} from "@/helpers";
 
 import BlockHeader from "@/app/[locale]/components/BlockHeader/BlockHeader";
 
 import tiger from './assets/tiger.png';
+import tigerM from './assets/tiger-m.png';
 
 import {useTranslations} from "next-intl";
 
-import styles from './Services.module.css';
+import styles from './Services.module.scss';
 
 interface ListData {
     title: string;
@@ -18,9 +23,9 @@ const Services = () => {
     const data: ListData[] = t.raw('data');
 
     return (
-        <div className={cn(styles.root, 'wide_padding')}>
-            <BlockHeader title={t('title')} buttonTitle={t('button')} link='/'/>
-            <img src={tiger.src} alt="" className={styles.tiger}/>
+        <div className={cn(styles.root, isMobile() ? 'wide' : 'wide_padding')}>
+            <BlockHeader title={t('title')} buttonTitle={isMobile() ? undefined : t('button')} link='/'/>
+            <img src={isMobile() ? tigerM.src : tiger.src} alt="" className={styles.tiger}/>
             <div className={styles.wrapper}>
                 { data.map(({title, desc}, index) => (
                     <div className={styles.item} key={title}>
@@ -32,6 +37,7 @@ const Services = () => {
                     </div>
                 ))}
             </div>
+            {isMobile() && <BlockHeader buttonTitle={t('button')} link='/'/>}
         </div>
     )
 }

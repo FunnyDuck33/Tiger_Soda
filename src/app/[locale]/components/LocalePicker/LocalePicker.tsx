@@ -6,7 +6,7 @@ import cn from 'classnames'
 
 import {usePathname} from 'next-intl/client';
 
-import styles from './LocalePicker.module.css';
+import styles from './LocalePicker.module.scss';
 
 interface Props {
     locale: string;

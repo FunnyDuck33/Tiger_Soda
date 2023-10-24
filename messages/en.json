@@ -11,7 +11,11 @@
       "desc": "ethical digital agency"
     },
     "Cover": "Welcome to&nbsp;Tiger Soda web-site. We&nbsp;are a&nbsp;global creative agency that does trendy, ethical, beautiful and rewarding advertising.",
-    "Ticker": "we care;about;your brand",
+    "Ticker": [
+      "we care",
+      "about",
+      "your brand"
+    ],
     "Projects": {
       "title": "projects",
       "button": "All projects",

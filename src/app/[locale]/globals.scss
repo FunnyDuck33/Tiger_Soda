@@ -5,15 +5,35 @@
 
 html,
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   overscroll-behavior-y: none;
 }
 
+@media (min-width: $mobile-size-trigger + 1) {
+  .wide_padding {
+    padding: 0 calc((100% - 1040rem) / 2);
+  }
+
+  .box {
+    width: 1040rem;
+  }
+}
+
+@media (max-width: $mobile-size-trigger) {
+  .wide_padding {
+    padding: 0 calc((100% - 288rem) / 2);
+  }
+
+  .box {
+    width: 288rem;
+  }
+}
+
 .wide_padding {
   box-sizing: border-box;
   width: 100%;
-  padding: 0 calc((100% - 1040rem) / 2);
   flex-shrink: 0;
 }
 
@@ -23,7 +43,6 @@ body {
 }
 
 .box {
-  width: 1040rem;
   margin: 0 auto;
 }
 

@@ -1,7 +1,11 @@
 import {useTranslations} from "next-intl";
+import {isMobile} from "@/helpers";
 
-import styles from './Navigation.module.css';
 import LocalePicker from "../LocalePicker/LocalePicker";
+
+import burger from './assets/burger.svg';
+
+import styles from './Navigation.module.scss';
 
 interface Props {
     locale: string;
@@ -12,15 +16,18 @@ const Navigation = ({locale}: Props) => {
 
     return (
         <div className={styles.root}>
-            <nav className={styles.nav}>
-                <div className={styles.navItem}>{t('about')}</div>
-                <div className={styles.navItem}>{t('projects')}</div>
-                <div className={styles.navItem}>{t('services')}</div>
-                <div className={styles.navItem}>{t('creators')}</div>
-            </nav>
+            {!isMobile() && (
+                <nav className={styles.nav}>
+                    <div className={styles.navItem}>{t('about')}</div>
+                    <div className={styles.navItem}>{t('projects')}</div>
+                    <div className={styles.navItem}>{t('services')}</div>
+                    <div className={styles.navItem}>{t('creators')}</div>
+                </nav>
+            )}
             <div className={styles.menu}>
-                <div className={styles.contactButton}>{t('contacts')}</div>
+                {!isMobile() && <div className={styles.contactButton}>{t('contacts')}</div>}
                 <LocalePicker locale={locale}/>
+                {isMobile() && <img src={burger.src} alt="" className={styles.burger}/>}
             </div>
         </div>
     )

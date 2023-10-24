@@ -1,0 +1,52 @@
+@media (min-width: $mobile-size-trigger + 1) {
+    .root {
+        position: relative;
+
+        margin-top: 100rem;
+    }
+
+    .wrapper {
+        display: flex;
+        gap: 18rem;
+    }
+
+    .floaty {
+        position: absolute;
+    }
+
+    .floaty1 {
+        left: -47rem;
+        top: 384rem;
+
+        width: 76rem;
+    }
+
+    .floaty2 {
+        left: 500rem;
+        top: 9rem;
+
+        width: 48rem;
+    }
+
+    .floaty3 {
+        right: -78rem;
+        top: 259rem;
+
+        width: 31rem;
+    }
+}
+
+@media (max-width: $mobile-size-trigger) {
+    .root {
+        position: relative;
+
+        margin-top: 48rem;
+    }
+
+    .wrapper {
+        overflow-x: scroll;
+        display: flex;
+        gap: 16rem;
+        padding: 0 16rem;
+    }
+}

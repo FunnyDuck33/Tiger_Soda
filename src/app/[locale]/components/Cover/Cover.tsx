@@ -4,7 +4,7 @@ import {useTranslations} from "next-intl";
 
 import floaty from './assets/floaty.png';
 
-import styles from './Cover.module.css';
+import styles from './Cover.module.scss';
 
 
 const Cover = () => {

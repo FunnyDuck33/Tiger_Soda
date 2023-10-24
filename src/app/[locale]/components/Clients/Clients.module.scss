@@ -1,0 +1,53 @@
+@media (min-width: $mobile-size-trigger + 1) {
+    .root {
+        position: relative;
+
+        margin-top: 100rem;
+        margin-bottom: 100rem;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .wrapper:not(:first-child) {
+        margin-top: 32rem;
+    }
+
+    .icon {
+        height: 27rem;
+    }
+
+    .icon_tall {
+        height: 48rem;
+    }
+}
+
+@media (max-width: $mobile-size-trigger) {
+    .root {
+        position: relative;
+
+        margin-top: 48rem;
+        margin-bottom: 48rem;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20rem;
+    }
+
+    .icon {
+        height: 24rem;
+    }
+
+    .icon_tall {
+        height: 40rem;
+    }
+}

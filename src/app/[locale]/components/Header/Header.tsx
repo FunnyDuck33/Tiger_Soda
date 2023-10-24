@@ -1,15 +1,19 @@
+'use client';
+
 import cn from "classnames";
 
 import Navigation from "@/app/[locale]/components/Navigation/Navigation";
 
 import titleSvg from '@/app/[locale]/components/Header/assets/title.svg';
-import background from '@/app/[locale]/components/Header/assets/background.png';
 import tiger from '@/app/[locale]/components/Header/assets/tiger.png';
-
+import background from '@/app/[locale]/components/Header/assets/background.png';
+import backgroundM from '@/app/[locale]/components/Header/assets/background-m.png';
 
 import {useTranslations} from "next-intl";
 
-import styles from './Header.module.css';
+import {isMobile} from "@/helpers";
+
+import styles from './Header.module.scss';
 
 interface Props {
     locale: string;
@@ -26,7 +30,7 @@ const Header = ({locale}: Props) => {
                 {t('desc')}
             </div>
             <div className={styles.backgroundWrapper}>
-                <img src={background.src} alt="" className={styles.background}/>
+                <img src={isMobile() ? backgroundM.src : background.src} alt="" className={styles.background}/>
             </div>
             <img src={tiger.src} alt="" className={styles.tiger}/>
         </div>

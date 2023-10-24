@@ -1,0 +1,81 @@
+@media (min-width: $mobile-size-trigger + 1) {
+    .root {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 18px;
+
+        color: white;
+        font-family: Gantari, Arial, sans-serif;
+        font-weight: 400;
+    }
+
+    .nav {
+        display: flex;
+        gap: 32rem;
+    }
+
+    .navItem {
+        font-size: 18rem;
+        line-height: 133%;
+        letter-spacing: 0.36rem;
+    }
+
+    .navItem_active {
+        text-decoration: underline;
+    }
+
+    .navItem:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: flex;
+
+        gap: 12px;
+    }
+
+    .contactButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 132rem;
+        height: 38rem;
+        border-radius: 100rem;
+
+        font-size: 18rem;
+        line-height: 133%;
+        letter-spacing: 0.36rem;
+
+        background-color: var(--green);
+        cursor: pointer;
+    }
+}
+
+@media (max-width: $mobile-size-trigger) {
+    .root {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 18px;
+
+        color: white;
+        font-family: Gantari, Arial, sans-serif;
+        font-weight: 400;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    .burger {
+        width: 38rem;
+    }
+}

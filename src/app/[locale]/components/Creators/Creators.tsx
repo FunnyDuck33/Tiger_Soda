@@ -1,3 +1,5 @@
+'use client';
+
 import cn from "classnames";
 
 import BlockHeader from "@/app/[locale]/components/BlockHeader/BlockHeader";
@@ -14,7 +16,8 @@ import floaty3 from "@/app/[locale]/components/Creators/assets/floaty-3.png";
 
 import {useTranslations} from "next-intl";
 
-import styles from './Creators.module.css';
+import styles from './Creators.module.scss';
+import {isMobile} from "@/helpers";
 
 interface ListData {
     title: string;
@@ -45,16 +48,21 @@ const Creators = () => {
     const data: ListData[] = t.raw('data');
 
     return (
-        <div className={styles.root}>
-            <BlockHeader title={t('title')} buttonTitle={t('button')} link='/'/>
+        <div className={cn(styles.root, isMobile() && 'wide')}>
+            <BlockHeader title={t('title')} buttonTitle={isMobile() ? undefined : t('button')} link='/'/>
             <div className={styles.wrapper}>
                 {data.map(({title, desc}, i) => (
-                    <ImageItem key={title} src={imageData[i].src} title={title} desc={desc} link={imageData[i].link} size='s'/>
+                    <ImageItem key={title} src={imageData[i].src} title={title} desc={desc} link={imageData[i].link} size={isMobile() ? 'xs' : 's'}/>
                 ))}
             </div>
-            <img src={floaty1.src} alt="" className={cn(styles.floaty, styles.floaty1)}/>
-            <img src={floaty2.src} alt="" className={cn(styles.floaty, styles.floaty2)}/>
-            <img src={floaty3.src} alt="" className={cn(styles.floaty, styles.floaty3)}/>
+            {!isMobile() && (
+                <>
+                    <img src={floaty1.src} alt="" className={cn(styles.floaty, styles.floaty1)}/>
+                    <img src={floaty2.src} alt="" className={cn(styles.floaty, styles.floaty2)}/>
+                    <img src={floaty3.src} alt="" className={cn(styles.floaty, styles.floaty3)}/>
+                </>
+            )}
+            {isMobile() && <BlockHeader buttonTitle={t('button')} link='/'/>}
         </div>
     )
 }

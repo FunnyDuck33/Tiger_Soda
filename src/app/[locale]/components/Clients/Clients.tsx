@@ -1,3 +1,5 @@
+'use client';
+
 import cn from "classnames";
 
 import BlockHeader from "@/app/[locale]/components/BlockHeader/BlockHeader";
@@ -18,7 +20,8 @@ import client13 from "@/app/[locale]/components/Clients/assets/client-13.svg";
 
 import {useTranslations} from "next-intl";
 
-import styles from './Clients.module.css';
+import styles from './Clients.module.scss';
+import {isMobile} from "@/helpers";
 
 interface List {
     svg: {
@@ -44,6 +47,22 @@ const list2: List[] = [
     {svg: client11, type: 'tall'},
     {svg: client12},
     {svg: client13},
+];
+
+const mobileList = [
+    {svg: client1},
+    {svg: client2},
+    {svg: client3},
+    {svg: client4},
+    {svg: client7, type: 'tall'},
+    {svg: client5},
+    {svg: client6},
+    {svg: client8},
+    {svg: client10},
+    {svg: client9, type: 'tall'},
+    {svg: client12},
+    {svg: client11, type: 'tall'},
+    {svg: client13},
 ]
 
 const Clients = () => {
@@ -52,16 +71,27 @@ const Clients = () => {
     return (
         <div className={cn(styles.root, 'box')}>
             <BlockHeader title={t('Clients')}/>
-            <div className={styles.wrapper}>
-                {list1.map(({svg, type}) => (
-                    <img src={svg.src} alt="" className={cn(styles.icon, type === 'tall' && styles.icon_tall)}/>
-                ))}
-            </div>
-            <div className={styles.wrapper}>
-                {list2.map(({svg, type}) => (
-                    <img src={svg.src} alt="" className={cn(styles.icon, type === 'tall' && styles.icon_tall)}/>
-                ))}
-            </div>
+            {!isMobile() ? (
+                <>
+                    <div className={styles.wrapper}>
+                        {list1.map(({svg, type}) => (
+                            <img key={svg.src} src={svg.src} alt="" className={cn(styles.icon, type === 'tall' && styles.icon_tall)}/>
+                        ))}
+                    </div>
+                    <div className={styles.wrapper}>
+                        {list2.map(({svg, type}) => (
+                            <img key={svg.src} src={svg.src} alt="" className={cn(styles.icon, type === 'tall' && styles.icon_tall)}/>
+                        ))}
+                    </div>
+                </>
+            ) : (
+                <div className={styles.wrapper}>
+                    {mobileList.map(({svg, type}) => (
+                        <img key={svg.src} src={svg.src} alt="" className={cn(styles.icon, type === 'tall' && styles.icon_tall)}/>
+                    ))}
+                </div>
+            )}
+
         </div>
     )
 }

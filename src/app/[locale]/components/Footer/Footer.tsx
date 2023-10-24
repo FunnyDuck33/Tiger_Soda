@@ -1,11 +1,15 @@
+'use client';
+
 import cn from "classnames";
 
 import background from './assets/background.png';
+import backgroundM from './assets/background-m.png';
 import floaty from './assets/floaty.png';
 
 import {useTranslations} from "next-intl";
 
-import styles from './Footer.module.css';
+import styles from './Footer.module.scss';
+import {isMobile} from "@/helpers";
 
 
 const Footer = () => {
@@ -23,7 +27,7 @@ const Footer = () => {
                 <button type='submit' className={styles.button}>{t('button')}</button>
             </form>
             <div className={styles.backgorundWrapper}>
-                <img src={background.src} alt="" className={styles.background}/>
+                <img src={isMobile() ? backgroundM.src : background.src} alt="" className={styles.background}/>
             </div>
             <img src={floaty.src} alt="" className={styles.floaty}/>
         </div>

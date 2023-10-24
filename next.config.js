@@ -11,6 +11,7 @@ const nextConfig = {
     // output: 'export',
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
+        prependData: `@import "src/app/[locale]/styles/variables.scss";`
     },
 }
 

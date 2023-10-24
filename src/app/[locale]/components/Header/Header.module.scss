@@ -1,0 +1,119 @@
+@media (min-width: $mobile-size-trigger + 1) {
+    .root {
+        position: relative;
+        background-color: black;
+
+        border-radius: 0 0 56rem 56rem;
+
+        height: 646rem;
+    }
+
+    .title {
+        width: 1040rem;
+        margin-top: 26rem;
+    }
+
+    .desc {
+        margin-top: 18rem;
+
+        font-size: 40rem;
+        line-height: 105%;
+        font-weight: 700;
+        color: white;
+        font-family: Gantari, Arial, sans-serif;
+    }
+
+    .backgroundWrapper {
+        position: absolute;
+        overflow: hidden;
+
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        border-radius: 0 0 56rem 56rem;
+
+        pointer-events: none;
+    }
+
+    .background {
+        position: absolute;
+
+        right: 50%;
+        bottom: 0;
+
+        width: 1323rem;
+
+        transform: translateX(calc(50% - 56rem));
+    }
+
+    .tiger {
+        position: absolute;
+
+        right: 50%;
+        bottom: -26rem;
+
+        width: 403rem;
+
+        transform: translateX(calc(50% + 333rem));
+    }
+}
+
+@media (max-width: $mobile-size-trigger) {
+    .root {
+        position: relative;
+        background-color: black;
+
+        border-radius: 0 0 24rem 24rem;
+
+        height: 380rem;
+    }
+
+    .title {
+        width: 100%;
+        margin-top: 32rem;
+    }
+
+    .desc {
+        margin-top: 12rem;
+
+        font-size: 20rem;
+        line-height: 110%;
+        font-weight: 700;
+        color: white;
+        font-family: Gantari, Arial, sans-serif;
+    }
+
+    .backgroundWrapper {
+        position: absolute;
+        overflow: hidden;
+
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        border-radius: 0 0 24rem 24rem;
+
+        pointer-events: none;
+    }
+
+    .background {
+        position: absolute;
+
+        left: -43rem;
+        bottom: -17rem;
+
+        width: 392rem;
+    }
+
+    .tiger {
+        position: absolute;
+
+        right: -29rem;
+        bottom: -17rem;
+
+        width: 185rem;
+    }
+}

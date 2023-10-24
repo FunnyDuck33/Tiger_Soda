@@ -1,8 +1,10 @@
 import {useLocale} from 'next-intl';
 import type {Metadata} from 'next';
 
+import {NextIntlClientProvider} from 'next-intl';
+
 import './styles/init.scss';
-import './globals.css'
+import './globals.scss'
 import styles from './layout.module.css';
 
 export const metadata: Metadata = {
@@ -10,18 +12,21 @@ export const metadata: Metadata = {
     description: 'Ethical digital agency',
 }
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
     children,
 }: {
     children: React.ReactNode,
 }) {
     const locale = useLocale();
+    let messages = await import(`@/../messages/${locale}.json`);
 
     return (
         <html lang={locale}>
-        <body>
-            {children}
-        </body>
+            <body>
+            <NextIntlClientProvider locale={locale} messages={messages}>
+                {children}
+            </NextIntlClientProvider>
+            </body>
         </html>
     )
 }
