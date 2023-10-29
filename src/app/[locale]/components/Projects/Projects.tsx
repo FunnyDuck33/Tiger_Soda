@@ -2,11 +2,10 @@
 
 import cn from 'classnames'
 
-import project1 from './assets/project-1.png';
-import project2 from './assets/project-2.png';
-import project3 from './assets/project-3.png';
+import {projects} from "@/data";
 
-import floaty from './assets/floaty.png';
+import floaty1 from '@/../public/assets/floaties/floaty.png';
+import floaty2 from '@/../public/assets/floaties/floaty-2.png';
 
 import BlockHeader from "@/app/[locale]/components/BlockHeader/BlockHeader";
 
@@ -16,24 +15,9 @@ import styles from './Projects.module.scss';
 import ImageItem from "@/app/[locale]/components/ImageItem/ImageItem";
 import {isMobile} from "@/helpers";
 
-const data = [
-    {
-        src: project1.src,
-        link: '/',
-    },
-    {
-        src: project2.src,
-        link: '/',
-    },
-    {
-        src: project3.src,
-        link: '/',
-    },
-]
-
 const Projects = () => {
-    const t = useTranslations('Index.Projects');
-    const banners = t.raw('banners');
+    const t = useTranslations('Projects');
+    const i18nBanners = t.raw('banners');
 
     return (
         <div className={cn(styles.root, 'box')}>
@@ -43,11 +27,16 @@ const Projects = () => {
                 link='/'
             />
             <div className={styles.bottomWrapper}>
-                {data.map(({src, link}, index) => (
-                    <ImageItem key={src} src={src} title={banners[index]} link={link} size={isMobile() ? 'm': 'l'}/>
+                {projects(i18nBanners).slice(0, 3).map(({src, link, title}, index) => (
+                    <ImageItem key={src} src={src} title={title} link={link} size={isMobile() ? 'm': 'l'}/>
                 ))}
             </div>
-            {!isMobile() && <img src={floaty.src} alt="" className={styles.floaty}/>}
+            {!isMobile() && (
+                <>
+                    <img src={floaty1.src} alt="" className={cn(styles.floaty, styles.floaty1)}/>
+                    <img src={floaty2.src} alt="" className={cn(styles.floaty, styles.floaty2)}/>
+                </>
+            )}
             {isMobile() && <BlockHeader buttonTitle={t('button')} link='/'/>}
         </div>
     )

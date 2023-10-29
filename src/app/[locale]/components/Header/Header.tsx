@@ -4,7 +4,7 @@ import cn from "classnames";
 
 import Navigation from "@/app/[locale]/components/Navigation/Navigation";
 
-import titleSvg from '@/app/[locale]/components/Header/assets/title.svg';
+import titleSvg from '@/../public/assets/title.svg';
 import tiger from '@/app/[locale]/components/Header/assets/tiger.png';
 import background from '@/app/[locale]/components/Header/assets/background.png';
 import backgroundM from '@/app/[locale]/components/Header/assets/background-m.png';
@@ -24,7 +24,7 @@ const Header = ({locale}: Props) => {
 
     return (
         <div className={cn(styles.root, 'wide_padding')}>
-            <Navigation locale={locale}/>
+            <Navigation theme='black' locale={locale}/>
             <img src={titleSvg.src} alt="tiger soda" className={styles.title}/>
             <div className={styles.desc}>
                 {t('desc')}

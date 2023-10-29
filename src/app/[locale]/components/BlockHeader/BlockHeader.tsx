@@ -1,6 +1,7 @@
 'use client';
 
 import arrowWhiteSvg from './assets/arrow-white.svg';
+import cn from 'classnames';
 
 import Link from "next-intl/link";
 
@@ -10,12 +11,14 @@ interface Props {
     title?: string;
     buttonTitle?: string;
     link?: string;
+    className?: string;
+    titleClassName?: string;
 }
 
-const BlockHeader = ({title, buttonTitle, link}: Props) => {
+const BlockHeader = ({title, buttonTitle, link, className, titleClassName}: Props) => {
     return (
-        <div className={styles.root}>
-            {title && <div className={styles.title}>{title}</div>}
+        <div className={cn(styles.root, className)}>
+            {title && <div className={cn(styles.title, titleClassName)}>{title}</div>}
             {buttonTitle && link && (
                 <Link href={link} className={styles.link}>
                     <div className={styles.button}>

@@ -2,35 +2,88 @@
 
 import {useTranslations} from "next-intl";
 import {isMobile} from "@/helpers";
+import cn from 'classnames';
 
+import titleSvg from '@/../public/assets/title-black.svg';
 import LocalePicker from "../LocalePicker/LocalePicker";
+import Link from 'next-intl/link';
 
 import burger from './assets/burger.svg';
+import burgerBlack from './assets/burger-black.svg';
 
 import styles from './Navigation.module.scss';
+import { usePathname } from 'next/navigation';
+import {useCallback} from "react";
 
 interface Props {
     locale: string;
+    withLogo?: boolean;
+    theme: 'black' | 'white';
 }
 
-const Navigation = ({locale}: Props) => {
+const Navigation = ({locale, withLogo, theme}: Props) => {
     const t = useTranslations('Index.Navigation');
+    const pathname = usePathname();
 
-    return (
-        <div className={styles.root}>
+    const isActive = useCallback((link: string) => {
+        const pathWithoutLocale = pathname.split('/')[2] || '';
+
+        return pathWithoutLocale === link.slice(1)
+    }, [pathname])
+
+    const items = [
+        {
+            link: '/',
+            text: t('about'),
+        },
+        {
+            link: '/projects',
+            text: t('projects'),
+        },
+        {
+            link: '/asd',
+            text: t('services'),
+        },
+        {
+            link: '/zxc',
+            text: t('creators'),
+        },
+    ]
+
+    const content = (
+        <>
             {!isMobile() && (
                 <nav className={styles.nav}>
-                    <div className={styles.navItem}>{t('about')}</div>
-                    <div className={styles.navItem}>{t('projects')}</div>
-                    <div className={styles.navItem}>{t('services')}</div>
-                    <div className={styles.navItem}>{t('creators')}</div>
+                    {items.map(({link, text}, index) => (
+                        <Link key={index} className={styles.links} href={link}>
+                            <div className={cn(styles.navItem, isActive(link) && styles.navItem_active)}>{text}</div>
+                        </Link>
+                    ))}
                 </nav>
             )}
             <div className={styles.menu}>
                 {!isMobile() && <div className={styles.contactButton}>{t('contacts')}</div>}
-                <LocalePicker locale={locale}/>
-                {isMobile() && <img src={burger.src} alt="" className={styles.burger}/>}
+                {(!isMobile() || !withLogo) && <LocalePicker theme={theme} locale={locale}/>}
+                {isMobile() && <img src={theme === 'black' ?  burger.src : burgerBlack.src} alt="" className={styles.burger}/>}
             </div>
+        </>
+    );
+
+    return (
+        <div className={cn(
+            styles.root,
+            'wide_padding',
+            theme === 'white' ? styles.root_theme_white : styles.root_theme_black,
+            withLogo && styles.root_withLogo
+        )}>
+            {withLogo ? (
+                <>
+                    <img src={titleSvg.src} alt="" className={styles.logo}/>
+                    <div className={styles.wrapper}>
+                        {content}
+                    </div>
+                </>
+            ) : content}
         </div>
     )
 }

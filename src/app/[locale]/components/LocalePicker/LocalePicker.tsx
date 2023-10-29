@@ -10,13 +10,14 @@ import styles from './LocalePicker.module.scss';
 
 interface Props {
     locale: string;
+    theme: 'black' | 'white';
 }
 
-const LocalePicker = ({locale}: Props) => {
+const LocalePicker = ({locale, theme}: Props) => {
     const pathname = usePathname();
 
     return (
-        <div className={styles.root}>
+        <div className={cn(styles.root, theme === 'white' ? styles.root_theme_white : styles.root_theme_black)}>
             <Link href={pathname} locale='en' className={styles.link}>
                 <div className={cn(styles.language, locale === 'en' && styles.language_active)}>
                     EN
