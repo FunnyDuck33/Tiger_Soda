@@ -16,15 +16,6 @@
       "about",
       "your brand"
     ],
-    "Projects": {
-      "title": "projects",
-      "button": "All projects",
-      "banners": [
-        "Online museum of ZHEK-art",
-        "NFT tokens for Samokat",
-        "Tigers x Jägermeister"
-      ]
-    },
     "Services": {
       "title": "services",
       "button": "Service page",
@@ -99,5 +90,14 @@
     "company": "Company",
     "message": "Message",
     "button": "Sent"
+  },
+  "Projects": {
+    "title": "projects",
+    "button": "All projects",
+    "banners": [
+      "Online museum of ZHEK-art",
+      "NFT tokens for Samokat",
+      "Tigers x Jägermeister"
+    ]
   }
 }
