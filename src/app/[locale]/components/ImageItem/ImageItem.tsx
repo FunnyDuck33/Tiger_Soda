@@ -1,3 +1,5 @@
+'use client';
+
 import cn from 'classnames'
 
 import arrowBlackSvg from './assets/arrow-black.svg';

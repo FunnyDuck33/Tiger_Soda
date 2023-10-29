@@ -1,3 +1,5 @@
+'use client';
+
 import Header from './components/Header/Header';
 import Cover from "@/app/[locale]/components/Cover/Cover";
 
@@ -14,6 +16,8 @@ interface Props {
         locale: string;
     }
 }
+
+export const dynamic = 'force-static';
 
 export default function Home({params}: Props) {
   return (

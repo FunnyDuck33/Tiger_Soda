@@ -1,3 +1,5 @@
+'use client';
+
 import arrowWhiteSvg from './assets/arrow-white.svg';
 
 import Link from "next-intl/link";

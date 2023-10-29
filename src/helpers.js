@@ -1,7 +1,11 @@
 const mobileSizeTrigger = 768;
 
 export function isMobile() {
-    return document.documentElement.clientWidth <= mobileSizeTrigger;
+    if (process.browser) {
+        return document?.documentElement?.clientWidth <= mobileSizeTrigger;
+    }
+
+    return false;
 }
 
 export function pluralForm(number, words) {

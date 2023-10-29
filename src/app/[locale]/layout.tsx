@@ -1,4 +1,3 @@
-import {useLocale} from 'next-intl';
 import type {Metadata} from 'next';
 
 import {NextIntlClientProvider} from 'next-intl';
@@ -12,13 +11,23 @@ export const metadata: Metadata = {
     description: 'Ethical digital agency',
 }
 
+async function getMessages(locale: string) {
+    return (await import(`@/../messages/${locale}.json`)).default
+}
+
+//function to generate the routes for all the locales
+export async function generateStaticParams() {
+    return ['en', 'es'].map((locale) => ({ locale }))
+}
+
 export default async function LocaleLayout({
     children,
+    params: { locale },
 }: {
     children: React.ReactNode,
+    params: {locale: string},
 }) {
-    const locale = useLocale();
-    let messages = await import(`@/../messages/${locale}.json`);
+    const messages = await getMessages(locale);
 
     return (
         <html lang={locale}>

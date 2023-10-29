@@ -2,17 +2,12 @@
 
 const path = require('path');
 
-const withNextIntl = require('next-intl/plugin')(
-    // This is the default (also the `src` folder is supported out of the box)
-    './i18n.ts'
-);
-
 const nextConfig = {
-    // output: 'export',
+    output: 'export',
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
         prependData: `@import "src/app/[locale]/styles/variables.scss";`
     },
 }
 
-module.exports = withNextIntl(nextConfig);
+module.exports = nextConfig;

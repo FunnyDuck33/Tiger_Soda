@@ -1,5 +1,5 @@
 'use client';
-
+import {useEffect} from 'react';
 import cn from 'classnames';
 
 import {useTranslations} from "next-intl";
@@ -32,7 +32,9 @@ const Ticker = () => {
         requestAnimationFrame(scroller);
     }
 
-    requestAnimationFrame(scroller);
+    useEffect(() => {
+        requestAnimationFrame(scroller);
+    })
 
     return (
         <div ref={root} className={cn(styles.root, 'wide')}>
