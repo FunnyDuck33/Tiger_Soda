@@ -4,15 +4,15 @@ import cn from 'classnames'
 
 import {projects} from "@/data";
 
-import floaty1 from '@/../public/assets/floaties/floaty.png';
-import floaty2 from '@/../public/assets/floaties/floaty-2.png';
+import floaty1 from '../../../../public/assets/floaties/floaty.png';
+import floaty2 from '../../../../public/assets/floaties/floaty-2.png';
 
-import BlockHeader from "@/app/[locale]/components/BlockHeader/BlockHeader";
+import BlockHeader from "@/components/BlockHeader/BlockHeader";
 
 import {useTranslations} from "next-intl";
 
 import styles from './Projects.module.scss';
-import ImageItem from "@/app/[locale]/components/ImageItem/ImageItem";
+import ImageItem from "@/components/ImageItem/ImageItem";
 import {isMobile} from "@/helpers";
 
 const Projects = () => {

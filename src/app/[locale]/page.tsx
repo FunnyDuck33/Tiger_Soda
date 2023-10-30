@@ -1,15 +1,15 @@
 'use client';
 
-import Header from './components/Header/Header';
-import Cover from "@/app/[locale]/components/Cover/Cover";
+import Header from '@/app/components/Header/Header';
+import Cover from "@/app/components/Cover/Cover";
 
 import styles from './page.module.css'
-import Ticker from "@/app/[locale]/components/Ticker/Ticker";
-import Projects from "@/app/[locale]/components/Projects/Projects";
-import Services from "@/app/[locale]/components/Services/Services";
-import Creators from "@/app/[locale]/components/Creators/Creators";
-import Clients from "@/app/[locale]/components/Clients/Clients";
-import Footer from "@/app/[locale]/components/Footer/Footer";
+import Ticker from "@/app/components/Ticker/Ticker";
+import Projects from "@/app/components/Projects/Projects";
+import Services from "@/app/components/Services/Services";
+import Creators from "@/app/components/Creators/Creators";
+import Clients from "@/app/components/Clients/Clients";
+import Footer from "@/components/Footer/Footer";
 
 interface Props {
     params: {

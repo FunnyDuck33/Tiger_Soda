@@ -3,17 +3,17 @@
 import {useTranslations} from "next-intl";
 import {isMobile} from "@/helpers";
 import cn from 'classnames';
+import { usePathname } from 'next/navigation';
+import {useCallback} from "react";
 
 import titleSvg from '@/../public/assets/title-black.svg';
-import LocalePicker from "../LocalePicker/LocalePicker";
+import LocalePicker from "@/components/LocalePicker/LocalePicker";
 import Link from 'next-intl/link';
 
 import burger from './assets/burger.svg';
 import burgerBlack from './assets/burger-black.svg';
 
 import styles from './Navigation.module.scss';
-import { usePathname } from 'next/navigation';
-import {useCallback} from "react";
 
 interface Props {
     locale: string;

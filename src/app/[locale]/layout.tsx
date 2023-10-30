@@ -2,7 +2,7 @@ import type {Metadata} from 'next';
 
 import {NextIntlClientProvider} from 'next-intl';
 
-import './styles/init.scss';
+import '@/app/styles/init.scss';
 import './globals.scss'
 import styles from './layout.module.css';
 

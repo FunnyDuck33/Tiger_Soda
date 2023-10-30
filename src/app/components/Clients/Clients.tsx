@@ -2,21 +2,21 @@
 
 import cn from "classnames";
 
-import BlockHeader from "@/app/[locale]/components/BlockHeader/BlockHeader";
+import BlockHeader from "@/components/BlockHeader/BlockHeader";
 
-import client1 from "@/app/[locale]/components/Clients/assets/client-1.svg";
-import client2 from "@/app/[locale]/components/Clients/assets/client-2.svg";
-import client3 from "@/app/[locale]/components/Clients/assets/client-3.svg";
-import client4 from "@/app/[locale]/components/Clients/assets/client-4.svg";
-import client5 from "@/app/[locale]/components/Clients/assets/client-5.svg";
-import client6 from "@/app/[locale]/components/Clients/assets/client-6.svg";
-import client7 from "@/app/[locale]/components/Clients/assets/client-7.svg";
-import client8 from "@/app/[locale]/components/Clients/assets/client-8.svg";
-import client9 from "@/app/[locale]/components/Clients/assets/client-9.svg";
-import client10 from "@/app/[locale]/components/Clients/assets/client-10.svg";
-import client11 from "@/app/[locale]/components/Clients/assets/client-11.svg";
-import client12 from "@/app/[locale]/components/Clients/assets/client-12.svg";
-import client13 from "@/app/[locale]/components/Clients/assets/client-13.svg";
+import client1 from "@/app/components/Clients/assets/client-1.svg";
+import client2 from "@/app/components/Clients/assets/client-2.svg";
+import client3 from "@/app/components/Clients/assets/client-3.svg";
+import client4 from "@/app/components/Clients/assets/client-4.svg";
+import client5 from "@/app/components/Clients/assets/client-5.svg";
+import client6 from "@/app/components/Clients/assets/client-6.svg";
+import client7 from "@/app/components/Clients/assets/client-7.svg";
+import client8 from "@/app/components/Clients/assets/client-8.svg";
+import client9 from "@/app/components/Clients/assets/client-9.svg";
+import client10 from "@/app/components/Clients/assets/client-10.svg";
+import client11 from "@/app/components/Clients/assets/client-11.svg";
+import client12 from "@/app/components/Clients/assets/client-12.svg";
+import client13 from "@/app/components/Clients/assets/client-13.svg";
 
 import {useTranslations} from "next-intl";
 

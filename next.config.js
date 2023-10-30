@@ -7,7 +7,7 @@ const nextConfig = {
     // assetPrefix: './',
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
-        prependData: `@import "src/app/[locale]/styles/variables.scss";`
+        prependData: `@import "src/app/styles/variables.scss";`
     },
 }
 

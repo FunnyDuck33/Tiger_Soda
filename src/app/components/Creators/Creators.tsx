@@ -2,17 +2,17 @@
 
 import cn from "classnames";
 
-import BlockHeader from "@/app/[locale]/components/BlockHeader/BlockHeader";
-import ImageItem from "@/app/[locale]/components/ImageItem/ImageItem";
+import BlockHeader from "@/components/BlockHeader/BlockHeader";
+import ImageItem from "@/components/ImageItem/ImageItem";
 
-import author1 from "@/app/[locale]/components/Creators/assets/author-1.png";
-import author2 from "@/app/[locale]/components/Creators/assets/author-2.png";
-import author3 from "@/app/[locale]/components/Creators/assets/author-3.png";
-import author4 from "@/app/[locale]/components/Creators/assets/author-4.png";
+import author1 from "@/app/components/Creators/assets/author-1.png";
+import author2 from "@/app/components/Creators/assets/author-2.png";
+import author3 from "@/app/components/Creators/assets/author-3.png";
+import author4 from "@/app/components/Creators/assets/author-4.png";
 
-import floaty1 from "@/app/[locale]/components/Creators/assets/floaty-1.png";
-import floaty2 from "@/app/[locale]/components/Creators/assets/floaty-2.png";
-import floaty3 from "@/app/[locale]/components/Creators/assets/floaty-3.png";
+import floaty1 from "@/app/components/Creators/assets/floaty-1.png";
+import floaty2 from "@/app/components/Creators/assets/floaty-2.png";
+import floaty3 from "@/app/components/Creators/assets/floaty-3.png";
 
 import {useTranslations} from "next-intl";
 

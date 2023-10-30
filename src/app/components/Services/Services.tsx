@@ -4,7 +4,7 @@ import cn from 'classnames'
 
 import {isMobile} from "@/helpers";
 
-import BlockHeader from "@/app/[locale]/components/BlockHeader/BlockHeader";
+import BlockHeader from "@/components/BlockHeader/BlockHeader";
 
 import tiger from './assets/tiger.png';
 import tigerM from './assets/tiger-m.png';

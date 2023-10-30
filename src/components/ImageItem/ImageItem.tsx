@@ -2,8 +2,6 @@
 
 import cn from 'classnames'
 
-import arrowBlackSvg from './assets/arrow-black.svg';
-
 import Link from "next-intl/link";
 
 import styles from './ImageItem.module.scss';

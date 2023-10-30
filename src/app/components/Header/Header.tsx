@@ -2,12 +2,12 @@
 
 import cn from "classnames";
 
-import Navigation from "@/app/[locale]/components/Navigation/Navigation";
+import Navigation from "@/components/Navigation/Navigation";
 
-import titleSvg from '@/../public/assets/title.svg';
-import tiger from '@/app/[locale]/components/Header/assets/tiger.png';
-import background from '@/app/[locale]/components/Header/assets/background.png';
-import backgroundM from '@/app/[locale]/components/Header/assets/background-m.png';
+import titleSvg from '../../../../public/assets/title.svg';
+import tiger from '@/app/components/Header/assets/tiger.png';
+import background from '@/app/components/Header/assets/background.png';
+import backgroundM from '@/app/components/Header/assets/background-m.png';
 
 import {useTranslations} from "next-intl";
 
