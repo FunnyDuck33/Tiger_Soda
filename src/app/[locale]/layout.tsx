@@ -15,7 +15,6 @@ async function getMessages(locale: string) {
     return (await import(`@/../messages/${locale}.json`)).default
 }
 
-//function to generate the routes for all the locales
 export async function generateStaticParams() {
     return ['en', 'es'].map((locale) => ({ locale }))
 }

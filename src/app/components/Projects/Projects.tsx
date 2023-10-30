@@ -17,7 +17,7 @@ import {isMobile} from "@/helpers";
 
 const Projects = () => {
     const t = useTranslations('Projects');
-    const i18nBanners = t.raw('banners');
+    const i18nData = t.raw('list');
 
     return (
         <div className={cn(styles.root, 'box')}>
@@ -27,8 +27,8 @@ const Projects = () => {
                 link='/'
             />
             <div className={styles.bottomWrapper}>
-                {projects(i18nBanners).slice(0, 3).map(({src, link, title}, index) => (
-                    <ImageItem key={src} src={src} title={title} link={link} size={isMobile() ? 'm': 'l'}/>
+                {Object.values(projects(i18nData)).slice(0, 3).map(({src, link, previewTitle}, index) => (
+                    <ImageItem key={index} src={src} title={previewTitle} link={link} size={isMobile() ? 'm': 'l'}/>
                 ))}
             </div>
             {!isMobile() && (

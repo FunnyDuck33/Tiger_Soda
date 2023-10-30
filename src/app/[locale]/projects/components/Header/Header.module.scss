@@ -1,0 +1,59 @@
+@media (min-width: $mobile-size-trigger + 1) {
+    .root {
+        position: relative;
+        background-color: black;
+
+        border-radius: 0 0 56rem 56rem;
+
+        height: 469rem;
+    }
+
+    .title {
+        width: 737rem;
+
+        margin-top: 50rem;
+        font-family: "DTGetai", "sans-serif";
+        font-size: 72rem;
+        line-height: 111%;
+        color: white;
+    }
+
+    .arrow {
+        width: 46rem;
+    }
+
+    .tagsWrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 737rem;
+        margin-top: 40rem;
+        gap: 12rem;
+    }
+
+    .tag {
+        font-family: "Gantari", "sans-serif";
+        font-size: 20rem;
+        line-height: 135%;
+        letter-spacing: 0.4rem;
+
+        padding: 16rem 24rem;
+        border: 1px solid white;
+        border-radius: 100rem;
+        color: white;
+    }
+
+    .item {
+        position: absolute;
+
+        height: 436rem;
+        top: 73rem;
+
+        left: 50%;
+        transform: translateX(calc(-50% + 293rem));
+    }
+}
+
+@media (max-width: $mobile-size-trigger) {
+
+}

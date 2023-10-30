@@ -6,7 +6,8 @@ import cn from 'classnames';
 import { usePathname } from 'next/navigation';
 import {useCallback} from "react";
 
-import titleSvg from '@/../public/assets/title-black.svg';
+import titleSvg from '@/../public/assets/title.svg';
+import titleBlackSvg from '@/../public/assets/title-black.svg';
 import LocalePicker from "@/components/LocalePicker/LocalePicker";
 import Link from 'next-intl/link';
 
@@ -78,7 +79,7 @@ const Navigation = ({locale, withLogo, theme}: Props) => {
         )}>
             {withLogo ? (
                 <>
-                    <img src={titleSvg.src} alt="" className={styles.logo}/>
+                    <img src={theme === 'black' ? titleSvg.src : titleBlackSvg.src} alt="" className={styles.logo}/>
                     <div className={styles.wrapper}>
                         {content}
                     </div>

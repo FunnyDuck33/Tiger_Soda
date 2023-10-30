@@ -58,8 +58,15 @@ function fallbackCopyTextToClipboard(text) {
 }
 
 
-export function getStyleString(obj) {
-    return Object.entries(obj)
-        .map(([key, value]) => `${key}: ${value}rem;`)
-        .join(' ')
+export function getStyleObject(obj) {
+    return Object.entries(obj).reduce((acc, [key, value]) => {
+        if (key === 'deviationFromCenter') {
+            acc.transform = `translateX(calc(-50% + ${value}rem))`;
+            acc.left = '50%';
+        } else {
+            acc[key] = `${value}rem`;
+        }
+
+        return acc;
+    }, {})
 }

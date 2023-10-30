@@ -23,15 +23,15 @@ interface Props {
 
 export default function Projects({params}: Props) {
     const t = useTranslations('Projects');
-    const i18nBanners = t.raw('banners');
+    const i18nData = t.raw('list');
 
     return (
         <div className={styles.root}>
             <Navigation withLogo={true} theme='white' locale={params.locale}/>
             <BlockHeader title="projects" className={cn('box', styles.blockHeader)} titleClassName={styles.title}/>
             <div className={cn('box', styles.itemsWrapper)}>
-                {projects(i18nBanners).map(({link, src, title}, index) => (
-                    <ImageItem key={index} src={src} title={title} link={link} size={isMobile() ? 'm' : 'l'}/>
+                {[...Object.values(projects(i18nData)), ...Object.values(projects(i18nData))].map(({link, src, previewTitle}, index) => (
+                    <ImageItem key={index} src={src} title={previewTitle} link={link} size={isMobile() ? 'm' : 'l'}/>
                 ))}
                 {!isMobile() && (
                     <>

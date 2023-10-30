@@ -1,6 +1,6 @@
 'use client';
 
-import arrowWhiteSvg from './assets/arrow-white.svg';
+import arrowWhiteSvg from '@/../public/assets/arrow-white.svg';
 import cn from 'classnames';
 
 import Link from "next-intl/link";

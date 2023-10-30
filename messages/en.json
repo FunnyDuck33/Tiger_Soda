@@ -94,10 +94,33 @@
   "Projects": {
     "title": "projects",
     "button": "All projects",
-    "banners": [
-      "Online museum of ZHEK-art",
-      "NFT tokens for Samokat",
-      "Tigers x Jägermeister"
-    ]
+    "list": {
+      "online-museum": {
+        "title": "Online museum of&nbsp;ZHEK-art",
+        "previewTitle": "Online museum of ZHEK-art",
+        "tags": [
+          "Project reach 10 million",
+          ">40 publications in the media",
+          "3 collaborations with 3 artists"
+        ]
+      },
+      "nft": {
+        "title": "NFT-ines on&nbsp;the Valentine&rsquo;s Day",
+        "previewTitle": "NFT tokens for Samokat",
+        "tags": [
+          "50,000 Valentine’s cards",
+          "14 people received NFT-cards",
+          "more than 100,000 unique users"
+        ]
+      },
+      "magic-mail": {
+        "title": "Magic Mail",
+        "previewTitle": "Tigers x Jägermeister",
+        "tags": [
+          "630,000 views",
+          "2,419 participants involved"
+        ]
+      }
+    }
   }
 }
