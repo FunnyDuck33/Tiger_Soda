@@ -6,10 +6,7 @@ import Navigation from "@/components/Navigation/Navigation";
 
 import arrowSvg from '@/../public/assets/arrow-white.svg';
 
-import {projects} from "@/data";
-
-
-import {useTranslations} from "next-intl";
+import {useProject} from "@/data";
 
 import {getStyleObject, isMobile} from "@/helpers";
 
@@ -21,15 +18,13 @@ interface Props {
 }
 
 const Header = ({locale, project}: Props) => {
-    const t = useTranslations(`Projects`);
-    const i18nData = t.raw('list');
-    const {titleImage, tags} = projects(i18nData)[project];
+    const {titleImage, tags, title} = useProject(project);
 
     return (
         <div className={cn(styles.root, 'wide_padding')}>
             <Navigation withLogo={true} theme='black' locale={locale}/>
             <div className={styles.title}>
-                <span dangerouslySetInnerHTML={{__html: t('title')}}/>
+                <span dangerouslySetInnerHTML={{__html: title}}/>
                 <span> <img src={arrowSvg.src} alt="" className={styles.arrow}/></span>
             </div>
             <div className={styles.tagsWrapper}>

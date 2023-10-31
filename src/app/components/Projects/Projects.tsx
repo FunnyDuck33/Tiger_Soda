@@ -2,7 +2,7 @@
 
 import cn from 'classnames'
 
-import {projects} from "@/data";
+import {useProjects} from "@/data";
 
 import floaty1 from '../../../../public/assets/floaties/floaty.png';
 import floaty2 from '../../../../public/assets/floaties/floaty-2.png';
@@ -17,7 +17,7 @@ import {isMobile} from "@/helpers";
 
 const Projects = () => {
     const t = useTranslations('Projects');
-    const i18nData = t.raw('list');
+    const projects = useProjects();
 
     return (
         <div className={cn(styles.root, 'box')}>
@@ -27,7 +27,7 @@ const Projects = () => {
                 link='/'
             />
             <div className={styles.bottomWrapper}>
-                {Object.values(projects(i18nData)).slice(0, 3).map(({src, link, previewTitle}, index) => (
+                {Object.values(projects).slice(0, 3).map(({src, link, previewTitle}, index) => (
                     <ImageItem key={index} src={src} title={previewTitle} link={link} size={isMobile() ? 'm': 'l'}/>
                 ))}
             </div>

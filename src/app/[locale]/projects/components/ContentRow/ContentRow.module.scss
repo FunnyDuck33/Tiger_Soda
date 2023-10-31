@@ -1,0 +1,13 @@
+@media (min-width: $mobile-size-trigger + 1) {
+  .root {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 56rem;
+  }
+}
+
+@media (max-width: $mobile-size-trigger) {
+
+}
