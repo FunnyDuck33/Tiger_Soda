@@ -96,6 +96,7 @@
     "button": "All projects",
     "coverTitle": "task",
     "ideasTitle": "ideas and solutions",
+    "artistsTitle": "artists",
     "list": {
       "online-museum": {
         "title": "Online museum of&nbsp;ZHEK-art",
@@ -124,6 +125,14 @@
               "desc": "Comic by Vitaly Terletsky"
             }
           ]
+        ],
+        "creators": [
+          {
+            "name": "Artem Bizyaev"
+          },
+          {
+            "name": "Vitaliy Terletsky"
+          }
         ]
       },
       "nft": {
@@ -164,6 +173,17 @@
               "desc": "NFT by Darya Fedorova"
             }
           ]
+        ],
+        "creators": [
+          {
+            "name": "Ellen Sheidlin"
+          },
+          {
+            "name": "Darya Fedorova"
+          },
+          {
+            "name": "Vladimir Vikhrov"
+          }
         ]
       },
       "magic-mail": {

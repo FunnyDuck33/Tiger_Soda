@@ -13,16 +13,17 @@ import project3TaskImage from '@/../public/assets/projects/project3-task.jpg';
 import project1Content1 from '@/../public/assets/projects/project1-content1.jpg';
 import project1Content2 from '@/../public/assets/projects/project1-content2.png';
 import project1Content3 from '@/../public/assets/projects/project1-content3.jpg';
-
 import project2Content1 from '@/../public/assets/projects/project2-content1.png';
 import project2Content2 from '@/../public/assets/projects/project2-content2.png';
 import project2Content3 from '@/../public/assets/projects/project2-content3.png';
 import project2Content4 from '@/../public/assets/projects/project2-content4.png';
 import project2Content5 from '@/../public/assets/projects/project2-content5.png';
 import project2Content6 from '@/../public/assets/projects/project2-content6.png';
-
 import project3Content1 from '@/../public/assets/projects/project3-content1.jpg';
 import project3Content2 from '@/../public/assets/projects/project3-content2.jpg';
+
+import project1Creator1 from '@/../public/assets/creators/creator3-cover.png';
+import project1Creator2 from '@/../public/assets/creators/creator2-cover.png';
 
 import {useTranslations} from "next-intl";
 import {merge} from 'lodash';
@@ -35,10 +36,15 @@ interface i18nProjectItem {
     cover: string;
     ideas: string[];
     content: i18nProjectItemContent[][];
+    creators?: i18nProjectItemCreators[];
 }
 
 interface i18nProjectItemContent {
     desc: Property.TextAlign;
+}
+
+interface i18nProjectItemCreators {
+    name: string;
 }
 
 
@@ -53,6 +59,7 @@ interface ProjectItem {
         };
     };
     content: ProjectItemContent[][];
+    creators?: ProjectItemCreators[];
 }
 
 interface ProjectItemContent {
@@ -61,12 +68,15 @@ interface ProjectItemContent {
     height: number;
 }
 
-interface i18nProjectList {
-    [K: string]: i18nProjectItem;
+interface ProjectItemCreators {
+    src: string;
+    link: string;
 }
 
 type CombinedProjectItem = i18nProjectItem & ProjectItem;
+
 export type CombinedProjectItemContent = i18nProjectItemContent & ProjectItemContent;
+export type CombinedProjectItemCreators = i18nProjectItemCreators & ProjectItemCreators;
 
 interface CombinedProjectList {
     [K: string]: CombinedProjectItem;
@@ -109,6 +119,16 @@ export const useProjects = (): CombinedProjectList => {
                         height: 480,
                     },
                 ]
+            ],
+            creators: [
+                {
+                    src: project1Creator1.src,
+                    link: '/',
+                },
+                {
+                    src: project1Creator2.src,
+                    link: '/',
+                }
             ]
         },
         'nft': {
@@ -160,6 +180,20 @@ export const useProjects = (): CombinedProjectList => {
                         height: 444,
                     },
                 ],
+            ],
+            creators: [
+                {
+                    src: project1Creator1.src,
+                    link: '/',
+                },
+                {
+                    src: project1Creator2.src,
+                    link: '/',
+                },
+                {
+                    src: project1Creator2.src,
+                    link: '/',
+                }
             ]
         },
         'magic-mail': {

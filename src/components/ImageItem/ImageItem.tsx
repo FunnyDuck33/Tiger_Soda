@@ -19,6 +19,7 @@ const sizeClasses = {
     m: styles.root_size_m,
     s: styles.root_size_s,
     xs: styles.root_size_xs,
+    xxs: styles.root_size_xxs,
 }
 
 const ImageItem = ({src, title, link, size, desc}: Props) => {

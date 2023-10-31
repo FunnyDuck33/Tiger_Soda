@@ -5,10 +5,10 @@ import cn from "classnames";
 import BlockHeader from "@/components/BlockHeader/BlockHeader";
 import ImageItem from "@/components/ImageItem/ImageItem";
 
-import author1 from "@/app/components/Creators/assets/author-1.png";
-import author2 from "@/app/components/Creators/assets/author-2.png";
-import author3 from "@/app/components/Creators/assets/author-3.png";
-import author4 from "@/app/components/Creators/assets/author-4.png";
+import author1 from '@/../public/assets/creators/creator1-cover.png';
+import author2 from '@/../public/assets/creators/creator2-cover.png';
+import author3 from '@/../public/assets/creators/creator3-cover.png';
+import author4 from '@/../public/assets/creators/creator4-cover.png';
 
 import floaty1 from "@/app/components/Creators/assets/floaty-1.png";
 import floaty2 from "@/app/components/Creators/assets/floaty-2.png";

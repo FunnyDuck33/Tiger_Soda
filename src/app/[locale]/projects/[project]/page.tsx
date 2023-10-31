@@ -4,10 +4,8 @@ import cn from 'classnames';
 
 import Header from "../components/Header/Header";
 import Text from "../components/Text/Text";
-import DescriptionWrapper from "../components/DescriptionWrapper/DescriptionWrapper";
+import Creators from "../components/Creators/Creators";
 import Footer from "@/components/Footer/Footer";
-
-import mainImg from '@/../public/assets/projects/project1-content1.jpg';
 
 import styles from './page.module.scss'
 
@@ -25,7 +23,7 @@ interface Props {
 export default function Projects({params}: Props) {
     const t = useTranslations('Projects');
     const {locale, project} = params;
-    const {taskSrc, cover, ideas, content} = useProject(project);
+    const {taskSrc, cover, ideas, content, creators} = useProject(project);
 
     return (
         <div className={styles.root}>
@@ -36,6 +34,7 @@ export default function Projects({params}: Props) {
             {content.map(contentRow => (
                 <ContentRow data={contentRow}/>
             ))}
+            {creators && <Creators data={creators}/>}
             <Footer/>
         </div>
     )

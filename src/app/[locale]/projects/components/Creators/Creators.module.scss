@@ -1,0 +1,25 @@
+@media (min-width: $mobile-size-trigger + 1) {
+  .root {
+    margin-top: 90rem;
+  }
+
+  .title {
+    text-align: center;
+
+    font-family: "DTGetai", "sans-serif";
+    font-size: 48rem;
+    line-height: 104%;
+    letter-spacing: 0.96rem;
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 40rem;
+
+    margin-top: 32rem;
+  }
+}
+
+@media (max-width: $mobile-size-trigger) {
+
+}
