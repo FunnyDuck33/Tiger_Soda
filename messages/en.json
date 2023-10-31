@@ -97,6 +97,9 @@
     "coverTitle": "task",
     "ideasTitle": "ideas and solutions",
     "artistsTitle": "artists",
+    "navigatorButton": "Visit project page",
+    "navigatorPrevButton": "Previous project",
+    "navigatorNextButton": "Next project",
     "list": {
       "online-museum": {
         "title": "Online museum of&nbsp;ZHEK-art",

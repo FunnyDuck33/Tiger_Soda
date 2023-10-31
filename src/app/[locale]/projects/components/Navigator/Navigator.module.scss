@@ -1,0 +1,74 @@
+@media (min-width: $mobile-size-trigger + 1) {
+  .root {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 90rem 0 120rem;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 490rem;
+    height: 60rem;
+
+    border-radius: 100rem;
+    background-color: var(--green);
+    color: white;
+
+    font-family: "DTGetai", "sans-serif";
+    font-weight: 900;
+    font-size: 20rem;
+    line-height: 160rem;
+    letter-spacing: 0.4rem;
+  }
+
+  .arrow {
+    width: 17rem;
+    margin: 4rem 0 0 9rem;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+
+    font-family: "Gantari", "sans-serif";
+    font-size: 20rem;
+    line-height: 130%;
+    letter-spacing: 0.4rem;
+    color: var(--graphyte);
+  }
+
+  .navText {
+    opacity: 0.5;
+  }
+
+  .navArrow {
+    opacity: 0.8;
+    height: 15rem;
+  }
+
+  .navArrowLeft {
+    margin-right: 9rem;
+  }
+
+  .navArrowRight {
+    margin-left: 9rem;
+  }
+
+  .navArrowRight {
+    margin-left: 9rem;
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: $mobile-size-trigger) {
+
+}

@@ -82,148 +82,149 @@ interface CombinedProjectList {
     [K: string]: CombinedProjectItem;
 }
 
+const data = {
+    'online-museum': {
+        src: project1Preview.src,
+        taskSrc: project1TaskImage.src,
+        link: '/projects/online-museum',
+        titleImage: {
+            src: project1TitleImage.src,
+            styles: {
+                top: 73,
+                height: 436,
+                deviationFromCenter: 293,
+            }
+        },
+        content: [
+            [
+                {
+                    src: project1Content1.src,
+                    descAlign: 'left',
+                    height: 686,
+                },
+            ],
+            [
+                {
+                    src: project1Content2.src,
+                    descAlign: 'left',
+                    height: 480,
+                },
+                {
+                    src: project1Content3.src,
+                    descAlign: 'right',
+                    height: 480,
+                },
+            ]
+        ],
+        creators: [
+            {
+                src: project1Creator1.src,
+                link: '/',
+            },
+            {
+                src: project1Creator2.src,
+                link: '/',
+            }
+        ]
+    },
+    'nft': {
+        src: project2Preview.src,
+        taskSrc: project2TaskImage.src,
+        link: '/projects/nft',
+        titleImage: {
+            src: project2TitleImage.src,
+            styles: {
+                top: 62,
+                height: 494,
+                deviationFromCenter: 362,
+            }
+        },
+        content: [
+            [
+                {
+                    src: project2Content1.src,
+                    descAlign: 'left',
+                    height: 444,
+                },
+                {
+                    src: project2Content2.src,
+                    descAlign: 'right',
+                    height: 444,
+                },
+            ],
+            [
+                {
+                    src: project2Content3.src,
+                    descAlign: 'left',
+                    height: 444,
+                },
+                {
+                    src: project2Content4.src,
+                    descAlign: 'right',
+                    height: 444,
+                },
+            ],
+            [
+                {
+                    src: project2Content5.src,
+                    descAlign: 'left',
+                    height: 444,
+                },
+                {
+                    src: project2Content6.src,
+                    descAlign: 'right',
+                    height: 444,
+                },
+            ],
+        ],
+        creators: [
+            {
+                src: project1Creator1.src,
+                link: '/',
+            },
+            {
+                src: project1Creator2.src,
+                link: '/',
+            },
+            {
+                src: project1Creator2.src,
+                link: '/',
+            }
+        ]
+    },
+    'magic-mail': {
+        src: project3Preview.src,
+        taskSrc: project3TaskImage.src,
+        link: '/projects/magic-mail',
+        titleImage: {
+            src: project3TitleImage.src,
+            styles: {
+                top: 81,
+                height: 493,
+                deviationFromCenter: 107,
+            }
+        },
+        content: [
+            [
+                {
+                    src: project3Content1.src,
+                    descAlign: 'left',
+                    height: 520,
+                },
+                {
+                    src: project3Content2.src,
+                    descAlign: 'right',
+                    height: 520,
+                },
+            ],
+        ]
+    },
+};
+export const projectRoutes = Object.keys(data);
+
 export const useProjects = (): CombinedProjectList => {
     const t = useTranslations(`Projects`);
     const i18nData = t.raw('list');
-
-    const data = {
-        'online-museum': {
-            src: project1Preview.src,
-            taskSrc: project1TaskImage.src,
-            link: '/projects/online-museum',
-            titleImage: {
-                src: project1TitleImage.src,
-                styles: {
-                    top: 73,
-                    height: 436,
-                    deviationFromCenter: 293,
-                }
-            },
-            content: [
-                [
-                    {
-                        src: project1Content1.src,
-                        descAlign: 'left',
-                        height: 686,
-                    },
-                ],
-                [
-                    {
-                        src: project1Content2.src,
-                        descAlign: 'left',
-                        height: 480,
-                    },
-                    {
-                        src: project1Content3.src,
-                        descAlign: 'right',
-                        height: 480,
-                    },
-                ]
-            ],
-            creators: [
-                {
-                    src: project1Creator1.src,
-                    link: '/',
-                },
-                {
-                    src: project1Creator2.src,
-                    link: '/',
-                }
-            ]
-        },
-        'nft': {
-            src: project2Preview.src,
-            taskSrc: project2TaskImage.src,
-            link: '/projects/nft',
-            titleImage: {
-                src: project2TitleImage.src,
-                styles: {
-                    top: 62,
-                    height: 494,
-                    deviationFromCenter: 362,
-                }
-            },
-            content: [
-                [
-                    {
-                        src: project2Content1.src,
-                        descAlign: 'left',
-                        height: 444,
-                    },
-                    {
-                        src: project2Content2.src,
-                        descAlign: 'right',
-                        height: 444,
-                    },
-                ],
-                [
-                    {
-                        src: project2Content3.src,
-                        descAlign: 'left',
-                        height: 444,
-                    },
-                    {
-                        src: project2Content4.src,
-                        descAlign: 'right',
-                        height: 444,
-                    },
-                ],
-                [
-                    {
-                        src: project2Content5.src,
-                        descAlign: 'left',
-                        height: 444,
-                    },
-                    {
-                        src: project2Content6.src,
-                        descAlign: 'right',
-                        height: 444,
-                    },
-                ],
-            ],
-            creators: [
-                {
-                    src: project1Creator1.src,
-                    link: '/',
-                },
-                {
-                    src: project1Creator2.src,
-                    link: '/',
-                },
-                {
-                    src: project1Creator2.src,
-                    link: '/',
-                }
-            ]
-        },
-        'magic-mail': {
-            src: project3Preview.src,
-            taskSrc: project3TaskImage.src,
-            link: '/projects/magic-mail',
-            titleImage: {
-                src: project3TitleImage.src,
-                styles: {
-                    top: 81,
-                    height: 493,
-                    deviationFromCenter: 107,
-                }
-            },
-            content: [
-                [
-                    {
-                        src: project3Content1.src,
-                        descAlign: 'left',
-                        height: 520,
-                    },
-                    {
-                        src: project3Content2.src,
-                        descAlign: 'right',
-                        height: 520,
-                    },
-                ],
-            ]
-        },
-    };
 
     return Object.entries(data).reduce((acc, [key, item]) => {
         acc[key] = merge(item, i18nData[key]);
