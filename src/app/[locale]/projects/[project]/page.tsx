@@ -30,7 +30,7 @@ export default function Projects({params}: Props) {
         <div className={styles.root}>
             <Header locale={locale} project={project}/>
             <Text title={t("coverTitle")} content={[cover]} className={styles.cover}/>
-            <img src={taskSrc} alt="" className={cn(styles.img, 'box')}/>
+            <img src={taskSrc} alt="" className={styles.img}/>
             <Text title={t("ideasTitle")} content={ideas} className={styles.ideas}/>
             {content.map(contentRow => (
                 <ContentRow data={contentRow}/>

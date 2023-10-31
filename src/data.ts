@@ -13,14 +13,17 @@ import project3TaskImage from '@/../public/assets/projects/project3-task.jpg';
 import project1Content1 from '@/../public/assets/projects/project1-content1.jpg';
 import project1Content2 from '@/../public/assets/projects/project1-content2.png';
 import project1Content3 from '@/../public/assets/projects/project1-content3.jpg';
+import project1Content4 from '@/../public/assets/projects/project1-content4.png';
 import project2Content1 from '@/../public/assets/projects/project2-content1.png';
 import project2Content2 from '@/../public/assets/projects/project2-content2.png';
 import project2Content3 from '@/../public/assets/projects/project2-content3.png';
 import project2Content4 from '@/../public/assets/projects/project2-content4.png';
 import project2Content5 from '@/../public/assets/projects/project2-content5.png';
 import project2Content6 from '@/../public/assets/projects/project2-content6.png';
-import project3Content1 from '@/../public/assets/projects/project3-content1.jpg';
+import project3Content1 from '@/../public/assets/projects/project3-content1.png';
 import project3Content2 from '@/../public/assets/projects/project3-content2.jpg';
+import project3Content3 from '@/../public/assets/projects/project3-content3.jpg';
+
 
 import project1Creator1 from '@/../public/assets/creators/creator3-cover.png';
 import project1Creator2 from '@/../public/assets/creators/creator2-cover.png';
@@ -96,6 +99,13 @@ const data = {
             }
         },
         content: [
+            [
+                {
+                    src: project1Content4.src,
+                    descAlign: 'right',
+                    height: 346,
+                },
+            ],
             [
                 {
                     src: project1Content1.src,
@@ -208,11 +218,18 @@ const data = {
             [
                 {
                     src: project3Content1.src,
+                    descAlign: 'right',
+                    height: 557,
+                },
+            ],
+            [
+                {
+                    src: project3Content2.src,
                     descAlign: 'left',
                     height: 520,
                 },
                 {
-                    src: project3Content2.src,
+                    src: project3Content3.src,
                     descAlign: 'right',
                     height: 520,
                 },
