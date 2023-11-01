@@ -8,7 +8,7 @@ import {CombinedProjectItemContent} from "@/data";
 import {isMobile} from "@/helpers";
 
 interface Props {
-    data: CombinedProjectItemContent[];
+    data: any[];
 }
 
 const ContentRow = ({data}: Props) => {

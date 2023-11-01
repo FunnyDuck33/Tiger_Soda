@@ -7,7 +7,7 @@ import {CombinedProjectItemCreators} from "@/data";
 import ImageItem from "@/components/ImageItem/ImageItem";
 
 interface Props {
-    data: CombinedProjectItemCreators[];
+    data: any[];
 }
 
 const Creators = ({data}: Props) => {
