@@ -12,5 +12,14 @@
 }
 
 @media (max-width: $mobile-size-trigger) {
+    .desc {
+        margin-top: 16rem;
 
+        font-family: "Gantari", "sans-serif";
+        font-size: 20rem;
+        line-height: 130%;
+        letter-spacing: 0.4rem;
+        color: var(--graphyte);
+        opacity: 0.5;
+    }
 }

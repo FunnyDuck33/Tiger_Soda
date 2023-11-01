@@ -28,5 +28,29 @@
 }
 
 @media (max-width: $mobile-size-trigger) {
+    .root {
+        position: relative;
+    }
 
+    .title {
+        font-family: "DTGetai", "sans-serif";
+        font-size: 32rem;
+        line-height: 106%;
+        letter-spacing: 0.64rem;
+    }
+
+    .contentWrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content {
+        margin-top: 16rem;
+
+        font-family: "Gantari", "sans-serif";
+        font-size: 16rem;
+        line-height: 130%;
+        letter-spacing: 0.32rem;
+        color: var(--graphyte);
+    }
 }

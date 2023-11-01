@@ -3,6 +3,7 @@
 import cn from 'classnames'
 
 import styles from './Text.module.scss';
+import {isMobile} from "@/helpers";
 
 interface Props {
     title: string;
@@ -11,6 +12,10 @@ interface Props {
 }
 
 const Text = ({title, className, content}: Props) => {
+    if (isMobile()) {
+        content = [content.join('')];
+    }
+
     return (
         <div className={cn(styles.root, 'box', className)}>
             <div className={styles.title}>{title}</div>

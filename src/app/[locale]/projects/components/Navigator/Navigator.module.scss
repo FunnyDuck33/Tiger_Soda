@@ -70,5 +70,66 @@
 }
 
 @media (max-width: $mobile-size-trigger) {
+  .root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    margin: 48rem 0 67rem;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 288rem;
+    height: 60rem;
+
+    border-radius: 100rem;
+    background-color: var(--green);
+    color: white;
+
+    font-family: "DTGetai", "sans-serif";
+    font-weight: 900;
+    font-size: 20rem;
+    line-height: 160rem;
+    letter-spacing: 0.4rem;
+  }
+
+  .arrowWrapper {
+    display: flex;
+
+    gap: 32rem;
+    margin-top: 32rem;
+  }
+
+  .arrow {
+    width: 17rem;
+    margin: 4rem 0 0 9rem;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60rem;
+    height: 60rem;
+
+    border: 1px solid black;
+    border-radius: 100%;
+  }
+
+  .navArrow {
+    height: 25rem;
+  }
+
+  .navArrowRight {
+    transform: rotate(180deg);
+  }
 }

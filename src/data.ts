@@ -5,6 +5,9 @@ import project3Preview from '@/../public/assets/projects/project3-preview.png';
 import project1TitleImage from '@/../public/assets/projects/project1-title.png';
 import project2TitleImage from '@/../public/assets/projects/project2-title.png';
 import project3TitleImage from '@/../public/assets/projects/project3-title.png';
+import project1TitleImageM from '@/../public/assets/projects/project1-titleM.png';
+import project2TitleImageM from '@/../public/assets/projects/project2-titleM.png';
+import project3TitleImageM from '@/../public/assets/projects/project3-titleM.png';
 
 import project1TaskImage from '@/../public/assets/projects/project1-task.jpg';
 import project2TaskImage from '@/../public/assets/projects/project2-task.png';
@@ -14,15 +17,21 @@ import project1Content1 from '@/../public/assets/projects/project1-content1.jpg'
 import project1Content2 from '@/../public/assets/projects/project1-content2.png';
 import project1Content3 from '@/../public/assets/projects/project1-content3.jpg';
 import project1Content4 from '@/../public/assets/projects/project1-content4.png';
+import project1Content1M from '@/../public/assets/projects/project1-content1M.jpg';
+import project1Content2M from '@/../public/assets/projects/project1-content2M.png';
+import project1Content3M from '@/../public/assets/projects/project1-content3M.jpg';
+
 import project2Content1 from '@/../public/assets/projects/project2-content1.png';
 import project2Content2 from '@/../public/assets/projects/project2-content2.png';
 import project2Content3 from '@/../public/assets/projects/project2-content3.png';
 import project2Content4 from '@/../public/assets/projects/project2-content4.png';
 import project2Content5 from '@/../public/assets/projects/project2-content5.png';
 import project2Content6 from '@/../public/assets/projects/project2-content6.png';
+
 import project3Content1 from '@/../public/assets/projects/project3-content1.png';
 import project3Content2 from '@/../public/assets/projects/project3-content2.jpg';
 import project3Content3 from '@/../public/assets/projects/project3-content3.jpg';
+import project3Content1M from '@/../public/assets/projects/project3-content1M.jpg';
 
 
 import project1Creator1 from '@/../public/assets/creators/creator3-cover.png';
@@ -34,6 +43,7 @@ import {Property} from "csstype";
 
 interface i18nProjectItem {
     title: string;
+    titleM?: string;
     previewTitle: string;
     tags: string[];
     cover: string;
@@ -57,9 +67,13 @@ interface ProjectItem {
     link: string;
     titleImage: {
         src: string;
+        srcM: string;
         styles: {
             [K: string]: number;
         };
+        stylesM: {
+            [K: string]: number
+        }
     };
     content: ProjectItemContent[][];
     creators?: ProjectItemCreators[];
@@ -67,6 +81,7 @@ interface ProjectItem {
 
 interface ProjectItemContent {
     src: string;
+    srcM: string;
     descAlign: string;
     height: number;
 }
@@ -92,10 +107,17 @@ const data = {
         link: '/projects/online-museum',
         titleImage: {
             src: project1TitleImage.src,
+            srcM: project1TitleImageM.src,
             styles: {
                 top: 73,
                 height: 436,
                 deviationFromCenter: 293,
+            },
+            stylesM: {
+                marginTop: -26,
+                marginBottom: -31,
+                left: -7,
+                width: 295,
             }
         },
         content: [
@@ -109,6 +131,7 @@ const data = {
             [
                 {
                     src: project1Content1.src,
+                    srcM: project1Content1M.src,
                     descAlign: 'left',
                     height: 686,
                 },
@@ -116,11 +139,13 @@ const data = {
             [
                 {
                     src: project1Content2.src,
+                    srcM: project1Content2M.src,
                     descAlign: 'left',
                     height: 480,
                 },
                 {
                     src: project1Content3.src,
+                    srcM: project1Content3M.src,
                     descAlign: 'right',
                     height: 480,
                 },
@@ -143,10 +168,17 @@ const data = {
         link: '/projects/nft',
         titleImage: {
             src: project2TitleImage.src,
+            srcM: project2TitleImageM.src,
             styles: {
                 top: 62,
                 height: 494,
                 deviationFromCenter: 362,
+            },
+            stylesM: {
+                marginTop: 6,
+                marginBottom: -56,
+                left: -5,
+                width: 327,
             }
         },
         content: [
@@ -208,16 +240,24 @@ const data = {
         link: '/projects/magic-mail',
         titleImage: {
             src: project3TitleImage.src,
+            srcM: project3TitleImageM.src,
             styles: {
                 top: 81,
                 height: 493,
                 deviationFromCenter: 107,
+            },
+            stylesM: {
+                marginTop: 12,
+                marginBottom: -33,
+                left: -16,
+                width: 320,
             }
         },
         content: [
             [
                 {
                     src: project3Content1.src,
+                    srcM: project3Content1M.src,
                     descAlign: 'right',
                     height: 557,
                 },

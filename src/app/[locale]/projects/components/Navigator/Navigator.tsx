@@ -10,6 +10,7 @@ import Link from "next-intl/link";
 
 import {useTranslations} from "next-intl";
 import cn from "classnames";
+import {isMobile} from "@/helpers";
 
 interface Props {
     project: string;
@@ -20,30 +21,58 @@ const Navigator = ({project}: Props) => {
     const prevLink = projectRoutes[projectRoutes.indexOf(project) - 1] || projectRoutes[projectRoutes.length - 1];
     const nextLink = projectRoutes[projectRoutes.indexOf(project) + 1] || projectRoutes[0];
 
-    return (
-        <div className={cn(styles.root, 'box')}>
-            <Link href={`/projects/${prevLink}`} className={styles.link}>
-                <div className={styles.nav}>
-                    <img src={arrowNavSvg.src} alt="" className={cn(styles.navArrowLeft, styles.navArrow)}/>
+    const prevNav = (
+        <Link href={`/projects/${prevLink}`} className={styles.link}>
+            <div className={styles.nav}>
+                <img src={arrowNavSvg.src} alt="" className={cn(styles.navArrowLeft, styles.navArrow)}/>
+                {!isMobile() && (
                     <div className={styles.navText}>
                         {t("navigatorPrevButton")}
                     </div>
-                </div>
-            </Link>
-            <Link href='/projects' className={styles.link}>
-                <div className={styles.button}>
-                    {t("navigatorButton")}
-                    <img src={arrowSvg.src} alt="" className={styles.arrow}/>
-                </div>
-            </Link>
-            <Link href={`/projects/${nextLink}`} className={styles.link}>
-                <div className={styles.nav}>
+                )}
+            </div>
+        </Link>
+    );
+
+    const nextNav = (
+        <Link href={`/projects/${nextLink}`} className={styles.link}>
+            <div className={styles.nav}>
+                {!isMobile() && (
                     <div className={styles.navText}>
                         {t("navigatorNextButton")}
                     </div>
-                    <img src={arrowNavSvg.src} alt="" className={cn(styles.navArrowRight, styles.navArrow)}/>
-                </div>
-            </Link>
+                )}
+                <img src={arrowNavSvg.src} alt="" className={cn(styles.navArrowRight, styles.navArrow)}/>
+            </div>
+        </Link>
+    )
+
+    const button = (
+        <Link href='/projects' className={styles.link}>
+            <div className={styles.button}>
+                {t("navigatorButton")}
+                <img src={arrowSvg.src} alt="" className={styles.arrow}/>
+            </div>
+        </Link>
+    )
+
+    return (
+        <div className={cn(styles.root, 'box')}>
+            {isMobile() ? (
+                <>
+                    {button}
+                    <div className={styles.arrowWrapper}>
+                        {prevNav}
+                        {nextNav}
+                    </div>
+                </>
+            ): (
+                <>
+                    {prevNav}
+                    {button}
+                    {nextNav}
+                </>
+            )}
         </div>
     )
 }

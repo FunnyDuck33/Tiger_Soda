@@ -21,5 +21,26 @@
 }
 
 @media (max-width: $mobile-size-trigger) {
+  .root {
+    margin-top: 48rem;
+  }
+
+  .title {
+    text-align: center;
+
+    font-family: "DTGetai", "sans-serif";
+    font-size: 32rem;
+    line-height: 106%;
+    letter-spacing: 0.64rem;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 24rem;
+    margin-top: 24rem;
+  }
 
 }

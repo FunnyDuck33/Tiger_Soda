@@ -18,13 +18,13 @@ interface Props {
 }
 
 const Header = ({locale, project}: Props) => {
-    const {titleImage, tags, title} = useProject(project);
+    const {titleImage, tags, title, titleM} = useProject(project);
 
     return (
         <div className={cn(styles.root, 'wide_padding')}>
             <Navigation withLogo={true} theme='black' locale={locale}/>
             <div className={styles.title}>
-                <span dangerouslySetInnerHTML={{__html: title}}/>
+                <span dangerouslySetInnerHTML={{__html: isMobile() && titleM ? titleM : title}}/>
                 <span> <img src={arrowSvg.src} alt="" className={styles.arrow}/></span>
             </div>
             <div className={styles.tagsWrapper}>
@@ -33,7 +33,7 @@ const Header = ({locale, project}: Props) => {
                 ))}
             </div>
             <div>
-                <img src={titleImage.src} alt="" className={styles.item} style={getStyleObject(titleImage.styles)}/>
+                <img src={isMobile() ? titleImage.srcM : titleImage.src } alt="" className={styles.item} style={getStyleObject(isMobile() ? titleImage.stylesM : titleImage.styles)}/>
             </div>
         </div>
     )

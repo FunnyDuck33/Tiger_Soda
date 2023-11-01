@@ -45,15 +45,50 @@
 
     .item {
         position: absolute;
-
-        height: 436rem;
-        top: 73rem;
-
-        left: 50%;
-        transform: translateX(calc(-50% + 293rem));
     }
 }
 
 @media (max-width: $mobile-size-trigger) {
+    .root {
+        position: relative;
+        background-color: black;
 
+        border-radius: 0 0 24rem 24rem;
+    }
+
+    .title {
+        margin-top: 32rem;
+        font-family: "DTGetai", "sans-serif";
+        font-size: 32rem;
+        line-height: 102%;
+        color: white;
+    }
+
+    .arrow {
+        width: 22rem;
+    }
+
+    .tagsWrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 32rem;
+        gap: 12rem;
+    }
+
+    .tag {
+        text-align: center;
+        font-family: "Gantari", "sans-serif";
+        font-size: 16rem;
+        line-height: 150%;
+        letter-spacing: 0.32rem;
+
+        padding: 16rem 16rem;
+        border: 1px solid white;
+        border-radius: 100rem;
+        color: white;
+    }
+
+    .item {
+        position: relative;
+    }
 }

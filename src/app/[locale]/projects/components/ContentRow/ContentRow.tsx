@@ -5,18 +5,22 @@ import cn from 'classnames'
 import styles from './ContentRow.module.scss';
 import DescriptionWrapper from "@/app/[locale]/projects/components/DescriptionWrapper/DescriptionWrapper";
 import {CombinedProjectItemContent} from "@/data";
+import {isMobile} from "@/helpers";
 
 interface Props {
     data: CombinedProjectItemContent[];
 }
 
 const ContentRow = ({data}: Props) => {
-    console.log(123, data);
     return (
         <div className={cn(styles.root, 'box')}>
-            {data.map(({desc, src, descAlign, height}) => (
-                <DescriptionWrapper desc={desc} descAlign={descAlign}>
-                    <img src={src} alt="" className={styles.mainImg} style={{height: `${height}rem`}}/>
+            {data.map(({desc, src, srcM, descAlign, height}) => (
+                <DescriptionWrapper className={styles.wrapper} desc={desc} descAlign={isMobile() ? 'center' : descAlign}>
+                    <img
+                        className={styles.mainImg} style={isMobile() ? {} : {height: `${height}rem`}}
+                        src={isMobile() && srcM ? srcM : src}
+                        alt=""
+                    />
                 </DescriptionWrapper>
             ))}
         </div>
