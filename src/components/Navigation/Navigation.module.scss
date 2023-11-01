@@ -87,7 +87,7 @@
         justify-content: space-between;
         align-items: center;
 
-        padding-top: 20px;
+        padding-top: 20rem;
     }
 
     .menu {
@@ -103,5 +103,44 @@
 
     .logo {
         height: 24rem;
+    }
+
+    .mobileMenu {
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+
+        padding: 20rem 16rem 0;
+
+        background-color: #2C2C2C;
+        color: white;
+    }
+
+    .topWrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 32rem;
+        margin-top: 98rem;
+    }
+
+    .navItem {
+        font-size: 24rem;
+        line-height: 108%;
+        letter-spacing: 0.48rem;
+    }
+
+    .navItem_active {
+        text-decoration: underline;
     }
 }

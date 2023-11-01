@@ -53,7 +53,7 @@ interface i18nProjectItem {
 }
 
 interface i18nProjectItemContent {
-    desc: Property.TextAlign;
+    desc: string;
 }
 
 interface i18nProjectItemCreators {
@@ -82,7 +82,7 @@ interface ProjectItem {
 interface ProjectItemContent {
     src: string;
     srcM: string;
-    descAlign: string;
+    descAlign: Property.TextAlign;
     height: number;
 }
 

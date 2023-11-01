@@ -4,13 +4,14 @@ import {useTranslations} from "next-intl";
 import {isMobile} from "@/helpers";
 import cn from 'classnames';
 import { usePathname } from 'next/navigation';
-import {useCallback} from "react";
+import {useCallback, useState} from "react";
 
 import titleSvg from '@/../public/assets/title.svg';
 import titleBlackSvg from '@/../public/assets/title-black.svg';
 import LocalePicker from "@/components/LocalePicker/LocalePicker";
 import Link from 'next-intl/link';
 
+import close from './assets/close.svg';
 import burger from './assets/burger.svg';
 import burgerBlack from './assets/burger-black.svg';
 
@@ -26,11 +27,22 @@ const Navigation = ({locale, withLogo, theme}: Props) => {
     const t = useTranslations('Index.Navigation');
     const pathname = usePathname();
 
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     const isActive = useCallback((link: string) => {
         const pathWithoutLocale = pathname.split('/')[2] || '';
 
         return pathWithoutLocale === link.slice(1)
-    }, [pathname])
+    }, [pathname]);
+
+    const onOpenClick = useCallback(() => {
+        setIsMenuOpen(true);
+    }, []);
+
+
+    const onCloseClick = useCallback(() => {
+        setIsMenuOpen(false);
+    }, []);
 
     const items = [
         {
@@ -51,6 +63,14 @@ const Navigation = ({locale, withLogo, theme}: Props) => {
         },
     ]
 
+    const mobileItems = [
+        ...items,
+        {
+            link: '/bbb',
+            text: t('contacts'),
+        },
+    ]
+
     const content = (
         <>
             {!isMobile() && (
@@ -63,10 +83,34 @@ const Navigation = ({locale, withLogo, theme}: Props) => {
                 </nav>
             )}
             <div className={styles.menu}>
-                {!isMobile() && <div className={styles.contactButton}>{t('contacts')}</div>}
-                {(!isMobile() || !withLogo) && <LocalePicker theme={theme} locale={locale}/>}
-                {isMobile() && <img src={theme === 'black' ?  burger.src : burgerBlack.src} alt="" className={styles.burger}/>}
+                {isMobile() ? (
+                    <>
+                        {!withLogo && <LocalePicker theme={theme} locale={locale}/>}
+                        <img src={theme === 'black' ?  burger.src : burgerBlack.src} alt="" className={styles.burger} onClick={onOpenClick}/>
+                        {isMenuOpen && (
+                            <div className={styles.mobileMenu}>
+                                <div className={styles.topWrapper}>
+                                    <LocalePicker theme="black" locale={locale}/>
+                                    <img src={close.src} alt="" className={styles.burger} onClick={onCloseClick}/>
+                                </div>
+                                <nav className={styles.nav}>
+                                    {mobileItems.map(({link, text}, index) => (
+                                        <Link key={index} className={styles.links} href={link}>
+                                            <div className={cn(styles.navItem, isActive(link) && styles.navItem_active)}>{text}</div>
+                                        </Link>
+                                    ))}
+                                </nav>
+                            </div>
+                        )}
+                    </>
+                ) : (
+                    <>
+                        <div className={styles.contactButton}>{t('contacts')}</div>
+                        <LocalePicker theme={theme} locale={locale}/>
+                    </>
+                )}
             </div>
+
         </>
     );
 
