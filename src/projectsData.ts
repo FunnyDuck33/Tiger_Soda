@@ -34,8 +34,8 @@ import project3Content3 from '@/../public/assets/projects/project3-content3.jpg'
 import project3Content1M from '@/../public/assets/projects/project3-content1M.jpg';
 
 
-import project1Creator1 from '@/../public/assets/creators/creator3-cover.png';
-import project1Creator2 from '@/../public/assets/creators/creator2-cover.png';
+import project1Creator1 from '../public/assets/creators/creator3-preview.png';
+import project1Creator2 from '../public/assets/creators/creator2-preview.png';
 
 import {useTranslations} from "next-intl";
 import {merge} from 'lodash';

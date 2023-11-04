@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './Navigator.module.scss';
-import {projectRoutes} from "@/data";
+import {projectRoutes} from "@/projectsData";
 
 import arrowSvg from '@/../public/assets/arrow-white.svg';
 import arrowNavSvg from './assets/arrow.svg';

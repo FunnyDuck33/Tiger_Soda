@@ -11,7 +11,7 @@ import Navigator from "../components/Navigator/Navigator";
 
 import styles from './page.module.scss'
 
-import {useProject} from "@/data";
+import {useProject} from "@/projectsData";
 import {useTranslations} from "next-intl";
 
 interface Props {

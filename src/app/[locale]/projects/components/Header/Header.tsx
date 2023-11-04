@@ -6,7 +6,7 @@ import Navigation from "@/components/Navigation/Navigation";
 
 import arrowSvg from '@/../public/assets/arrow-white.svg';
 
-import {useProject} from "@/data";
+import {useProject} from "@/projectsData";
 
 import {getStyleObject, isMobile} from "@/helpers";
 

@@ -1,5 +1,5 @@
 import {ReactNode} from 'react';
-import {projectRoutes} from "@/data";
+import {projectRoutes} from "@/projectsData";
 
 type Props = {
     children: ReactNode;

@@ -2,7 +2,7 @@
 
 import cn from 'classnames'
 
-import {useProjects} from "@/data";
+import {useProjects} from "@/projectsData";
 
 import floaty1 from '../../../../public/assets/floaties/floaty.png';
 import floaty2 from '../../../../public/assets/floaties/floaty-2.png';

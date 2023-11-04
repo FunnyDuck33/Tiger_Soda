@@ -4,7 +4,7 @@ import cn from 'classnames'
 
 import styles from './ContentRow.module.scss';
 import DescriptionWrapper from "@/app/[locale]/projects/components/DescriptionWrapper/DescriptionWrapper";
-import {CombinedProjectItemContent} from "@/data";
+import {CombinedProjectItemContent} from "@/projectsData";
 import {isMobile} from "@/helpers";
 
 interface Props {

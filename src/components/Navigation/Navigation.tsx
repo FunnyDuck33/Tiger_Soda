@@ -58,7 +58,7 @@ const Navigation = ({locale, withLogo, theme}: Props) => {
             text: t('services'),
         },
         {
-            link: '/zxc',
+            link: '/creators',
             text: t('creators'),
         },
     ]
