@@ -58,28 +58,6 @@
         }
       ]
     },
-    "Creators": {
-      "title": "creators",
-      "button": "All creators",
-      "data": [
-        {
-          "title": "Ivan Ivanow",
-          "desc": "Animation"
-        },
-        {
-          "title": "Petr Petrow",
-          "desc": "Video production"
-        },
-        {
-          "title": "Svetlana Svetlanova",
-          "desc": "Illustration"
-        },
-        {
-          "title": "Elena Troyanskaya",
-          "desc": "Graphics"
-        }
-      ]
-    },
     "Clients": "clients"
   },
   "Footer": {
@@ -145,6 +123,7 @@
       },
       "nft": {
         "title": "NFT-ines on&nbsp;the Valentine&rsquo;s Day",
+        "titleM": "NFT-ines on&nbsp;the Valentine&rsquo;s&nbsp&nbsp Day",
         "previewTitle": "NFT tokens for Samokat",
         "tags": [
           "50,000 Valentine’s cards",
@@ -221,6 +200,28 @@
             }
           ]
         ]
+      }
+    }
+  },
+  "Creators": {
+    "title": "creators",
+    "button": "All creators",
+    "list": {
+      "ivan-ivanov": {
+        "title": "Ivan Ivanow",
+        "desc": "Animation"
+      },
+      "petr-petrow": {
+        "title": "Petr Petrow",
+        "desc": "Video production"
+      },
+      "svetlana-svetlanova": {
+        "title": "Svetlana Svetlanova",
+        "desc": "Illustration"
+      },
+      "elena-troyanskaya": {
+        "title": "Elena Troyanskaya",
+        "desc": "Graphics"
       }
     }
   }
