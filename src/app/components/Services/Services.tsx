@@ -19,8 +19,8 @@ interface ListData {
 }
 
 const Services = () => {
-    const t = useTranslations('Index.Services');
-    const data: ListData[] = t.raw('data');
+    const t = useTranslations('Services');
+    const data: ListData[] = Object.values(t.raw('list'));
 
     return (
         <div className={cn(styles.root, isMobile() ? 'wide' : 'wide_padding')}>

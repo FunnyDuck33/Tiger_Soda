@@ -1,0 +1,36 @@
+@media (min-width: $mobile-size-trigger + 1) {
+    .root {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 102rem;
+    }
+
+    .headerWrapper {
+        position: relative;
+
+        margin-top: 64rem;
+    }
+
+    .floaty {
+        position: absolute;
+    }
+
+    .floaty6 {
+        left: 493rem;
+        top: -4rem;
+
+        width: 80rem;
+    }
+
+    .contentWrapper {
+        padding-top: 40rem;
+        margin-bottom: 100rem;
+    }
+}
+
+@media (max-width: $mobile-size-trigger) {
+}

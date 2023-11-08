@@ -40,6 +40,7 @@ import project1Creator2 from '../public/assets/creators/creator2-preview.png';
 import {useTranslations} from "next-intl";
 import {merge} from 'lodash';
 import {Property} from "csstype";
+import exp from "constants";
 
 interface i18nProjectItem {
     title: string;
@@ -91,7 +92,7 @@ interface ProjectItemCreators {
     link: string;
 }
 
-type CombinedProjectItem = i18nProjectItem & ProjectItem;
+export type CombinedProjectItem = i18nProjectItem & ProjectItem;
 
 export type CombinedProjectItemContent = i18nProjectItemContent & ProjectItemContent;
 export type CombinedProjectItemCreators = i18nProjectItemCreators & ProjectItemCreators;

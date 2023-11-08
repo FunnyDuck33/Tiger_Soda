@@ -1,0 +1,21 @@
+$transform-duration: 0.5s;
+
+@media (min-width: $mobile-size-trigger + 1) {
+  .root {
+    display: flex;
+    justify-content: space-evenly;
+
+    box-sizing: border-box;
+    width: 844rem;
+
+    padding: 40rem 0;
+    margin-top: 32rem;
+
+    border-radius: 40rem;
+    background-color: #F5F5F5;
+  }
+}
+
+@media (max-width: $mobile-size-trigger) {
+
+}

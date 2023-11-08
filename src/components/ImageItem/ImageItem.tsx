@@ -12,6 +12,7 @@ interface Props {
     desc?: string;
     link: string;
     size: keyof typeof sizeClasses;
+    position?: keyof typeof positionClasses;
 }
 
 const sizeClasses = {
@@ -20,15 +21,20 @@ const sizeClasses = {
     s: styles.root_size_s,
     xs: styles.root_size_xs,
     xxs: styles.root_size_xxs,
+    xxxs: styles.root_size_xxxs,
+}
+const positionClasses = {
+    row: styles.root_position_row,
+    column: styles.root_position_column,
 }
 
-const ImageItem = ({src, title, link, size, desc}: Props) => {
+const ImageItem = ({src, title, link, size, desc, position = 'column'}: Props) => {
     return (
-        <div className={cn(styles.root, sizeClasses[size])}>
+        <div className={cn(styles.root, sizeClasses[size], positionClasses[position])}>
             <Link href={link} className={styles.link}>
                 <div className={styles.wrapper}>
                     <img src={src} alt="" className={styles.img}/>
-                    <div className={styles.title}>{title}</div>
+                    <div className={styles.title} dangerouslySetInnerHTML={{__html: title}} />
                     {desc && <div className={styles.desc}>{desc}</div>}
                 </div>
             </Link>
