@@ -1,3 +1,19 @@
+.root_size_xxxs {
+    .img {
+        width: 80rem;
+    }
+
+    .title {
+        font-size: 18rem;
+        line-height: 133%;
+        letter-spacing: 0.36rem;
+    }
+
+    .title::after {
+        width: 13rem;
+    }
+}
+
 .root_position_row {
     .wrapper {
         flex-direction: row;
@@ -6,6 +22,7 @@
 
     .title {
         margin-left: 20rem;
+        white-space: normal;
     }
 }
 
@@ -17,6 +34,16 @@
 
     .title {
         margin-top: 16rem;
+    }
+}
+
+.root_inlineArrow {
+    .title {
+        display: block;
+    }
+
+    .title::after {
+        display: inline;
     }
 }
 
@@ -45,22 +72,6 @@
         .title {
             font-size: 20rem;
             line-height: 0.4rem;
-        }
-
-        .title::after {
-            width: 13rem;
-        }
-    }
-
-    .root_size_xxxs {
-        .img {
-            width: 80rem;
-        }
-
-        .title {
-            font-size: 18rem;
-            line-height: 133%;
-            letter-spacing: 0.36rem;
         }
 
         .title::after {

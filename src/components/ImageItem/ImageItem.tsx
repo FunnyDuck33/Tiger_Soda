@@ -13,6 +13,7 @@ interface Props {
     link: string;
     size: keyof typeof sizeClasses;
     position?: keyof typeof positionClasses;
+    isInlineArrow?: boolean
 }
 
 const sizeClasses = {
@@ -28,9 +29,9 @@ const positionClasses = {
     column: styles.root_position_column,
 }
 
-const ImageItem = ({src, title, link, size, desc, position = 'column'}: Props) => {
+const ImageItem = ({src, title, link, size, desc, position = 'column', isInlineArrow}: Props) => {
     return (
-        <div className={cn(styles.root, sizeClasses[size], positionClasses[position])}>
+        <div className={cn(styles.root, sizeClasses[size], positionClasses[position], isInlineArrow && styles.root_inlineArrow)}>
             <Link href={link} className={styles.link}>
                 <div className={styles.wrapper}>
                     <img src={src} alt="" className={styles.img}/>

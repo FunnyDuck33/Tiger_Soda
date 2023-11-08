@@ -30,7 +30,7 @@ const Accordion = ({number, title, examples, text, showBottomDivider}: Props) =>
         const bottomInnerWrapperEl = bottomInnerWrapper.current;
 
         if (bottomWrapperEl) {
-            bottomWrapperEl.style.height = `${bottomInnerWrapperEl?.clientHeight || 0}rem`;
+            bottomWrapperEl.style.height = `${bottomInnerWrapperEl?.offsetHeight || 0}px`;
         }
 
         rootEl?.classList.toggle(styles.root_hidden);

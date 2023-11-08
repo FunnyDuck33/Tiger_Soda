@@ -13,7 +13,7 @@ const Examples = ({data}: Props) => {
     return (
         <div className={styles.root} >
             {data.map(({src, title, link}) => (
-                <ImageItem src={src} title={title} link={link} size='xxxs' position='row' />
+                <ImageItem src={src} title={title} link={link} size='xxxs' position='row' isInlineArrow={true} />
             ))}
         </div>
     )

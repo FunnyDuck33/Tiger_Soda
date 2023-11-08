@@ -17,5 +17,18 @@ $transform-duration: 0.5s;
 }
 
 @media (max-width: $mobile-size-trigger) {
+  .root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
+    box-sizing: border-box;
+
+    padding: 16rem;
+    margin-top: 16rem;
+    gap: 23rem;
+
+    border-radius: 24rem;
+    background-color: #F5F5F5;
+  }
 }
