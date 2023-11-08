@@ -16,48 +16,6 @@
       "about",
       "your brand"
     ],
-    "Services": {
-      "title": "services",
-      "button": "Service page",
-      "data": [
-        {
-          "title": "Special projects",
-          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
-        },
-        {
-          "title": "Micromedia",
-          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
-        },
-        {
-          "title": "PR support",
-          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
-        },
-        {
-          "title": "Creative consulting",
-          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
-        },
-        {
-          "title": "Ethical audit",
-          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
-        },
-        {
-          "title": "Brand media",
-          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
-        },
-        {
-          "title": "Animated podcasts",
-          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
-        },
-        {
-          "title": "Educational course",
-          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
-        },
-        {
-          "title": "New formats",
-          "desc": "Special project is&nbsp;a&nbsp;broad term which can mean almost anything a&nbsp;brand does on&nbsp;the Internet."
-        }
-      ]
-    },
     "Clients": "clients"
   },
   "Footer": {
@@ -222,6 +180,58 @@
       "elena-troyanskaya": {
         "title": "Elena Troyanskaya",
         "desc": "Graphics"
+      }
+    }
+  },
+  "Services": {
+    "title": "services",
+    "examplesTitle": "See examples below",
+    "button": "Service page",
+    "list": {
+      "special-projects": {
+        "title": "special projects",
+        "text": "Special project is a broad term which can mean almost anything a brand does on the Internet. There are no limits to imagination here: we can create a project with a wow-effect; which is captivating, memorable and helps the brand stand out from the competition.<br><br>Would you like to present buying your product as an interactive quest for young girls? Maybe your audience needs an online encyclopedia with videos and tests? A time-killer game you simply can’t stop playing, or a multi-format immersive adventure on the landing page? Or perhaps what’s best is a portal with a comprehensive analysis of the problem solved by your product, or a kind-hearted telegram-bot that provides psychological support on a daily basis.<br><br>All this is something we can create, design, code, launch and organize PR support for, so that as many people see it as possible.",
+        "desc": "Special project is a broad term which can mean almost anything a brand does on the Internet."
+      },
+      "micromedia": {
+        "title": "micromedia",
+        "text": "Special project is a broad term which can mean almost anything a brand does on the Internet. There are no limits to imagination here: we can create a project with a wow-effect; which is captivating, memorable and helps the brand stand out from the competition.<br><br>Would you like to present buying your product as an interactive quest for young girls? Maybe your audience needs an online encyclopedia with videos and tests? A time-killer game you simply can’t stop playing, or a multi-format immersive adventure on the landing page? Or perhaps what’s best is a portal with a comprehensive analysis of the problem solved by your product, or a kind-hearted telegram-bot that provides psychological support on a daily basis.<br><br>All this is something we can create, design, code, launch and organize PR support for, so that as many people see it as possible.",
+        "desc": "Special project is a broad term which can mean almost anything a brand does on the Internet."
+      },
+      "pr-support": {
+        "title": "PR support",
+        "text": "Special project is a broad term which can mean almost anything a brand does on the Internet. There are no limits to imagination here: we can create a project with a wow-effect; which is captivating, memorable and helps the brand stand out from the competition.<br><br>Would you like to present buying your product as an interactive quest for young girls? Maybe your audience needs an online encyclopedia with videos and tests? A time-killer game you simply can’t stop playing, or a multi-format immersive adventure on the landing page? Or perhaps what’s best is a portal with a comprehensive analysis of the problem solved by your product, or a kind-hearted telegram-bot that provides psychological support on a daily basis.<br><br>All this is something we can create, design, code, launch and organize PR support for, so that as many people see it as possible.",
+        "desc": "Special project is a broad term which can mean almost anything a brand does on the Internet."
+      },
+      "creative-consulting": {
+        "title": "creative consulting",
+        "text": "Special project is a broad term which can mean almost anything a brand does on the Internet. There are no limits to imagination here: we can create a project with a wow-effect; which is captivating, memorable and helps the brand stand out from the competition.<br><br>Would you like to present buying your product as an interactive quest for young girls? Maybe your audience needs an online encyclopedia with videos and tests? A time-killer game you simply can’t stop playing, or a multi-format immersive adventure on the landing page? Or perhaps what’s best is a portal with a comprehensive analysis of the problem solved by your product, or a kind-hearted telegram-bot that provides psychological support on a daily basis.<br><br>All this is something we can create, design, code, launch and organize PR support for, so that as many people see it as possible.",
+        "desc": "Special project is a broad term which can mean almost anything a brand does on the Internet."
+      },
+      "ethical-audit": {
+        "title": "ethical audit",
+        "text": "Special project is a broad term which can mean almost anything a brand does on the Internet. There are no limits to imagination here: we can create a project with a wow-effect; which is captivating, memorable and helps the brand stand out from the competition.<br><br>Would you like to present buying your product as an interactive quest for young girls? Maybe your audience needs an online encyclopedia with videos and tests? A time-killer game you simply can’t stop playing, or a multi-format immersive adventure on the landing page? Or perhaps what’s best is a portal with a comprehensive analysis of the problem solved by your product, or a kind-hearted telegram-bot that provides psychological support on a daily basis.<br><br>All this is something we can create, design, code, launch and organize PR support for, so that as many people see it as possible.",
+        "desc": "Special project is a broad term which can mean almost anything a brand does on the Internet."
+      },
+      "brand-media": {
+        "title": "brand media",
+        "text": "Special project is a broad term which can mean almost anything a brand does on the Internet. There are no limits to imagination here: we can create a project with a wow-effect; which is captivating, memorable and helps the brand stand out from the competition.<br><br>Would you like to present buying your product as an interactive quest for young girls? Maybe your audience needs an online encyclopedia with videos and tests? A time-killer game you simply can’t stop playing, or a multi-format immersive adventure on the landing page? Or perhaps what’s best is a portal with a comprehensive analysis of the problem solved by your product, or a kind-hearted telegram-bot that provides psychological support on a daily basis.<br><br>All this is something we can create, design, code, launch and organize PR support for, so that as many people see it as possible.",
+        "desc": "Special project is a broad term which can mean almost anything a brand does on the Internet."
+      },
+      "animated-podcasts": {
+        "title": "Animated podcasts",
+        "text": "Special project is a broad term which can mean almost anything a brand does on the Internet. There are no limits to imagination here: we can create a project with a wow-effect; which is captivating, memorable and helps the brand stand out from the competition.<br><br>Would you like to present buying your product as an interactive quest for young girls? Maybe your audience needs an online encyclopedia with videos and tests? A time-killer game you simply can’t stop playing, or a multi-format immersive adventure on the landing page? Or perhaps what’s best is a portal with a comprehensive analysis of the problem solved by your product, or a kind-hearted telegram-bot that provides psychological support on a daily basis.<br><br>All this is something we can create, design, code, launch and organize PR support for, so that as many people see it as possible.",
+        "desc": "Special project is a broad term which can mean almost anything a brand does on the Internet."
+      },
+      "educational-course": {
+        "title": "educational course",
+        "text": "Special project is a broad term which can mean almost anything a brand does on the Internet. There are no limits to imagination here: we can create a project with a wow-effect; which is captivating, memorable and helps the brand stand out from the competition.<br><br>Would you like to present buying your product as an interactive quest for young girls? Maybe your audience needs an online encyclopedia with videos and tests? A time-killer game you simply can’t stop playing, or a multi-format immersive adventure on the landing page? Or perhaps what’s best is a portal with a comprehensive analysis of the problem solved by your product, or a kind-hearted telegram-bot that provides psychological support on a daily basis.<br><br>All this is something we can create, design, code, launch and organize PR support for, so that as many people see it as possible.",
+        "desc": "Special project is a broad term which can mean almost anything a brand does on the Internet."
+      },
+      "new-formats": {
+        "title": "new formats",
+        "text": "Special project is a broad term which can mean almost anything a brand does on the Internet. There are no limits to imagination here: we can create a project with a wow-effect; which is captivating, memorable and helps the brand stand out from the competition.<br><br>Would you like to present buying your product as an interactive quest for young girls? Maybe your audience needs an online encyclopedia with videos and tests? A time-killer game you simply can’t stop playing, or a multi-format immersive adventure on the landing page? Or perhaps what’s best is a portal with a comprehensive analysis of the problem solved by your product, or a kind-hearted telegram-bot that provides psychological support on a daily basis.<br><br>All this is something we can create, design, code, launch and organize PR support for, so that as many people see it as possible.",
+        "desc": "Special project is a broad term which can mean almost anything a brand does on the Internet."
       }
     }
   }
