@@ -1,8 +1,6 @@
 'use client';
 
-import cn from 'classnames';
-
-import Header from "../components/Header/Header";
+import Header from "@/app/commonComponents/Header/Header";
 import Text from "../components/Text/Text";
 import Creators from "../components/Creators/Creators";
 import Footer from "@/components/Footer/Footer";
@@ -21,14 +19,15 @@ interface Props {
     }
 }
 
-export default function Projects({params}: Props) {
+export default function Project({params}: Props) {
     const t = useTranslations('Projects');
     const {locale, project} = params;
+    const projectData = useProject(project);
     const {taskSrc, cover, ideas, content, creators} = useProject(project);
 
     return (
         <div className={styles.root}>
-            <Header locale={locale} project={project}/>
+            <Header locale={locale} type="project" {...projectData}/>
             <Text title={t("coverTitle")} content={[cover]} className={styles.cover}/>
             <img src={taskSrc} alt="" className={styles.img}/>
             <Text title={t("ideasTitle")} content={ideas} className={styles.ideas}/>

@@ -40,7 +40,7 @@ import project1Creator2 from '../public/assets/creators/creator2-preview.png';
 import {useTranslations} from "next-intl";
 import {merge} from 'lodash';
 import {Property} from "csstype";
-import exp from "constants";
+import {TitleImage} from "@/types";
 
 interface i18nProjectItem {
     title: string;
@@ -66,16 +66,7 @@ interface ProjectItem {
     src: string;
     taskSrc: string;
     link: string;
-    titleImage: {
-        src: string;
-        srcM: string;
-        styles: {
-            [K: string]: number;
-        };
-        stylesM: {
-            [K: string]: number
-        }
-    };
+    titleImage: TitleImage;
     content: ProjectItemContent[][];
     creators?: ProjectItemCreators[];
 }
@@ -275,7 +266,7 @@ const data = {
                     height: 520,
                 },
             ],
-        ]
+        ],
     },
 };
 export const projectRoutes = Object.keys(data);

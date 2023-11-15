@@ -30,7 +30,7 @@ export default function Projects({params}: Props) {
             <Navigation withLogo={true} theme='white' locale={params.locale}/>
             <BlockHeader title={t('title')} className={cn('box', styles.blockHeader)} titleClassName={styles.title}/>
             <div className={cn('box', styles.itemsWrapper)}>
-                {[...Object.values(projects), ...Object.values(projects)].map(({link, src, previewTitle}, index) => (
+                {Object.values(projects).slice(0, 3).map(({link, src, previewTitle}, index) => (
                     <ImageItem key={index} src={src} title={previewTitle} link={link} size={isMobile() ? 'm' : 'l'}/>
                 ))}
                 {!isMobile() && (

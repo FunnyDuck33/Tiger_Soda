@@ -1,11 +1,13 @@
 @media (min-width: $mobile-size-trigger + 1) {
     .root {
+        box-sizing: border-box;
         position: relative;
-        background-color: black;
+
+        min-height: 469rem;
+        padding-bottom: 40rem;
 
         border-radius: 0 0 56rem 56rem;
-
-        height: 469rem;
+        background-color: black;
     }
 
     .title {
@@ -46,6 +48,17 @@
     .item {
         position: absolute;
     }
+
+    .text {
+        margin-top: 32rem;
+        width: 490rem;
+
+        font-family: "Gantari", "sans-serif";
+        font-size: 20rem;
+        line-height: 130%;
+        letter-spacing: 0.4rem;
+        color: white;
+    }
 }
 
 @media (max-width: $mobile-size-trigger) {
@@ -54,6 +67,13 @@
         background-color: black;
 
         border-radius: 0 0 24rem 24rem;
+    }
+
+    .root_type_creator {
+        .tagsWrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 
     .title {
@@ -82,7 +102,7 @@
         line-height: 150%;
         letter-spacing: 0.32rem;
 
-        padding: 16rem 16rem;
+        padding: 16rem 24rem;
         border: 1px solid white;
         border-radius: 100rem;
         color: white;
@@ -90,5 +110,15 @@
 
     .item {
         position: relative;
+    }
+
+    .text {
+        margin-top: 16rem;
+
+        font-family: "Gantari", "sans-serif";
+        font-size: 16rem;
+        line-height: 150%;
+        letter-spacing: 0.32rem;
+        color: white;
     }
 }
