@@ -164,14 +164,28 @@
   "Creators": {
     "title": "creators",
     "button": "All creators",
+    "projectsTitle": "joint projects",
+    "otherTitle": "other works",
+    "swipeInfo": "Swipe to see more",
     "list": {
-      "ivan-ivanov": {
-        "title": "Ivan Ivanow",
-        "desc": "Animation"
+      "vitaly-terletsky": {
+        "title": "Vitaly Terletsky",
+        "desc": "Animation",
+        "titleText": "Vitaly designed a&nbsp;comic book for&nbsp;us on&nbsp;a&nbsp;project about the culture of&nbsp;ZHEK-art: the plot involves a&nbsp;plush tiger protecting the elderly Antonina Stepanovna and keeping the soul of&nbsp;Russia&rsquo;s bedroom communities safe.",
+        "tags": [
+          "Author",
+          "Artist",
+          "Publisher"
+        ]
       },
       "aidar-bekchintaev": {
         "title": "Aidar Bekchintaev",
-        "desc": "Video production"
+        "desc": "Video production",
+        "titleText": "Aidar studied at&nbsp;the Vienna Academy and works in&nbsp;low- and high-poly modeling, sculpting, UV-mapping and texturing. He&nbsp;usually uses Maya, ZBrush, Substance Painter, Unreal Engine in&nbsp;his work.",
+        "tags": [
+          "3D",
+          "Artist"
+        ]
       },
       "svetlana-svetlanova": {
         "title": "Svetlana Svetlanova",

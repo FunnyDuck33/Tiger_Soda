@@ -37,12 +37,12 @@ const Header = ({locale, titleImage, tags, title, titleM, titleText, type}: Prop
             </div>
             {titleText && <div className={styles.text} dangerouslySetInnerHTML={{__html: titleText}}></div>}
             <div className={styles.tagsWrapper}>
-                {tags.map((tag, index) => (
+                {tags?.map((tag, index) => (
                     <div key={index} className={styles.tag}>{tag}</div>
                 ))}
             </div>
             <div>
-                <img src={isMobile() ? titleImage.srcM : titleImage.src } alt="" className={styles.item} style={getStyleObject(isMobile() ? titleImage.stylesM : titleImage.styles)}/>
+                <img src={isMobile() ? titleImage?.srcM : titleImage?.src } alt="" className={styles.item} style={getStyleObject(isMobile() ? titleImage.stylesM : titleImage.styles)}/>
             </div>
         </div>
     )

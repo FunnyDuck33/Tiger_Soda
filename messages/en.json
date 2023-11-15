@@ -189,11 +189,21 @@
       },
       "svetlana-svetlanova": {
         "title": "Svetlana Svetlanova",
-        "desc": "Illustration"
+        "desc": "Illustration",
+        "titleText": "Aidar studied at&nbsp;the Vienna Academy and works in&nbsp;low- and high-poly modeling, sculpting, UV-mapping and texturing. He&nbsp;usually uses Maya, ZBrush, Substance Painter, Unreal Engine in&nbsp;his work.",
+        "tags": [
+          "3D",
+          "Artist"
+        ]
       },
       "elena-troyanskaya": {
         "title": "Elena Troyanskaya",
-        "desc": "Graphics"
+        "desc": "Graphics",
+        "titleText": "Aidar studied at&nbsp;the Vienna Academy and works in&nbsp;low- and high-poly modeling, sculpting, UV-mapping and texturing. He&nbsp;usually uses Maya, ZBrush, Substance Painter, Unreal Engine in&nbsp;his work.",
+        "tags": [
+          "3D",
+          "Artist"
+        ]
       }
     }
   },

@@ -175,10 +175,122 @@ const data = {
     'svetlana-svetlanova': {
         src: creators3Preview.src,
         link: '/creators/svetlana-svetlanova',
+        titleImage: {
+            src: creator2TitleImage.src,
+            srcM: creator2TitleImageM.src,
+            styles: {
+                bottom: -43,
+                height: 452,
+                deviationFromCenter: 275,
+            },
+            stylesM: {
+                marginTop: 46,
+                marginBottom: -33,
+                left: -37,
+                width: 361,
+            }
+        },
+        projects: [
+            {
+                src: creator2Project1.src,
+                title: 'Online museum of ZHEK-art',
+                link: '/projects/online-museum',
+            },
+            {
+                src: creator2Project2.src,
+                title: 'Online museum of ZHEK-art',
+                link: '/projects/online-museum',
+                isCircle: true,
+            },
+            {
+                src: creator2Project3.src,
+                title: 'Online museum of ZHEK-art',
+                link: '/projects/online-museum',
+                isCircle: true,
+            }
+        ],
+        other: [
+            {
+                src: creator2Other1.src,
+                link: '/',
+            },
+            {
+                src: creator2Other2.src,
+                link: '/',
+            },
+            {
+                src: creator2Other3.src,
+                link: '/',
+            },
+            {
+                src: creator2Other4.src,
+                link: '/',
+            },
+            {
+                src: creator2Other5.src,
+                link: '/',
+            },
+        ],
     },
     'elena-troyanskaya': {
         src: creators4Preview.src,
         link: '/creators/elena-troyanskaya',
+        titleImage: {
+            src: creator2TitleImage.src,
+            srcM: creator2TitleImageM.src,
+            styles: {
+                bottom: -43,
+                height: 452,
+                deviationFromCenter: 275,
+            },
+            stylesM: {
+                marginTop: 46,
+                marginBottom: -33,
+                left: -37,
+                width: 361,
+            }
+        },
+        projects: [
+            {
+                src: creator2Project1.src,
+                title: 'Online museum of ZHEK-art',
+                link: '/projects/online-museum',
+            },
+            {
+                src: creator2Project2.src,
+                title: 'Online museum of ZHEK-art',
+                link: '/projects/online-museum',
+                isCircle: true,
+            },
+            {
+                src: creator2Project3.src,
+                title: 'Online museum of ZHEK-art',
+                link: '/projects/online-museum',
+                isCircle: true,
+            }
+        ],
+        other: [
+            {
+                src: creator2Other1.src,
+                link: '/',
+            },
+            {
+                src: creator2Other2.src,
+                link: '/',
+            },
+            {
+                src: creator2Other3.src,
+                link: '/',
+            },
+            {
+                src: creator2Other4.src,
+                link: '/',
+            },
+            {
+                src: creator2Other5.src,
+                link: '/',
+            },
+        ],
     },
 };
 export const creatorsRoutes = Object.keys(data);
