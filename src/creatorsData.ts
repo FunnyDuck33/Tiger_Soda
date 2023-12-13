@@ -5,8 +5,10 @@ import creators4Preview from '@/../public/assets/creators/creator4-preview.png';
 
 import creator1TitleImage from '@/../public/assets/creators/creator1-title.png';
 import creator2TitleImage from '@/../public/assets/creators/creator2-title.png';
+import creator3TitleImage from '@/../public/assets/creators/creator3-title.png';
 import creator1TitleImageM from '@/../public/assets/creators/creator1-titleM.png';
 import creator2TitleImageM from '@/../public/assets/creators/creator2-titleM.png';
+import creator3TitleImageM from '@/../public/assets/creators/creator3-titleM.png';
 
 import creator1Project1 from '@/../public/assets/creators/creator1-project1.png';
 import creator1Project2 from '@/../public/assets/creators/creator1-project2.png';
@@ -14,6 +16,9 @@ import creator1Project3 from '@/../public/assets/creators/creator1-project3.png'
 import creator2Project1 from '@/../public/assets/creators/creator2-project1.png';
 import creator2Project2 from '@/../public/assets/creators/creator2-project2.png';
 import creator2Project3 from '@/../public/assets/creators/creator2-project3.png';
+import creator3Project1 from '@/../public/assets/creators/creator3-project1.png';
+import creator3Project2 from '@/../public/assets/creators/creator3-project2.png';
+import creator3Project3 from '@/../public/assets/creators/creator3-project3.png';
 
 import creator1Other1 from '@/../public/assets/creators/creator1-other1.png';
 import creator1Other2 from '@/../public/assets/creators/creator1-other2.png';
@@ -172,38 +177,38 @@ const data = {
             },
         ],
     },
-    'svetlana-svetlanova': {
+    'artem-bizyaev': {
         src: creators3Preview.src,
-        link: '/creators/svetlana-svetlanova',
+        link: '/creators/artem-bizyaev',
         titleImage: {
-            src: creator2TitleImage.src,
-            srcM: creator2TitleImageM.src,
+            src: creator3TitleImage.src,
+            srcM: creator3TitleImageM.src,
             styles: {
-                bottom: -43,
-                height: 452,
+                bottom: -45,
+                height: 454,
                 deviationFromCenter: 275,
             },
             stylesM: {
-                marginTop: 46,
-                marginBottom: -33,
-                left: -37,
+                marginTop: 10,
+                marginBottom: -19,
+                left: -55,
                 width: 361,
             }
         },
         projects: [
             {
-                src: creator2Project1.src,
+                src: creator3Project1.src,
                 title: 'Online museum of ZHEK-art',
                 link: '/projects/online-museum',
             },
             {
-                src: creator2Project2.src,
+                src: creator3Project2.src,
                 title: 'Online museum of ZHEK-art',
                 link: '/projects/online-museum',
                 isCircle: true,
             },
             {
-                src: creator2Project3.src,
+                src: creator3Project3.src,
                 title: 'Online museum of ZHEK-art',
                 link: '/projects/online-museum',
                 isCircle: true,

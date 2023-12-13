@@ -4,7 +4,7 @@ import cn from 'classnames'
 
 import {useTranslations} from "next-intl";
 
-import floaty from './assets/floaty.png';
+import floaty from '@/../public/assets/floaties/floaty-7.png';
 
 import styles from './Cover.module.scss';
 

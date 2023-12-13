@@ -5,6 +5,9 @@ import Link from "next-intl/link";
 import {useTranslations} from "next-intl";
 import cn from "classnames";
 
+import floaty8 from '@/../public/assets/floaties/floaty-8.png';
+import floaty7 from '@/../public/assets/floaties/floaty-7.png';
+
 interface Props {
     data: any[];
 }
@@ -26,6 +29,12 @@ const Projects = ({data}: Props) => {
                         </div>
                     </Link>
                 ))}
+                <div>
+                    <img className={cn(styles.floaty, styles.floaty1)} src={floaty8.src} alt=""/>
+                    <img className={cn(styles.floaty, styles.floaty2)} src={floaty7.src} alt=""/>
+                    <div className={cn(styles.floaty, styles.floaty_circle, styles.floaty3)}/>
+                    <div className={cn(styles.floaty, styles.floaty_circle, styles.floaty4)}/>
+                </div>
             </div>
         </div>
     )

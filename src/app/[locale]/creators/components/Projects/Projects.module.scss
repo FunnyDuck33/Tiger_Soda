@@ -12,6 +12,15 @@
   transform: translateY(2rem);
 }
 
+.floaty {
+  position: absolute;
+}
+
+.floaty_circle {
+  background-color: #5550EC;
+  border-radius: 100%;
+}
+
 @media (min-width: $mobile-size-trigger + 1) {
   .root {
     margin-top: 56rem;
@@ -26,6 +35,7 @@
   }
 
   .wrapper {
+    position: relative;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
@@ -54,6 +64,34 @@
     letter-spacing: 0.36rem;
     font-weight: 700;
   }
+
+  .floaty1 {
+    width: 107rem;
+    top: 0;
+    right: 350rem;
+  }
+
+  .floaty2 {
+    width: 64rem;
+    bottom: -40px;
+    right: 150rem;
+
+    transform: translateY(100%);
+  }
+
+  .floaty3 {
+    width: 34rem;
+    height: 34rem;
+    top: 363px;
+    left: 360rem;
+  }
+
+  .floaty4 {
+    width: 13rem;
+    height: 13rem;
+    top: 397px;
+    left: 414rem;
+  }
 }
 
 @media (max-width: $mobile-size-trigger) {
@@ -70,6 +108,7 @@
   }
 
   .wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,5 +136,29 @@
     line-height: 130%;
     letter-spacing: 0.36rem;
     font-weight: 700;
+  }
+
+  .floaty1 {
+    width: 86rem;
+    top: 479rem;
+    right: -16rem;
+  }
+
+  .floaty2 {
+    display: none;
+  }
+
+  .floaty3 {
+    width: 21rem;
+    height: 21rem;
+    top: 880px;
+    left: 0;
+  }
+
+  .floaty4 {
+    width: 8rem;
+    height: 8rem;
+    top: 905px;
+    left: 40rem;
   }
 }

@@ -187,13 +187,23 @@
           "Artist"
         ]
       },
-      "svetlana-svetlanova": {
-        "title": "Svetlana Svetlanova",
-        "desc": "Illustration"
+      "artem-bizyaev": {
+        "title": "Artem Bizyaev",
+        "desc": "Illustration",
+        "titleText": "Author and comic book artist with a&nbsp;background as&nbsp;an&nbsp;animation director. He&nbsp;likes to&nbsp;create bright and dynamic stories. Russian audience knows Artem by&nbsp;his project of&nbsp;fan-made lego sets based on&nbsp;Russian culture OLEG: Bizyaev has depicted Russia from Slavic fairy tales to&nbsp;Russian reality with cell van and protesters.",
+        "tags": [
+          "Motion design",
+          "Artist"
+        ]
       },
       "elena-troyanskaya": {
         "title": "Elena Troyanskaya",
-        "desc": "Graphics"
+        "desc": "Graphics",
+        "titleText": "Aidar studied at&nbsp;the Vienna Academy and works in&nbsp;low- and high-poly modeling, sculpting, UV-mapping and texturing. He&nbsp;usually uses Maya, ZBrush, Substance Painter, Unreal Engine in&nbsp;his work.",
+        "tags": [
+          "3D",
+          "Artist"
+        ]
       }
     }
   },
