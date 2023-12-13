@@ -1,4 +1,4 @@
-0:["2epPuonzFdHSC5-frS1N0",[[["",{"children":[["locale","es","d"],{"children":["projects",{"children":[["project","nft","d"],{"children":["__PAGE__?{\"locale\":\"es\",\"project\":\"nft\"}",{}]}]}]}]},"$undefined","$undefined",true],"$L1",[[],"$L2"]]]]
+0:["WVcGojoU43qisMCye1Jb5",[[["",{"children":[["locale","es","d"],{"children":["projects",{"children":[["project","nft","d"],{"children":["__PAGE__?{\"locale\":\"es\",\"project\":\"nft\"}",{}]}]}]}]},"$undefined","$undefined",true],"$L1",[[],"$L2"]]]]
 3:HL["/_next/static/css/5db7f9e72003cf2a.css","style",{"crossOrigin":""}]
 4:HL["/_next/static/css/44be9c72cd75ec22.css","style",{"crossOrigin":""}]
 5:I[6954,[],""]
