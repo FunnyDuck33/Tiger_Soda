@@ -9,20 +9,15 @@ interface Props {
     title: string;
     className?: string;
     content: string[];
+    isColumns?: boolean;
 }
 
-const Text = ({title, className, content}: Props) => {
-    if (isMobile()) {
-        content = [content.join('')];
-    }
-
+const Text = ({title, className, content, isColumns}: Props) => {
     return (
         <div className={cn(styles.root, 'box', className)}>
             <div className={styles.title}>{title}</div>
             <div className={styles.contentWrapper}>
-                { content.map(contentItem => (
-                    <div className={styles.content} dangerouslySetInnerHTML={{__html: contentItem}}/>
-                ))}
+                <div className={cn(styles.content, isColumns && styles.content_columns)} dangerouslySetInnerHTML={{__html: content}}/>
             </div>
         </div>
     )

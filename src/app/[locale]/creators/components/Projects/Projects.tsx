@@ -7,6 +7,7 @@ import cn from "classnames";
 
 import floaty8 from '@/../public/assets/floaties/floaty-8.png';
 import floaty7 from '@/../public/assets/floaties/floaty-7.png';
+import {useProject} from "@/projectsData";
 
 interface Props {
     data: any[];
@@ -25,7 +26,7 @@ const Projects = ({data}: Props) => {
                     <Link href={link} className={styles.link} key={index}>
                         <div className={styles.itemWrapper}>
                             <img src={src} alt="" className={styles.itemImg}/>
-                            <div className={styles.desc}>{title}</div>
+                            <div className={styles.desc}>{useProject(title).previewTitle}</div>
                         </div>
                     </Link>
                 ))}

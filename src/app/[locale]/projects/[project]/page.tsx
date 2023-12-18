@@ -30,7 +30,7 @@ export default function Project({params}: Props) {
             <Header locale={locale} type="project" {...projectData}/>
             <Text title={t("coverTitle")} content={[cover]} className={styles.cover}/>
             <img src={taskSrc} alt="" className={styles.img}/>
-            <Text title={t("ideasTitle")} content={ideas} className={styles.ideas}/>
+            <Text title={t("ideasTitle")} content={ideas} className={styles.ideas} isColumns={true}/>
             {content.map(contentRow => (
                 <ContentRow data={contentRow}/>
             ))}

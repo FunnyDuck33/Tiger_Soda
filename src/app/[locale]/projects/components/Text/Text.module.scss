@@ -16,7 +16,6 @@
     }
 
     .content {
-        width: 490rem;
         margin-top: 32rem;
 
         font-family: "Gantari", "sans-serif";
@@ -24,6 +23,15 @@
         line-height: 130%;
         letter-spacing: 0.4rem;
         color: var(--graphyte);
+    }
+
+    .content_columns {
+        columns: 2;
+        column-gap: 60px;
+    }
+
+    .content:not(.content_columns) {
+        width: 490rem;
     }
 }
 

@@ -4,39 +4,19 @@ import {useTranslations} from "next-intl";
 const data = [
     {
         examples: ['online-museum', 'nft'],
-        key: "special-projects",
+        key: "creative",
     },
     {
         examples: ['online-museum', 'nft'],
-        key: "micromedia",
+        key: "digital-production",
     },
     {
         examples: ['online-museum', 'nft'],
-        key: "pr-support",
+        key: "video-production-and-animation",
     },
     {
         examples: ['online-museum', 'nft'],
-        key: "creative-consulting",
-    },
-    {
-        examples: ['online-museum', 'nft'],
-        key: "ethical-audit",
-    },
-    {
-        examples: ['online-museum', 'nft'],
-        key: "brand-media",
-    },
-    {
-        examples: ['online-museum', 'nft'],
-        key: "animated-podcasts",
-    },
-    {
-        examples: ['online-museum', 'nft'],
-        key: "educational-course",
-    },
-    {
-        examples: ['online-museum', 'nft'],
-        key: "new-formats",
+        key: "web3",
     },
 ]
 
