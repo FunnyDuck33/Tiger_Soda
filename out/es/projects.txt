@@ -1,4 +1,4 @@
-0:["LHvlLZ-RYfktHvZJnFw-t",[[["",{"children":[["locale","es","d"],{"children":["projects",{"children":["__PAGE__?{\"locale\":\"es\"}",{}]}]}]},"$undefined","$undefined",true],"$L1",[[],"$L2"]]]]
+0:["Kf1GIwtGjrib8d4gmX9KG",[[["",{"children":[["locale","es","d"],{"children":["projects",{"children":["__PAGE__?{\"locale\":\"es\"}",{}]}]}]},"$undefined","$undefined",true],"$L1",[[],"$L2"]]]]
 3:HL["/_next/static/css/5db7f9e72003cf2a.css","style",{"crossOrigin":""}]
 4:HL["/_next/static/css/a44cf5bb020c386d.css","style",{"crossOrigin":""}]
 5:I[6954,[],""]
@@ -7,7 +7,7 @@
 2:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Tiger Soda"}],["$","meta","2",{"name":"description","content":"Ethical digital agency"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]
 8:I[6316,["816","static/chunks/816-957dc8a3c5831e77.js","203","static/chunks/app/%5Blocale%5D/layout-3af33cc7c9c4f67d.js"],""]
 c:I[8297,[],""]
-d:I[2688,["816","static/chunks/816-957dc8a3c5831e77.js","434","static/chunks/434-dc473e1ae0873be4.js","341","static/chunks/341-2bc711eabcd965dc.js","768","static/chunks/app/%5Blocale%5D/projects/page-7ad2dec8161a49e0.js"],""]
+d:I[2688,["816","static/chunks/816-957dc8a3c5831e77.js","434","static/chunks/434-fc96c68957089a6a.js","341","static/chunks/341-5d902a387ad0eca0.js","768","static/chunks/app/%5Blocale%5D/projects/page-944393111784f519.js"],""]
 9:T6c3,Un&nbsp;museo interactivo virtual en&nbsp;el&nbsp;que uno puede explorar el&nbsp;tema y&nbsp;sumergirse en&nbsp;el&nbsp;ambiente de&nbsp;un&nbsp;verdadero patio de&nbsp;viviendas.
 <br><br>
 Cisnes hechos de&nbsp;neum&aacute;ticos, Cheburashka hecho de&nbsp;botellas, tocones con ojos: en&nbsp;la&nbsp;secci&oacute;n &laquo;Bestiario&raquo; se&nbsp;puede ver y&nbsp;conocer las biograf&iacute;as de&nbsp;los estrafalarios personajes del arte ZHEK que nos rodean.

@@ -1,7 +1,6 @@
 import creators1Preview from '@/../public/assets/creators/creator1-preview.png';
 import creators2Preview from '@/../public/assets/creators/creator2-preview.png';
 import creators3Preview from '@/../public/assets/creators/creator3-preview.png';
-import creators4Preview from '@/../public/assets/creators/creator4-preview.png';
 
 import creator1TitleImage from '@/../public/assets/creators/creator1-title.png';
 import creator2TitleImage from '@/../public/assets/creators/creator2-title.png';
