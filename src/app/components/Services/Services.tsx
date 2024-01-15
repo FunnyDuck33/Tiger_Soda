@@ -24,7 +24,7 @@ const Services = () => {
 
     return (
         <div className={cn(styles.root, isMobile() ? 'wide' : 'wide_padding')}>
-            <BlockHeader title={t('title')} buttonTitle={isMobile() ? undefined : t('button')} link='/'/>
+            <BlockHeader title={t('title')} buttonTitle={isMobile() ? undefined : t('button')} link='/services'/>
             <img src={isMobile() ? tigerM.src : tiger.src} alt="" className={styles.tiger}/>
             <div className={styles.wrapper}>
                 { data.map(({title, desc}, index) => (
@@ -37,7 +37,7 @@ const Services = () => {
                     </div>
                 ))}
             </div>
-            {isMobile() && <BlockHeader buttonTitle={t('button')} link='/'/>}
+            {isMobile() && <BlockHeader buttonTitle={t('button')} link='/services'/>}
         </div>
     )
 }

@@ -24,7 +24,7 @@ const Projects = () => {
             <BlockHeader
                 title={t('title')}
                 buttonTitle={isMobile() ? undefined : t('button')}
-                link='/'
+                link='/projects'
             />
             <div className={styles.bottomWrapper}>
                 {Object.values(projects).slice(0, 3).map(({src, link, previewTitle}, index) => (
@@ -37,7 +37,7 @@ const Projects = () => {
                     <img src={floaty2.src} alt="" className={cn(styles.floaty, styles.floaty2)}/>
                 </>
             )}
-            {isMobile() && <BlockHeader buttonTitle={t('button')} link='/'/>}
+            {isMobile() && <BlockHeader buttonTitle={t('button')} link='/projects'/>}
         </div>
     )
 }

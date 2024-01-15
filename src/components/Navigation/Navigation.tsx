@@ -123,9 +123,11 @@ const Navigation = ({locale, withLogo, theme}: Props) => {
         )}>
             {withLogo ? (
                 <>
-                    <img src={theme === 'black' ? titleSvg.src : titleBlackSvg.src} alt="" className={styles.logo}/>
+                    <Link href='/'>
+                        <img src={theme === 'black' ? titleSvg.src : titleBlackSvg.src} alt="" className={styles.logo}/>
+                    </Link>
                     <div className={styles.wrapper}>
-                        {content}
+                    {content}
                     </div>
                 </>
             ) : content}

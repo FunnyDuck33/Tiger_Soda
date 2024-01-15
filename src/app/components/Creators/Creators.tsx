@@ -21,7 +21,7 @@ const Creators = () => {
 
     return (
         <div className={cn(styles.root, isMobile() && 'wide')}>
-            <BlockHeader title={t('title')} buttonTitle={isMobile() ? undefined : t('button')} link='/'/>
+            <BlockHeader title={t('title')} buttonTitle={isMobile() ? undefined : t('button')} link='/creators'/>
             <div className={styles.wrapper}>
                 {Object.values(creators).map(({title, desc, src, link}, i) => (
                     <ImageItem key={title} src={src} title={title} desc={desc} link={link} size={isMobile() ? 'xs' : 's'}/>
@@ -34,7 +34,7 @@ const Creators = () => {
                     <img src={floaty3.src} alt="" className={cn(styles.floaty, styles.floaty3)}/>
                 </>
             )}
-            {isMobile() && <BlockHeader buttonTitle={t('button')} link='/'/>}
+            {isMobile() && <BlockHeader buttonTitle={t('button')} link='/creators'/>}
         </div>
     )
 }
