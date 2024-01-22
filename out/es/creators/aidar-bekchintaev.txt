@@ -1,4 +1,4 @@
-0:["kGqX0LX32xiCwLKLOqsd4",[[["",{"children":[["locale","es","d"],{"children":["creators",{"children":[["creator","aidar-bekchintaev","d"],{"children":["__PAGE__?{\"locale\":\"es\",\"creator\":\"aidar-bekchintaev\"}",{}]}]}]}]},"$undefined","$undefined",true],"$L1",[[],"$L2"]]]]
+0:["3ySxI_ks8PfPhjh67XcFc",[[["",{"children":[["locale","es","d"],{"children":["creators",{"children":[["creator","aidar-bekchintaev","d"],{"children":["__PAGE__?{\"locale\":\"es\",\"creator\":\"aidar-bekchintaev\"}",{}]}]}]}]},"$undefined","$undefined",true],"$L1",[[],"$L2"]]]]
 3:HL["/_next/static/css/5db7f9e72003cf2a.css","style",{"crossOrigin":""}]
 4:HL["/_next/static/css/1e467aa1b2267a68.css","style",{"crossOrigin":""}]
 5:I[56954,[],""]

@@ -1,4 +1,4 @@
-0:["kGqX0LX32xiCwLKLOqsd4",[[["",{"children":[["locale","es","d"],{"children":["projects",{"children":[["project","magic-mail","d"],{"children":["__PAGE__?{\"locale\":\"es\",\"project\":\"magic-mail\"}",{}]}]}]}]},"$undefined","$undefined",true],"$L1",[[],"$L2"]]]]
+0:["3ySxI_ks8PfPhjh67XcFc",[[["",{"children":[["locale","es","d"],{"children":["projects",{"children":[["project","magic-mail","d"],{"children":["__PAGE__?{\"locale\":\"es\",\"project\":\"magic-mail\"}",{}]}]}]}]},"$undefined","$undefined",true],"$L1",[[],"$L2"]]]]
 3:HL["/_next/static/css/5db7f9e72003cf2a.css","style",{"crossOrigin":""}]
 4:HL["/_next/static/css/622001792d70c795.css","style",{"crossOrigin":""}]
 5:I[56954,[],""]
