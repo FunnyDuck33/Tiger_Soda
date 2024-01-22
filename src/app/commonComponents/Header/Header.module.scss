@@ -4,10 +4,33 @@
         position: relative;
 
         min-height: 469rem;
-        padding-bottom: 40rem;
 
         border-radius: 0 0 56rem 56rem;
         background-color: black;
+    }
+
+    .root_type_creator {
+        .item {
+            bottom: 0;
+            right: 0;
+
+            width: 526rem;
+            height: 460rem;
+            object-fit: contain;
+        }
+
+        .title {
+            width: 490rem;
+        }
+
+        .tagsWrapper {
+            width: 490rem;
+        }
+    }
+
+    .wrapper {
+        position: relative;
+        padding-bottom: 40rem;
     }
 
     .title {
@@ -49,6 +72,13 @@
         position: absolute;
     }
 
+    .floatyItem {
+        position: absolute;
+        right: -36rem;
+        bottom: -43rem;
+        width: 182rem;
+    }
+
     .text {
         margin-top: 32rem;
         width: 490rem;
@@ -74,6 +104,24 @@
             flex-direction: row;
             flex-wrap: wrap;
         }
+
+        .item {
+            width: 374rem;
+            height: 327rem;
+            object-fit: contain;
+        }
+
+        .itemWrapper {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .floatyItem {
+        position: absolute;
+        right: 16rem;
+        bottom: -33rem;
+        width: 107rem;
     }
 
     .title {

@@ -1,41 +1,41 @@
-import project1Preview from '@/../public/assets/projects/project1-preview.png';
-import project2Preview from '@/../public/assets/projects/project2-preview.png';
-import project3Preview from '@/../public/assets/projects/project3-preview.png';
+import project1Preview from '../public/assets/projects/project1/preview.png';
+import project2Preview from '../public/assets/projects/project2/preview.png';
+import project3Preview from '../public/assets/projects/project3/preview.png';
 
-import project1TitleImage from '@/../public/assets/projects/project1-title.png';
-import project2TitleImage from '@/../public/assets/projects/project2-title.png';
-import project3TitleImage from '@/../public/assets/projects/project3-title.png';
-import project1TitleImageM from '@/../public/assets/projects/project1-titleM.png';
-import project2TitleImageM from '@/../public/assets/projects/project2-titleM.png';
-import project3TitleImageM from '@/../public/assets/projects/project3-titleM.png';
+import project1TitleImage from '../public/assets/projects/project1/title.png';
+import project2TitleImage from '../public/assets/projects/project2/title.png';
+import project3TitleImage from '../public/assets/projects/project3/title.png';
+import project1TitleImageM from '../public/assets/projects/project1/titleM.png';
+import project2TitleImageM from '../public/assets/projects/project2/titleM.png';
+import project3TitleImageM from '../public/assets/projects/project3/titleM.png';
 
-import project1TaskImage from '@/../public/assets/projects/project1-task.jpg';
-import project2TaskImage from '@/../public/assets/projects/project2-task.png';
-import project3TaskImage from '@/../public/assets/projects/project3-task.jpg';
+import project1TaskImage from '../public/assets/projects/project1/task.jpg';
+import project2TaskImage from '../public/assets/projects/project2/task.png';
+import project3TaskImage from '../public/assets/projects/project3/task.jpg';
 
-import project1Content1 from '@/../public/assets/projects/project1-content1.jpg';
-import project1Content2 from '@/../public/assets/projects/project1-content2.png';
-import project1Content3 from '@/../public/assets/projects/project1-content3.jpg';
-import project1Content4 from '@/../public/assets/projects/project1-content4.png';
-import project1Content1M from '@/../public/assets/projects/project1-content1M.jpg';
-import project1Content2M from '@/../public/assets/projects/project1-content2M.png';
-import project1Content3M from '@/../public/assets/projects/project1-content3M.jpg';
+import project1Content1 from '../public/assets/projects/project1/content1.jpg';
+import project1Content2 from '../public/assets/projects/project1/content2.png';
+import project1Content3 from '../public/assets/projects/project1/content3.jpg';
+import project1Content4 from '../public/assets/projects/project1/content4.png';
+import project1Content1M from '../public/assets/projects/project1/content1M.jpg';
+import project1Content2M from '../public/assets/projects/project1/content2M.png';
+import project1Content3M from '../public/assets/projects/project1/content3M.jpg';
 
-import project2Content1 from '@/../public/assets/projects/project2-content1.png';
-import project2Content2 from '@/../public/assets/projects/project2-content2.png';
-import project2Content3 from '@/../public/assets/projects/project2-content3.png';
-import project2Content4 from '@/../public/assets/projects/project2-content4.png';
-import project2Content5 from '@/../public/assets/projects/project2-content5.png';
-import project2Content6 from '@/../public/assets/projects/project2-content6.png';
+import project2Content1 from '../public/assets/projects/project2/content1.png';
+import project2Content2 from '../public/assets/projects/project2/content2.png';
+import project2Content3 from '../public/assets/projects/project2/content3.png';
+import project2Content4 from '../public/assets/projects/project2/content4.png';
+import project2Content5 from '../public/assets/projects/project2/content5.png';
+import project2Content6 from '../public/assets/projects/project2/content6.png';
 
-import project3Content1 from '@/../public/assets/projects/project3-content1.png';
-import project3Content2 from '@/../public/assets/projects/project3-content2.jpg';
-import project3Content3 from '@/../public/assets/projects/project3-content3.jpg';
-import project3Content1M from '@/../public/assets/projects/project3-content1M.jpg';
+import project3Content1 from '../public/assets/projects/project3/content1.png';
+import project3Content2 from '../public/assets/projects/project3/content2.jpg';
+import project3Content3 from '../public/assets/projects/project3/content3.jpg';
+import project3Content1M from '../public/assets/projects/project3/content1M.jpg';
 
 
-import project1Creator1 from '../public/assets/creators/creator3-preview.png';
-import project1Creator2 from '../public/assets/creators/creator2-preview.png';
+import project1Creator1 from '../public/assets/creators/creator3/preview.png';
+import project1Creator2 from '../public/assets/creators/creator2/preview.png';
 
 import {useTranslations} from "next-intl";
 import {merge} from 'lodash';
@@ -103,7 +103,7 @@ const data = {
             styles: {
                 top: 73,
                 height: 436,
-                deviationFromCenter: 293,
+                right: 0,
             },
             stylesM: {
                 marginTop: -26,
@@ -164,7 +164,7 @@ const data = {
             styles: {
                 top: 62,
                 height: 494,
-                deviationFromCenter: 362,
+                right: -40,
             },
             stylesM: {
                 marginTop: 6,
@@ -236,7 +236,7 @@ const data = {
             styles: {
                 top: 81,
                 height: 493,
-                deviationFromCenter: 107,
+                right: 0,
             },
             stylesM: {
                 marginTop: 12,
@@ -268,20 +268,27 @@ const data = {
             ],
         ],
     },
-};
+    'chat-bot': {
+        link: '/',
+    },
+} as unknown as Record<string, ProjectItem>;
+
 export const projectRoutes = Object.keys(data);
 
 export const useProjects = (): CombinedProjectList => {
-    const t = useTranslations(`Projects`);
-    const i18nData = t.raw('list');
-
-    return Object.entries(data).reduce((acc, [key, item]) => {
-        acc[key] = merge(item, i18nData[key]);
+    return Object.entries(data).filter(([_, val]) => val.content).reduce((acc, [key]) => {
+        acc[key] = useProject(key);
 
         return acc;
     }, {} as CombinedProjectList);
 }
 
 export const useProject = (project: string): CombinedProjectItem => {
-    return useProjects()[project];
+    const t = useTranslations(`Projects`);
+    const i18nData = t.raw('list');
+
+    const item = data[project];
+    const i18nItem = i18nData[project];
+
+    return merge(item, i18nItem);
 }

@@ -59,6 +59,10 @@ function fallbackCopyTextToClipboard(text) {
 
 
 export function getStyleObject(obj) {
+    if (!obj) {
+        return undefined;
+    }
+
     return Object.entries(obj).reduce((acc, [key, value]) => {
         if (key === 'deviationFromCenter') {
             acc.transform = `translateX(calc(-50% + ${value}rem))`;

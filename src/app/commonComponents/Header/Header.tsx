@@ -30,19 +30,33 @@ const Header = ({locale, titleImage, tags, title, titleM, titleText, type}: Prop
 
     return (
         <div className={cn(styles.root, 'wide_padding', typeClasses[type])}>
-            <Navigation withLogo={true} theme='black' locale={locale}/>
-            <div className={styles.title}>
-                <span dangerouslySetInnerHTML={{__html: isMobile() && titleM ? titleM : title}}/>
-                {type !== 'creator' && <span><img src={arrowSvg.src} alt="" className={styles.arrow}/></span>}
-            </div>
-            {titleText && <div className={styles.text} dangerouslySetInnerHTML={{__html: titleText}}></div>}
-            <div className={styles.tagsWrapper}>
-                {tags?.map((tag, index) => (
-                    <div key={index} className={styles.tag}>{tag}</div>
-                ))}
-            </div>
-            <div>
-                <img src={isMobile() ? titleImage?.srcM : titleImage?.src } alt="" className={styles.item} style={getStyleObject(isMobile() ? titleImage.stylesM : titleImage.styles)}/>
+            <div className={styles.wrapper}>
+                <Navigation withLogo={true} theme='black' locale={locale}/>
+                <div className={styles.title}>
+                    <span dangerouslySetInnerHTML={{__html: isMobile() && titleM ? titleM : title}}/>
+                    {type !== 'creator' && <span><img src={arrowSvg.src} alt="" className={styles.arrow}/></span>}
+                </div>
+                {titleText && <div className={styles.text} dangerouslySetInnerHTML={{__html: titleText}}></div>}
+                <div className={styles.tagsWrapper}>
+                    {tags?.map((tag, index) => (
+                        <div key={index} className={styles.tag}>{tag}</div>
+                    ))}
+                </div>
+                <div className={styles.itemWrapper}>
+                    <img
+                        className={styles.item}
+                        alt=""
+                        src={isMobile() && titleImage?.srcM ? titleImage?.srcM : titleImage?.src }
+                        style={getStyleObject(isMobile() ? titleImage.stylesM : titleImage.styles)}
+                    />
+                    {titleImage?.floatySrc && (
+                        <img
+                            className={styles.floatyItem}
+                            alt=""
+                            src={titleImage.floatySrc}
+                        />
+                    )}
+                </div>
             </div>
         </div>
     )

@@ -148,6 +148,9 @@
             }
           ]
         ]
+      },
+      "chat-bot": {
+        "previewTitle": "Chat-bot"
       }
     }
   },
@@ -160,7 +163,6 @@
     "list": {
       "vitaly-terletsky": {
         "title": "Vitaly Terletsky",
-        "desc": "Autor",
         "titleText": "Para nosotros Vitaly dibuj&oacute; un&nbsp;c&oacute;mic sobre el&nbsp;proyecto cultural del arte ZHEK: el&nbsp;argumento presenta a&nbsp;un&nbsp;tigre de&nbsp;peluche que protege a&nbsp;la&nbsp;anciana Antonina Stepanovna y&nbsp;mantiene a&nbsp;salvo el&nbsp;alma de&nbsp;las ciudades dormitorio de&nbsp;Rusia.",
         "tags": [
           "Autor",
@@ -170,7 +172,6 @@
       },
       "aidar-bekchintaev": {
         "title": "Aidar Bekchintaev",
-        "desc": "3D",
         "titleText": "Aidar estudi&oacute; en&nbsp;la&nbsp;Academia de&nbsp;Viena y&nbsp;actualmente trabaja con low- and high-poly modeling, escultura, mapeo de&nbsp;texturas, mapeado UV. Suele utilizar Maya, ZBrush, Substance Painter y&nbsp;Unreal Engine en&nbsp;su&nbsp;trabajo.",
         "tags": [
           "3D",
@@ -179,7 +180,6 @@
       },
       "artem-bizyaev": {
         "title": "Artem Bizyaev",
-        "desc": "Motion design",
         "titleText": "Autor y&nbsp;dibujante de&nbsp;c&oacute;mics con experiencia como director de&nbsp;animaci&oacute;n. Crea historias din&aacute;micas y&nbsp;llenas de&nbsp;color.\n<br><br>\nEl&nbsp;p&uacute;blico ruso conoce a&nbsp;Artem por OLEG, su&nbsp;proyecto de&nbsp;sets de&nbsp;Lego para fans basado en&nbsp;la&nbsp;cultura rusa: Bizyaev ha&nbsp;mostrado Rusia desde los cuentos de&nbsp;hadas eslavos hasta la&nbsp;realidad rusa moderna, con vagones de&nbsp;arroz y&nbsp;manifestantes.",
         "tags": [
           "Motion design",

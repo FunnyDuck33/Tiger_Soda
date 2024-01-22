@@ -1,10 +1,11 @@
 export interface TitleImage {
     src: string;
-    srcM: string;
-    styles: {
+    srcM?: string;
+    styles?: {
         [K: string]: number;
     };
-    stylesM: {
+    stylesM?: {
         [K: string]: number
     }
-};
+    floatySrc?: string;
+}

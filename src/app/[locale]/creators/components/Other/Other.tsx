@@ -19,13 +19,11 @@ const Other = ({data}: Props) => {
                 {t("otherTitle")}
             </div>
             <div className={cn(styles.wrapper, 'box')}>
-                {data?.map(({link, src}, index) => (
-                    <a href={link} className={styles.link} key={index}>
-                        <img src={src} alt="" className={styles.item}/>
-                    </a>
+                {data?.map((src, index) => (
+                    <img src={src} alt="" className={styles.item} key={index}/>
                 ))}
                 <div>
-                    <div className={cn(styles.floaty, styles.floaty_circle, styles.floaty1)}/>
+                <div className={cn(styles.floaty, styles.floaty_circle, styles.floaty1)}/>
                     <div className={cn(styles.floaty, styles.floaty_circle, styles.floaty2)}/>
                     <div className={cn(styles.floaty, styles.floaty_circle, styles.floaty3)}/>
                     <div className={cn(styles.floaty, styles.floaty_circle, styles.floaty4)}/>

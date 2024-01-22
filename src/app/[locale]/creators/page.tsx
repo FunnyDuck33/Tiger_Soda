@@ -32,8 +32,8 @@ export default function Creators({params}: Props) {
             <Navigation withLogo={true} theme='white' locale={params.locale}/>
             <BlockHeader title={t('title')} className={cn('box', styles.blockHeader)} titleClassName={styles.title}/>
             <div className={cn('box', styles.itemsWrapper)}>
-                {Object.values(creators).map(({link, src, title, desc}, index) => (
-                    <ImageItem key={index} src={src} title={title} desc={desc} link={link} size={isMobile() ? 'm' : 's'}/>
+                {Object.values(creators).map(({link, src, title, tags}, index) => (
+                    <ImageItem key={index} src={src} title={title} desc={tags[0]} link={link} size={isMobile() ? 'm' : 's'}/>
                 ))}
                 {!isMobile() && (
                     <>

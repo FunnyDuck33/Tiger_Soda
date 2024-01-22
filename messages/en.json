@@ -149,6 +149,9 @@
             }
           ]
         ]
+      },
+      "chat-bot": {
+        "previewTitle": "Chat-bot"
       }
     }
   },
@@ -161,7 +164,6 @@
     "list": {
       "vitaly-terletsky": {
         "title": "Vitaly Terletsky",
-        "desc": "Author",
         "titleText": "Vitaly designed a&nbsp;comic book for&nbsp;us on&nbsp;a&nbsp;project about the culture of&nbsp;ZHEK-art: the plot involves a&nbsp;plush tiger protecting the elderly Antonina Stepanovna and keeping the soul of&nbsp;Russia&rsquo;s bedroom communities safe.",
         "tags": [
           "Author",
@@ -171,7 +173,6 @@
       },
       "aidar-bekchintaev": {
         "title": "Aidar Bekchintaev",
-        "desc": "3D",
         "titleText": "Aidar studied at&nbsp;the Vienna Academy and works in&nbsp;low- and high-poly modeling, sculpting, UV-mapping and texturing. He&nbsp;usually uses Maya, ZBrush, Substance Painter, Unreal Engine in&nbsp;his work.",
         "tags": [
           "3D",
@@ -180,7 +181,6 @@
       },
       "artem-bizyaev": {
         "title": "Artem Bizyaev",
-        "desc": "Motion design",
         "titleText": "Author and comic book artist with a&nbsp;background as&nbsp;an&nbsp;animation director. He&nbsp;likes to&nbsp;create bright and dynamic stories. Russian audience knows Artem by&nbsp;his project of&nbsp;fan-made lego sets based on&nbsp;Russian culture OLEG: Bizyaev has depicted Russia from Slavic fairy tales to&nbsp;Russian reality with cell van and protesters.",
         "tags": [
           "Motion design",

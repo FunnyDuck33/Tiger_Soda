@@ -1,7 +1,5 @@
 'use client';
 
-import cn from 'classnames';
-
 import styles from './page.module.scss'
 
 import {useCreator} from "@/creatorsData";
