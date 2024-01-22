@@ -34,8 +34,8 @@ import project3Content3 from '../public/assets/projects/project3/content3.jpg';
 import project3Content1M from '../public/assets/projects/project3/content1M.jpg';
 
 
-import project1Creator1 from '../public/assets/creators/creator3/preview.png';
-import project1Creator2 from '../public/assets/creators/creator2/preview.png';
+import project1Creator1 from '../public/assets/creators/creator11/preview.png';
+import project1Creator2 from '../public/assets/creators/creator10/preview.png';
 
 import {useTranslations} from "next-intl";
 import {merge} from 'lodash';
@@ -271,6 +271,12 @@ const data = {
     'chat-bot': {
         link: '/',
     },
+    'five-minute-adventure': {
+        link: '/',
+    },
+    'efa-world-cup': {
+        link: '/',
+    }
 } as unknown as Record<string, ProjectItem>;
 
 export const projectRoutes = Object.keys(data);

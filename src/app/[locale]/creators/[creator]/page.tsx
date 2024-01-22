@@ -24,7 +24,9 @@ export default function Creator({params}: Props) {
     return (
         <div className={styles.root}>
             <Header locale={locale} type="creator" {...creatorData}/>
-            <Projects data={creatorData.projects}/>
+            {creatorData.projects && (
+                <Projects data={creatorData.projects}/>
+            )}
             <Other data={creatorData.other}/>
             <Footer/>
         </div>
