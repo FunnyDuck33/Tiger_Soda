@@ -23,8 +23,8 @@ const Creators = () => {
         <div className={cn(styles.root, isMobile() && 'wide')}>
             <BlockHeader title={t('title')} buttonTitle={isMobile() ? undefined : t('button')} link='/creators'/>
             <div className={styles.wrapper}>
-                {Object.values(creators).map(({title, desc, src, link}, i) => (
-                    <ImageItem key={title} src={src} title={title} desc={desc} link={link} size={isMobile() ? 'xs' : 's'}/>
+                {Object.values(creators).slice(0,4).map(({title, tags, src, link}) => (
+                    <ImageItem key={title} src={src} title={title} desc={tags[0]} link={link} size={isMobile() ? 'xs' : 's'}/>
                 ))}
             </div>
             {!isMobile() && (

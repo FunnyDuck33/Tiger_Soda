@@ -97,6 +97,7 @@ const data = {
         src: project1Preview.src,
         taskSrc: project1TaskImage.src,
         link: '/projects/online-museum',
+        externalLink: 'https://dvor.digital',
         titleImage: {
             src: project1TitleImage.src,
             srcM: project1TitleImageM.src,
@@ -279,10 +280,10 @@ const data = {
     }
 } as unknown as Record<string, ProjectItem>;
 
-export const projectRoutes = Object.keys(data);
+export const projectRoutes = Object.entries(data).filter(([_, val]) => val.content).map(([key]) => key);
 
 export const useProjects = (): CombinedProjectList => {
-    return Object.entries(data).filter(([_, val]) => val.content).reduce((acc, [key]) => {
+    return projectRoutes.reduce((acc, key) => {
         acc[key] = useProject(key);
 
         return acc;

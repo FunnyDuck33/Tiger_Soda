@@ -20,9 +20,10 @@ interface Props {
     titleM?: string;
     showArrow?: boolean
     type: 'project' | 'creator';
+    externalLink?: string;
 }
 
-const Header = ({locale, titleImage, tags, title, titleM, titleText, type}: Props) => {
+const Header = ({locale, titleImage, tags, title, titleM, titleText, type, externalLink}: Props) => {
     const typeClasses = {
         project: styles.root_type_project,
         creator: styles.root_type_creator,
@@ -33,8 +34,14 @@ const Header = ({locale, titleImage, tags, title, titleM, titleText, type}: Prop
             <div className={styles.wrapper}>
                 <Navigation withLogo={true} theme='black' locale={locale}/>
                 <div className={styles.title}>
-                    <span dangerouslySetInnerHTML={{__html: isMobile() && titleM ? titleM : title}}/>
-                    {type !== 'creator' && <span><img src={arrowSvg.src} alt="" className={styles.arrow}/></span>}
+                    {externalLink ? (
+                        <a href={externalLink} target="_blank">
+                            <span dangerouslySetInnerHTML={{__html: isMobile() && titleM ? titleM : title}}/>
+                            <span><img src={arrowSvg.src} alt="" className={styles.arrow}/></span>
+                        </a>
+                    ) : (
+                        <span dangerouslySetInnerHTML={{__html: isMobile() && titleM ? titleM : title}}/>
+                    )}
                 </div>
                 {titleText && <div className={styles.text} dangerouslySetInnerHTML={{__html: titleText}}></div>}
                 <div className={styles.tagsWrapper}>
