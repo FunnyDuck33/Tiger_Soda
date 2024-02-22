@@ -8,6 +8,7 @@ import Header from "@/app/commonComponents/Header/Header";
 import Projects from "../components/Projects/Projects";
 import Other from "@/app/[locale]/creators/components/Other/Other";
 import Footer from "@/components/Footer/Footer";
+import PageWrapper from "@/app/commonComponents/PageWrapper/PageWrapper";
 
 interface Props {
     params: {
@@ -22,13 +23,15 @@ export default function Creator({params}: Props) {
     const creatorData = useCreator(creator);
 
     return (
-        <div className={styles.root}>
-            <Header locale={locale} type="creator" {...creatorData}/>
-            {creatorData.projects && (
-                <Projects data={creatorData.projects}/>
-            )}
-            <Other data={creatorData.other}/>
-            <Footer/>
-        </div>
+        <PageWrapper>
+            <div className={styles.root}>
+                <Header locale={locale} type="creator" {...creatorData}/>
+                {creatorData.projects && (
+                    <Projects data={creatorData.projects}/>
+                )}
+                <Other showShortTitle={!creatorData.projects?.length} data={creatorData.other}/>
+                <Footer/>
+            </div>
+        </PageWrapper>
     )
 }

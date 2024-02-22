@@ -10,6 +10,7 @@ import Services from "@/app/components/Services/Services";
 import Creators from "@/app/components/Creators/Creators";
 import Clients from "@/app/components/Clients/Clients";
 import Footer from "@/components/Footer/Footer";
+import PageWrapper from "@/app/commonComponents/PageWrapper/PageWrapper";
 
 interface Props {
     params: {
@@ -20,16 +21,18 @@ interface Props {
 export const dynamic = 'force-static';
 
 export default function Home({params}: Props) {
-  return (
-      <div className={styles.root}>
-          <Header locale={params.locale}/>
-          <Cover/>
-          <Ticker/>
-          <Projects/>
-          <Services/>
-          <Creators/>
-          <Clients/>
-          <Footer/>
-      </div>
-  )
+    return (
+        <PageWrapper>
+            <div className={styles.root}>
+                <Header locale={params.locale}/>
+                <Cover/>
+                <Ticker/>
+                <Projects/>
+                <Services/>
+                <Creators/>
+                <Clients/>
+                <Footer/>
+            </div>
+        </PageWrapper>
+    )
 }

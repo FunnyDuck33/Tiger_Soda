@@ -16,7 +16,20 @@
 .link {
     color: unset;
     text-decoration: none;
+
 }
+
+.language:not(.language_active) {
+    cursor: pointer;
+
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.language_active {
+    pointer-events: none;
+}
+
 
 @media (min-width: $mobile-size-trigger + 1) {
     .root {
@@ -33,16 +46,6 @@
         font-size: 18rem;
         line-height: 133%;
         letter-spacing: 0.36rem;
-    }
-
-    .language:hover {
-        cursor: pointer;
-    }
-
-    .language:hover,
-    .language_active {
-        color: var(--green);
-        text-decoration: underline;
     }
 }
 
@@ -61,10 +64,5 @@
         font-size: 18rem;
         line-height: 133%;
         letter-spacing: 0.36rem;
-    }
-
-    .language_active {
-        color: var(--green);
-        text-decoration: underline;
     }
 }

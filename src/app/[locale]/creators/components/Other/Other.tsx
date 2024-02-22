@@ -8,15 +8,16 @@ import floaty3 from '@/../public/assets/floaties/floaty-3.png';
 
 interface Props {
     data: any[];
+    showShortTitle?: boolean
 }
 
-const Other = ({data}: Props) => {
+const Other = ({data, showShortTitle}: Props) => {
     const t = useTranslations('Creators');
 
     return (
         <div className={styles.root}>
             <div className={styles.title}>
-                {t("otherTitle")}
+                {showShortTitle ? t("otherShortTitle") : t("otherTitle")}
             </div>
             <div className={cn(styles.wrapper, 'box')}>
                 {data?.map((src, index) => (

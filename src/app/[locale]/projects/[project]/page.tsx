@@ -11,6 +11,7 @@ import styles from './page.module.scss'
 
 import {useProject} from "@/projectsData";
 import {useTranslations} from "next-intl";
+import PageWrapper from "@/app/commonComponents/PageWrapper/PageWrapper";
 
 interface Props {
     params: {
@@ -26,17 +27,19 @@ export default function Project({params}: Props) {
     const {taskSrc, cover, ideas, content, creators} = useProject(project);
 
     return (
-        <div className={styles.root}>
-            <Header locale={locale} type="project" {...projectData}/>
-            <Text title={t("coverTitle")} content={[cover]} className={styles.cover}/>
-            <img src={taskSrc} alt="" className={styles.img}/>
-            <Text title={t("ideasTitle")} content={ideas} className={styles.ideas} isColumns={true}/>
-            {content.map(contentRow => (
-                <ContentRow data={contentRow}/>
-            ))}
-            {creators && <Creators data={creators}/>}
-            <Navigator project={project}/>
-            <Footer/>
-        </div>
+        <PageWrapper>
+            <div className={styles.root}>
+                <Header locale={locale} type="project" {...projectData}/>
+                <Text title={t("coverTitle")} content={[cover]} className={styles.cover}/>
+                <img src={taskSrc} alt="" className={styles.img}/>
+                <Text title={t("ideasTitle")} content={ideas} className={styles.ideas} isColumns={true}/>
+                {content.map((contentRow, index) => (
+                    <ContentRow data={contentRow} key={index}/>
+                ))}
+                {creators && <Creators data={creators}/>}
+                <Navigator project={project}/>
+                <Footer/>
+            </div>
+        </PageWrapper>
     )
 }

@@ -19,10 +19,10 @@ const Footer = () => {
         <div className={cn(styles.root, 'wide')}>
             <div className={styles.title} dangerouslySetInnerHTML={{__html: t('title')}}/>
             <div className={styles.desc} dangerouslySetInnerHTML={{__html: t('desc')}}/>
-            <form action="/" className={styles.form}>
-                <input type="text" className={styles.input} required={true} placeholder={`*${t('name')}`}/>
-                <input type="text" className={styles.input} required={true} placeholder={`*${t('email')}`}/>
-                <input type="text" className={styles.input} required={true} placeholder={`*${t('company')}`}/>
+            <form action="/" className={styles.form} id="contactUsForm">
+                <input type="text" className={styles.input} placeholder={`${t('name')}`}/>
+                <input type="text" className={styles.input} required={true} placeholder={`${t('email')}`}/>
+                <input type="text" className={styles.input} placeholder={`${t('company')}`}/>
                 <textarea className={cn(styles.input, styles.area)} placeholder={t('message')}/>
                 <button type='submit' className={styles.button}>{t('button')}</button>
             </form>

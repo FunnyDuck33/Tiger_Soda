@@ -65,14 +65,6 @@
               "desc": "Juego de Lego por Artyom Bizyaev"
             }
           ]
-        ],
-        "creators": [
-          {
-            "name": "Artem Bizyaev"
-          },
-          {
-            "name": "Vitaliy Terletsky"
-          }
         ]
       },
       "nft": {
@@ -111,17 +103,6 @@
               "desc": "NFT por Darya Fedorova"
             }
           ]
-        ],
-        "creators": [
-          {
-            "name": "Ellen Sheidlin"
-          },
-          {
-            "name": "Darya Fedorova"
-          },
-          {
-            "name": "Vladimir Vikhrov"
-          }
         ]
       },
       "magic-mail": {
@@ -165,6 +146,7 @@
     "button": "Todos los creadores",
     "projectsTitle": "proyectos conjuntos",
     "otherTitle": "otros proyectos",
+    "otherShortTitle": "proyectos",
     "swipeInfo": "Swepear para ver más",
     "list": {
       "aidar-bekchintaev": {

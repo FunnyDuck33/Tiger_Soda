@@ -14,8 +14,13 @@ interface Props {
 const ContentRow = ({data}: Props) => {
     return (
         <div className={cn(styles.root, 'box')}>
-            {data.map(({desc, src, srcM, descAlign, height}) => (
-                <DescriptionWrapper className={styles.wrapper} desc={desc} descAlign={isMobile() ? 'center' : descAlign}>
+            {data.map(({desc, src, srcM, descAlign, height}, index) => (
+                <DescriptionWrapper
+                    className={styles.wrapper}
+                    desc={desc}
+                    descAlign={isMobile() ? 'center' : descAlign}
+                    key={index}
+                >
                     <img
                         className={styles.mainImg} style={isMobile() ? {} : {height: `${height}rem`}}
                         src={isMobile() && srcM ? srcM : src}

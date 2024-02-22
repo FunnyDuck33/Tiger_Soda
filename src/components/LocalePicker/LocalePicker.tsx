@@ -16,19 +16,27 @@ interface Props {
 const LocalePicker = ({locale, theme}: Props) => {
     const pathname = usePathname();
 
+    const renderLocale = (isActive: boolean, locale: string) => {
+        return (
+            <div className={cn(styles.language, isActive && styles.language_active)}>
+                {locale}
+            </div>
+        )
+    }
+
     return (
         <div className={cn(styles.root, theme === 'white' ? styles.root_theme_white : styles.root_theme_black)}>
-            <Link href={pathname} locale='en' className={styles.link}>
-                <div className={cn(styles.language, locale === 'en' && styles.language_active)}>
-                    EN
-                </div>
-            </Link>
+            {locale === 'en' ? renderLocale(true, 'EN') : (
+                <Link href={pathname} locale='en' className={styles.link}>
+                    {renderLocale(false, 'EN')}
+                </Link>
+            )}
             <div className={styles.divider}></div>
-            <Link href={pathname} locale='es' className={styles.link}>
-                <div className={cn(styles.language, locale === 'es' && styles.language_active)}>
-                    ESP
-                </div>
-            </Link>
+            {locale === 'es' ? renderLocale(true, 'ESP') : (
+                <Link href={pathname} locale='es' className={styles.link}>
+                    {renderLocale(false, 'ESP')}
+                </Link>
+            )}
         </div>
     )
 }

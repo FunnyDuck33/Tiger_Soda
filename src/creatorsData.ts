@@ -434,11 +434,11 @@ export const useCreators = (): CreatorList => {
     }, {} as CreatorList);
 }
 
-export const useCreator = (creator: string): CombinedCreatorItem => {
+export const useCreator = (creator: string, shouldPopulate = true): CombinedCreatorItem => {
     const t = useTranslations(`Creators`);
     const i18nData = t.raw('list');
 
-    const item = populateCreator(data[creator]);
+    const item = shouldPopulate ? populateCreator(data[creator]) : data[creator];
     const i18nItem = i18nData[creator];
 
     return merge(item, i18nItem);

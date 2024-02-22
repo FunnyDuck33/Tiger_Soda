@@ -61,7 +61,7 @@ const Navigation = ({locale, withLogo, theme}: Props) => {
             link: '/creators',
             text: t('creators'),
         },
-    ]
+    ];
 
     const mobileItems = [
         ...items,
@@ -69,7 +69,7 @@ const Navigation = ({locale, withLogo, theme}: Props) => {
             link: '/bbb',
             text: t('contacts'),
         },
-    ]
+    ];
 
     const content = (
         <>
@@ -127,7 +127,7 @@ const Navigation = ({locale, withLogo, theme}: Props) => {
                         <img src={theme === 'black' ? titleSvg.src : titleBlackSvg.src} alt="" className={styles.logo}/>
                     </Link>
                     <div className={styles.wrapper}>
-                    {content}
+                        {content}
                     </div>
                 </>
             ) : content}

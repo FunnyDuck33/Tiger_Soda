@@ -66,14 +66,6 @@
               "desc": "Comic by Vitaly Terletsky"
             }
           ]
-        ],
-        "creators": [
-          {
-            "name": "Artem Bizyaev"
-          },
-          {
-            "name": "Vitaliy Terletsky"
-          }
         ]
       },
       "nft": {
@@ -112,17 +104,6 @@
               "desc": "NFT by Darya Fedorova"
             }
           ]
-        ],
-        "creators": [
-          {
-            "name": "Ellen Sheidlin"
-          },
-          {
-            "name": "Darya Fedorova"
-          },
-          {
-            "name": "Vladimir Vikhrov"
-          }
         ]
       },
       "magic-mail": {
@@ -166,6 +147,7 @@
     "button": "All creators",
     "projectsTitle": "joint projects",
     "otherTitle": "other works",
+    "otherShortTitle": "works",
     "swipeInfo": "Swipe to see more",
     "list": {
       "aidar-bekchintaev": {

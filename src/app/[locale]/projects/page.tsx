@@ -14,6 +14,7 @@ import cn from "classnames";
 import ImageItem from "@/components/ImageItem/ImageItem";
 import {isMobile} from "@/helpers";
 import {useTranslations} from "next-intl";
+import PageWrapper from "@/app/commonComponents/PageWrapper/PageWrapper";
 
 interface Props {
     params: {
@@ -26,7 +27,8 @@ export default function Projects({params}: Props) {
     const t = useTranslations(`Projects`);
 
     return (
-        <div className={styles.root}>
+        <PageWrapper>
+            <div className={styles.root}>
             <Navigation withLogo={true} theme='white' locale={params.locale}/>
             <BlockHeader title={t('title')} className={cn('box', styles.blockHeader)} titleClassName={styles.title}/>
             <div className={cn('box', styles.itemsWrapper)}>
@@ -42,5 +44,6 @@ export default function Projects({params}: Props) {
             </div>
             <Footer/>
         </div>
+        </PageWrapper>
     )
 }

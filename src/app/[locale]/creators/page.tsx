@@ -16,6 +16,7 @@ import ImageItem from "@/components/ImageItem/ImageItem";
 import {isMobile} from "@/helpers";
 import {useTranslations} from "next-intl";
 import {useCreators} from "@/creatorsData";
+import PageWrapper from "@/app/commonComponents/PageWrapper/PageWrapper";
 
 interface Props {
     params: {
@@ -28,23 +29,25 @@ export default function Creators({params}: Props) {
     const t = useTranslations(`Creators`);
 
     return (
-        <div className={styles.root}>
-            <Navigation withLogo={true} theme='white' locale={params.locale}/>
-            <BlockHeader title={t('title')} className={cn('box', styles.blockHeader)} titleClassName={styles.title}/>
-            <div className={cn('box', styles.itemsWrapper)}>
-                {Object.values(creators).map(({link, src, title, tags}, index) => (
-                    <ImageItem key={index} src={src} title={title} desc={tags[0]} link={link} size={isMobile() ? 'm' : 's'}/>
-                ))}
-                {!isMobile() && (
-                    <>
-                        <img src={floaty2.src} alt="" className={cn(styles.floaty, styles.floaty2)}/>
-                        <img src={floaty3.src} alt="" className={cn(styles.floaty, styles.floaty3)}/>
-                        <img src={floaty4.src} alt="" className={cn(styles.floaty, styles.floaty4)}/>
-                        <img src={floaty5.src} alt="" className={cn(styles.floaty, styles.floaty5)}/>
-                    </>
-                )}
+        <PageWrapper>
+            <div className={styles.root}>
+                <Navigation withLogo={true} theme='white' locale={params.locale}/>
+                <BlockHeader title={t('title')} className={cn('box', styles.blockHeader)} titleClassName={styles.title}/>
+                <div className={cn('box', styles.itemsWrapper)}>
+                    {Object.values(creators).map(({link, src, title, tags}, index) => (
+                        <ImageItem key={index} src={src} title={title} desc={tags[0]} link={link} size={isMobile() ? 'm' : 's'}/>
+                    ))}
+                    {!isMobile() && (
+                        <>
+                            <img src={floaty2.src} alt="" className={cn(styles.floaty, styles.floaty2)}/>
+                            <img src={floaty3.src} alt="" className={cn(styles.floaty, styles.floaty3)}/>
+                            <img src={floaty4.src} alt="" className={cn(styles.floaty, styles.floaty4)}/>
+                            <img src={floaty5.src} alt="" className={cn(styles.floaty, styles.floaty5)}/>
+                        </>
+                    )}
+                </div>
+                <Footer/>
             </div>
-            <Footer/>
-        </div>
+        </PageWrapper>
     )
 }

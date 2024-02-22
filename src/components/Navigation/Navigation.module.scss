@@ -42,12 +42,11 @@
         letter-spacing: 0.36rem;
     }
 
-    .navItem_active {
+    .navItem:not(.navItem_active) {
         text-decoration: underline;
     }
 
-    .navItem:hover {
-        text-decoration: underline;
+    .navItem {
         cursor: pointer;
     }
 
@@ -77,7 +76,6 @@
 
     .logo {
         height: 38rem;
-        margin-right: 195rem;
     }
 }
 

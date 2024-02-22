@@ -33,14 +33,11 @@ import project3Content2 from '../public/assets/projects/project3/content2.jpg';
 import project3Content3 from '../public/assets/projects/project3/content3.jpg';
 import project3Content1M from '../public/assets/projects/project3/content1M.jpg';
 
-
-import project1Creator1 from '../public/assets/creators/creator11/preview.png';
-import project1Creator2 from '../public/assets/creators/creator10/preview.png';
-
 import {useTranslations} from "next-intl";
 import {merge} from 'lodash';
 import {Property} from "csstype";
 import {TitleImage} from "@/types";
+import {useCreator} from "@/creatorsData";
 
 interface i18nProjectItem {
     title: string;
@@ -79,8 +76,10 @@ interface ProjectItemContent {
 }
 
 interface ProjectItemCreators {
+    id: string;
     src: string;
     link: string;
+    title: string;
 }
 
 export type CombinedProjectItem = i18nProjectItem & ProjectItem;
@@ -146,12 +145,10 @@ const data = {
         ],
         creators: [
             {
-                src: project1Creator1.src,
-                link: '/',
+                id: 'artem-bizyaev',
             },
             {
-                src: project1Creator2.src,
-                link: '/',
+                id: 'vitaly-terletsky',
             }
         ]
     },
@@ -214,17 +211,11 @@ const data = {
         ],
         creators: [
             {
-                src: project1Creator1.src,
-                link: '/',
+                id: 'ellen-scheidlin',
             },
             {
-                src: project1Creator2.src,
-                link: '/',
+                id: 'dashaplesen',
             },
-            {
-                src: project1Creator2.src,
-                link: '/',
-            }
         ]
     },
     'magic-mail': {
@@ -294,8 +285,24 @@ export const useProject = (project: string): CombinedProjectItem => {
     const t = useTranslations(`Projects`);
     const i18nData = t.raw('list');
 
-    const item = data[project];
+    const item = populateProject(data[project]);
     const i18nItem = i18nData[project];
 
     return merge(item, i18nItem);
+}
+
+const populateProject = (project: ProjectItem) => {
+    if (!project.creators?.length) {
+        return project;
+    }
+
+    project.creators?.forEach(creator => {
+        const refProject = useCreator(creator.id, false);
+
+        creator.src = refProject.src;
+        creator.title = refProject.title;
+        creator.link = refProject.link;
+    })
+
+    return project;
 }

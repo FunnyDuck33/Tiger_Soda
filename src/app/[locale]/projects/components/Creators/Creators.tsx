@@ -19,8 +19,8 @@ const Creators = ({data}: Props) => {
                 {t("artistsTitle")}
             </div>
             <div className={styles.wrapper}>
-                {data.map(({name, link, src}) => (
-                    <ImageItem src={src} title={name} link={link} size="xxs" />
+                {data.map(({title, link, src}, index) => (
+                    <ImageItem src={src} title={title} link={link} key={index} size="xxs" />
                 ))}
             </div>
         </div>
