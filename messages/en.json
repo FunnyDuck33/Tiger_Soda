@@ -45,7 +45,9 @@
           ">40 publications in the media",
           "3 collaborations with 3 artists"
         ],
-        "cover": "To&nbsp;rethink the role of&nbsp;ZHEK-art as&nbsp;a&nbsp;decorative and applied art and remove derogatory associations from&nbsp;it.",
+        "cover": {
+          "text": "To&nbsp;rethink the role of&nbsp;ZHEK-art as&nbsp;a&nbsp;decorative and applied art and remove derogatory associations from&nbsp;it."
+        },
         "ideas": "An&nbsp;interactive online museum where you can explore the subject and immerse yourself in&nbsp;the atmosphere of&nbsp;a&nbsp;real-life residential housing courtyard. \n<br><br>\nSwans made of&nbsp;tires, Cheburashka made of&nbsp;bottles, stumps with eyes&nbsp;&mdash; in&nbsp;the Bestiary section, you can see and get acquainted with the biographies of&nbsp;the outlandish ZHEK-art characters surrounding you.\n<br><br>\nUsing the art constructor in&nbsp;the DIY section, you can create your unique work of&nbsp;ZHEK-art: download any background and assemble the character using the materials at&nbsp;hand. \n<br><br>\nThe Online Museum of&nbsp;ZHEK-art is&nbsp;a&nbsp;large-scale multidisciplinary project with bright typography, illustrations and 3D&nbsp;objects, animation and a&nbsp;360-degree panorama on&nbsp;the main page. The general message of&nbsp;the project is&nbsp;that even against the background of&nbsp;gray reality, there can be&nbsp;a&nbsp;place for bright original creativity, accessible to&nbsp;everyone and worth appreciating. \n<br><br>\nAs&nbsp;part of&nbsp;a&nbsp;large-scale PR&nbsp;campaign supporting the launch of&nbsp;the project, we&nbsp;collaborated with popular Internet artists: we&nbsp;modeled a&nbsp;LEGO set&nbsp;&mdash; dedicated to&nbsp;Russian ZHEK-art&nbsp;&mdash; with Oleg Lego, printed a&nbsp;comic with Vitaly Terletsky, released a&nbsp;limited edition merch with Nikita Gruzovik, and published an&nbsp;AR mask on&nbsp;Instagram.",
         "content": [
           [
@@ -77,7 +79,9 @@
           "14 people received NFT-cards",
           "more than 100,000 unique users"
         ],
-        "cover": "Come up&nbsp;with a&nbsp;fun and touching special project for Valentine&rsquo;s Day, which would show that Citymobil values its clients.",
+        "cover": {
+          "text": "Come up&nbsp;with a&nbsp;fun and touching special project for Valentine&rsquo;s Day, which would show that Citymobil values its clients."
+        },
         "ideas": "We&nbsp;intended the special project to&nbsp;be&nbsp;a&nbsp;platform for love confessions, and for this purpose, we&nbsp;set up&nbsp;a&nbsp;digital Valentine card constructor on&nbsp;a&nbsp;dedicated website. Everyone could create their own valentine and upload it&nbsp;to&nbsp;the gallery of&nbsp;romantic confessions. First of&nbsp;all, this is&nbsp;plain fun. Secondly, such UGC mechanics work well to&nbsp;engage a&nbsp;user in&nbsp;a&nbsp;dialog with the brand.\n<br><br>\nThe participants participated in&nbsp;a&nbsp;raffle of&nbsp;NFT-arts by&nbsp;famous artists Ellen Sheidlin, Daria Fedorova, and Vladimir Vikhrov. We&nbsp;got our users to&nbsp;feel like the new Tretyakovs and Morozovs (renowned XIX-century Russian art collectors), and the project became more vivid and high-profile media-wise. So&nbsp;much so&nbsp;that even Paris Hilton liked an&nbsp;Instagram post about the project.\n<br><br>\nJust three days after the launch, there were <b>50,000</b> Valentine&rsquo;s cards in&nbsp;the gallery! <b>40%</b> of&nbsp;users who have left romantic confessions have activated promotional codes for VK&nbsp;Combo subscriptions, including discounts on&nbsp;taxi rides with Citymobil.&nbsp;<b>14</b>&nbsp;people received NFT cards. In&nbsp;total, more than <b>100,000</b> unique users visited the project page.",
         "content": [
           [
@@ -113,7 +117,9 @@
           "630,000 views",
           "2,419 participants involved"
         ],
-        "cover": "To&nbsp;tell the media about the release of&nbsp;a&nbsp;special episode of&nbsp;Harry Potter on&nbsp;Amediateka streaming service, dedicated to&nbsp;the 20th anniversary of&nbsp;the release of&nbsp;the first film about the boy wizard.",
+        "cover": {
+          "text": "To&nbsp;tell the media about the release of&nbsp;a&nbsp;special episode of&nbsp;Harry Potter on&nbsp;Amediateka streaming service, dedicated to&nbsp;the 20th anniversary of&nbsp;the release of&nbsp;the first film about the boy wizard."
+        },
         "ideas": "Who hasn&rsquo;t dreamed of&nbsp;receiving a&nbsp;letter from Hogwarts? How about a&nbsp;whole parcel? In&nbsp;the viral promo video we&nbsp;shot for the special episode, the snowy owl Hedwig delivers gift sets right to&nbsp;the doorstep&nbsp;&mdash; to&nbsp;the homes where people are waiting for magic. In&nbsp;the boxes, we&nbsp;put Harry Potter-branded souvenirs and promo codes for annual subscriptions to&nbsp;Amediateka. Popular lifestyle bloggers joined the campaign. They filmed the unpacking process in&nbsp;Reel format, which became a&nbsp;logical follow-up to&nbsp;the promo video and attracted the audience&rsquo;s attention.\n<br><br>\nProject reach on&nbsp;social media: <b>630,000 views</b>\nParticipants involved: <b>2,419</b>",
         "content": [
           [
@@ -130,6 +136,26 @@
             }
           ]
         ]
+      },
+      "nft-tokens": {
+        "title": "NFT tokens",
+        "previewTitle": "NFT tokens",
+        "tags": [
+          "32,000 people visited the project",
+          "Overall project reach: 600,000"
+        ],
+        "cover": {
+          "text": "To&nbsp;increase the Samokat delivery service&rsquo;s name recognition among the active and young audience"
+        },
+        "ideas": "We&nbsp;picked 10&nbsp;of&nbsp;the most popular simple products in&nbsp;Samokat, such as&nbsp;buckwheat, sausage, pasta, pelmeni (Russian dumplings) and so&nbsp;on&nbsp;and turned them into unconventional works of&nbsp;art. Now, this is&nbsp;NFT art in&nbsp;neon cyber aesthetics with subtle branding.\n<br><br>\nWe&nbsp;decided to&nbsp;give away the crypto products to&nbsp;random users and raffled them randomly among all those who had made an&nbsp;order with a&nbsp;special promo code during the promotion period.\n<br><br>\nBy&nbsp;doing&nbsp;so, we&nbsp;made a&nbsp;bet on&nbsp;a&nbsp;forward-thinking audience. As&nbsp;a&nbsp;result, along with their regular orders, 10&nbsp;users also received unique works of&nbsp;NFT art. This piqued interest in&nbsp;the Samokat brand and increased the frequency and average order value.\n<br><br>\n<b>32,000</b> people visited the project\n<b>40%</b> average check increase\nOverall project reach: <b>600,000</b>"
+      },
+      "tigermeister": {
+        "title": "Tigermeister",
+        "previewTitle": "Tigermeister",
+        "cover": {
+          "text": "To&nbsp;come up&nbsp;with an&nbsp;original merch in&nbsp;collaboration with J&auml;germeister"
+        },
+        "ideas": "J&auml;germeister won&rsquo;t solve all problems, but it&nbsp;might inspire a&nbsp;creative solution. The legendary herbal liqueur is&nbsp;no&nbsp;longer just a&nbsp;hunters&rsquo; festive drink but the sponsor of&nbsp;music awards and metropolitan parties, as&nbsp;well as&nbsp;a&nbsp;trendsetter in&nbsp;alcohol fashion.\n<br><br>\nWe&nbsp;used visual elements as&nbsp;the core of&nbsp;the collaboration. The familiar label with a&nbsp;deer with a&nbsp;shining cross between its antlers is&nbsp;a&nbsp;reference to&nbsp;the legend of&nbsp;St. Hubert, the patron saint of&nbsp;hunters. We&nbsp;decided to&nbsp;reinvent it&nbsp;by&nbsp;replacing the deer with a&nbsp;tiger, the symbol of&nbsp;our creative group, and the name with Tigermeister. The content remains the same: a&nbsp;<b>56</b>-ingredient recipe created in&nbsp;the town of&nbsp;Wolfenb&uuml;ttel, the sheer name of&nbsp;which sounds like alcohol being poured into a&nbsp;shot glass.\n<br><br>\nWe&nbsp;released a&nbsp;total of&nbsp;500 bottles&nbsp;&mdash; so&nbsp;fashionable and rare that people started a&nbsp;hunt for them.\n<br><br>\n<b>300</b> bottles of&nbsp;Tigermeister were consumed on&nbsp;New Year&rsquo;s Eve, and we&nbsp;left another <b>200</b> for the Orthodox Christmas holiday in&nbsp;January."
       },
       "chat-bot": {
         "previewTitle": "Chat-bot"

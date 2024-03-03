@@ -7,7 +7,7 @@ import type {ReactNode} from "react";
 import {Property} from "csstype";
 
 interface Props {
-    desc: string;
+    desc?: string;
     descAlign?: Property.TextAlign;
     className?: string;
     children: ReactNode;
@@ -17,7 +17,9 @@ const DescriptionWrapper = ({className, children, desc, descAlign = 'left'}: Pro
     return (
         <div className={cn(styles.root, className)}>
             {children}
-            <div className={styles.desc} style={{textAlign: descAlign}}>{desc}</div>
+            {desc && (
+                <div className={styles.desc} style={{textAlign: descAlign}}>{desc}</div>
+            )}
         </div>
     )
 }

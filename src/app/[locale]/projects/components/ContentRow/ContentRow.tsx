@@ -4,8 +4,7 @@ import cn from 'classnames'
 
 import styles from './ContentRow.module.scss';
 import DescriptionWrapper from "@/app/[locale]/projects/components/DescriptionWrapper/DescriptionWrapper";
-import {CombinedProjectItemContent} from "@/projectsData";
-import {isMobile} from "@/helpers";
+import {getStyleObject, isMobile} from "@/helpers";
 
 interface Props {
     data: any[];
@@ -14,16 +13,16 @@ interface Props {
 const ContentRow = ({data}: Props) => {
     return (
         <div className={cn(styles.root, 'box')}>
-            {data.map(({desc, src, srcM, descAlign, height}, index) => (
+            {data.map((content, index) => (
                 <DescriptionWrapper
                     className={styles.wrapper}
-                    desc={desc}
-                    descAlign={isMobile() ? 'center' : descAlign}
+                    desc={content.desc}
+                    descAlign={isMobile() ? 'center' : content.descAlign}
                     key={index}
                 >
                     <img
-                        className={styles.mainImg} style={isMobile() ? {} : {height: `${height}rem`}}
-                        src={isMobile() && srcM ? srcM : src}
+                        className={styles.mainImg} style={isMobile() ? {} : getStyleObject(content.styles)}
+                        src={isMobile() && content.srcM ? content.srcM : content.src}
                         alt=""
                     />
                 </DescriptionWrapper>
