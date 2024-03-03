@@ -22,7 +22,7 @@ const Projects = ({data}: Props) => {
             </div>
             <div className={cn(styles.wrapper, 'box')}>
                 {data?.map(({title, link, src}, index) => (
-                    <Link href={link} className={styles.link} key={index}>
+                    <Link href={link} className={styles.link} key={index} target={link.startsWith('http') ? "_blank" : "_self"}>
                         <div className={styles.itemWrapper}>
                             <img src={src} alt="" className={styles.itemImg}/>
                             <div className={styles.desc}>{title}</div>

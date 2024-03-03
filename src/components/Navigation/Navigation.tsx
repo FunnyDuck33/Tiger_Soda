@@ -44,6 +44,31 @@ const Navigation = ({locale, withLogo, theme}: Props) => {
         setIsMenuOpen(false);
     }, []);
 
+    // сами делаем скролл из-за https://stackoverflow.com/a/63563437
+    const onLinkClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+        const target = e.currentTarget as HTMLAnchorElement;
+        const isAnchor = target.getAttribute('href')?.startsWith('#');
+        const anchor = target.getAttribute('href')?.slice(1);
+
+        if (!isAnchor || !anchor) {
+            return;
+        }
+
+        const form = document.getElementById(anchor);
+        const neededScroll = (form?.getBoundingClientRect().top || 100) - 100;
+
+        if (isMenuOpen) {
+            setIsMenuOpen(false);
+        }
+
+        document.documentElement.scrollTo({
+            top: neededScroll,
+            behavior: 'smooth',
+        })
+
+        e.preventDefault();
+    }, [isMenuOpen]);
+
     const items = [
         {
             link: '/',
@@ -66,7 +91,7 @@ const Navigation = ({locale, withLogo, theme}: Props) => {
     const mobileItems = [
         ...items,
         {
-            link: '/bbb',
+            link: '#contactUsForm',
             text: t('contacts'),
         },
     ];
@@ -95,7 +120,7 @@ const Navigation = ({locale, withLogo, theme}: Props) => {
                                 </div>
                                 <nav className={styles.nav}>
                                     {mobileItems.map(({link, text}, index) => (
-                                        <Link key={index} className={styles.links} href={link}>
+                                        <Link key={index} className={styles.links} href={link} onClick={onLinkClick}>
                                             <div className={cn(styles.navItem, isActive(link) && styles.navItem_active)}>{text}</div>
                                         </Link>
                                     ))}
@@ -105,7 +130,13 @@ const Navigation = ({locale, withLogo, theme}: Props) => {
                     </>
                 ) : (
                     <>
-                        <div className={styles.contactButton}>{t('contacts')}</div>
+                        <a
+                            className={styles.contactButton}
+                            href='#contactUsForm'
+                            onClick={onLinkClick}
+                        >
+                            {t('contacts')}
+                        </a>
                         <LocalePicker theme={theme} locale={locale}/>
                     </>
                 )}

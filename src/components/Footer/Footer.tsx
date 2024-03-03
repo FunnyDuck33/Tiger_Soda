@@ -16,10 +16,10 @@ const Footer = () => {
     const t = useTranslations('Footer');
 
     return (
-        <div className={cn(styles.root, 'wide')}>
+        <div className={cn(styles.root, 'wide')} id="contactUsForm">
             <div className={styles.title} dangerouslySetInnerHTML={{__html: t('title')}}/>
             <div className={styles.desc} dangerouslySetInnerHTML={{__html: t('desc')}}/>
-            <form action="/" className={styles.form} id="contactUsForm">
+            <form action="/" className={styles.form}>
                 <input type="text" className={styles.input} placeholder={`${t('name')}`}/>
                 <input type="text" className={styles.input} required={true} placeholder={`${t('email')}`}/>
                 <input type="text" className={styles.input} placeholder={`${t('company')}`}/>

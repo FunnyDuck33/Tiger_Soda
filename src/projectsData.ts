@@ -261,13 +261,13 @@ const data = {
         ],
     },
     'chat-bot': {
-        link: '/',
+        link: 'https://t.me/goroh_megabot',
     },
     'five-minute-adventure': {
-        link: '/',
+        link: 'https://knife.media/stage/fast-and-curious/',
     },
     'efa-world-cup': {
-        link: '/',
+        link: 'https://efa.earth/',
     }
 } as unknown as Record<string, ProjectItem>;
 

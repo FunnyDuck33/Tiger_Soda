@@ -3,13 +3,14 @@ $transform-duration: 0.5s;
 @media (min-width: $mobile-size-trigger + 1) {
   .root {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
 
     box-sizing: border-box;
-    width: 844rem;
+    max-width: 844rem;
 
-    padding: 40rem 0;
+    padding: 40rem;
     margin-top: 32rem;
+    gap: 20rem;
 
     border-radius: 40rem;
     background-color: #F5F5F5;
