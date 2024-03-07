@@ -1,4 +1,4 @@
-0:["P3ABBPyf1kRorEe1dltgu",[[["",{"children":[["locale","es","d"],{"children":["creators",{"children":[["creator","artem-bizyaev","d"],{"children":["__PAGE__?{\"locale\":\"es\",\"creator\":\"artem-bizyaev\"}",{}]}]}]}]},"$undefined","$undefined",true],"$L1",[[],"$L2"]]]]
+0:["fNvv142H9b-PAsJLE0ZPC",[[["",{"children":[["locale","es","d"],{"children":["creators",{"children":[["creator","artem-bizyaev","d"],{"children":["__PAGE__?{\"locale\":\"es\",\"creator\":\"artem-bizyaev\"}",{}]}]}]}]},"$undefined","$undefined",true],"$L1",[[],"$L2"]]]]
 3:HL["/_next/static/css/150949f7ee777d9f.css","style",{"crossOrigin":""}]
 4:HL["/_next/static/css/df80b3dec0f5a2cd.css","style",{"crossOrigin":""}]
 5:I[56954,[],""]
