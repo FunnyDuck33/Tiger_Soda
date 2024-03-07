@@ -20,7 +20,7 @@ export function generateMetadata({params}: {params: {locale: string}}): Metadata
     return {
         title: 'Tiger Soda',
         description: 'Ethical digital agency',
-        metadataBase: new URL('https://funnyduck33.github.io/Tiger_Soda'),
+        metadataBase: new URL('https://funnyduck33.github.io'),
         openGraph: {
             images: localeMap[locale],
         },
