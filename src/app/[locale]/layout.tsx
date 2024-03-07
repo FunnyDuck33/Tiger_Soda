@@ -2,14 +2,29 @@ import type {Metadata} from 'next';
 
 import {NextIntlClientProvider} from 'next-intl';
 
+import index_en from '@/../public/assets/shares/index-en.png';
+import index_es from '@/../public/assets/shares/index-es.png';
+
 import '@/app/styles/init.scss';
 import './globals.scss'
 import styles from './layout.module.css';
 
-export const metadata: Metadata = {
-    title: 'Tiger Soda',
-    description: 'Ethical digital agency',
-    metadataBase: new URL('https://funnyduck33.github.io/Tiger_Soda'),
+export function generateMetadata({params}: {params: {locale: string}}): Metadata {
+    const locale = params.locale as keyof typeof localeMap;
+
+    const localeMap = {
+        'en': index_en.src,
+        'es': index_es.src
+    }
+
+    return {
+        title: 'Tiger Soda',
+        description: 'Ethical digital agency',
+        metadataBase: new URL('https://funnyduck33.github.io/Tiger_Soda'),
+        openGraph: {
+            images: localeMap[locale],
+        },
+    }
 }
 
 async function getMessages(locale: string) {
