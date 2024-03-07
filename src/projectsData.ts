@@ -81,6 +81,7 @@ interface ProjectItem {
     src: string;
     taskSrc?: string;
     link: string;
+    externalLink?: string;
     titleImage: TitleImage;
     content: ProjectItemContent[][];
     earlyContent?: ProjectItemContent[][];
@@ -182,6 +183,7 @@ const data = {
         src: project2Preview.src,
         taskSrc: project2TaskImage.src,
         link: '/projects/nft',
+        externalLink: 'https://nftines.city-mobil.ru/',
         titleImage: {
             src: project2TitleImage.src,
             srcM: project2TitleImageM.src,
@@ -307,6 +309,7 @@ const data = {
     'nft-tokens': {
         src: project4Preview.src,
         link: '/projects/nft-tokens',
+        externalLink: 'https://knife.media/feature/nft-food-art/',
         cover: {
             src: project4Cover.src,
             styles: {

@@ -3,19 +3,19 @@ import {useTranslations} from "next-intl";
 
 const data = [
     {
-        examples: ['online-museum', 'nft'],
+        examples: ['online-museum', 'tigermeister'],
         key: "creative",
     },
     {
-        examples: ['online-museum', 'nft'],
+        examples: ['nft', 'nft-tokens'],
         key: "digital-production",
     },
     {
-        examples: ['online-museum', 'nft'],
+        examples: ['online-museum', 'magic-mail'],
         key: "video-production-and-animation",
     },
     {
-        examples: ['online-museum', 'nft'],
+        examples: ['online-museum', 'nft', 'nft-tokens'],
         key: "web3",
     },
 ]

@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './Navigator.module.scss';
-import {projectRoutes} from "@/projectsData";
+import {projectRoutes, useProject} from "@/projectsData";
 
 import arrowSvg from '@/../public/assets/arrow-white.svg';
 import arrowNavSvg from './assets/arrow.svg';
@@ -18,6 +18,7 @@ interface Props {
 
 const Navigator = ({project}: Props) => {
     const t = useTranslations('Projects');
+    const {externalLink} = useProject(project);
     const prevLink = projectRoutes[projectRoutes.indexOf(project) - 1] || projectRoutes[projectRoutes.length - 1];
     const nextLink = projectRoutes[projectRoutes.indexOf(project) + 1] || projectRoutes[0];
 
@@ -48,7 +49,7 @@ const Navigator = ({project}: Props) => {
     )
 
     const button = (
-        <Link href='/projects' className={styles.link}>
+        <Link href={externalLink || ''} target='_blank' className={styles.link}>
             <div className={styles.button}>
                 {t("navigatorButton")}
                 <img src={arrowSvg.src} alt="" className={styles.arrow}/>
@@ -60,7 +61,7 @@ const Navigator = ({project}: Props) => {
         <div className={cn(styles.root, 'box')}>
             {isMobile() ? (
                 <>
-                    {button}
+                    {externalLink ? button : null}
                     <div className={styles.arrowWrapper}>
                         {prevNav}
                         {nextNav}
@@ -69,7 +70,7 @@ const Navigator = ({project}: Props) => {
             ): (
                 <>
                     {prevNav}
-                    {button}
+                    {externalLink ? button : null}
                     {nextNav}
                 </>
             )}

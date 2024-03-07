@@ -9,6 +9,7 @@ import styles from './layout.module.css';
 export const metadata: Metadata = {
     title: 'Tiger Soda',
     description: 'Ethical digital agency',
+    metadataBase: new URL('https://funnyduck33.github.io/Tiger_Soda'),
 }
 
 async function getMessages(locale: string) {
