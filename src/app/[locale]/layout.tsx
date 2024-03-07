@@ -2,8 +2,8 @@ import type {Metadata} from 'next';
 
 import {NextIntlClientProvider} from 'next-intl';
 
-import index_en from '@/../public/assets/shares/index-en.png';
-import index_es from '@/../public/assets/shares/index-es.png';
+import index_en from '@/../public/assets/shares/index_en.png';
+import index_es from '@/../public/assets/shares/index_es.png';
 
 import '@/app/styles/init.scss';
 import './globals.scss'
